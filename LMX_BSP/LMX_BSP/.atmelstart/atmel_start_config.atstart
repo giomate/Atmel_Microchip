@@ -992,6 +992,13 @@ pads:
     mode: Digital output
     user_label: CLK1
     configuration: null
+  CS_LMX:
+    name: PA03
+    definition: Atmel:SAME54_Drivers:0.0.1::SAME54P20A-AU::pad::PA03
+    mode: Digital output
+    user_label: CS_LMX
+    configuration:
+      pad_initial_level: High
   PA04:
     name: PA04
     definition: Atmel:SAME54_Drivers:0.0.1::SAME54P20A-AU::pad::PA04
@@ -1010,11 +1017,11 @@ pads:
     mode: Digital input
     user_label: PA06
     configuration: null
-  CLK100MHz:
+  CLK120MHz:
     name: PB14
     definition: Atmel:SAME54_Drivers:0.0.1::SAME54P20A-AU::pad::PB14
     mode: Advanced
-    user_label: CLK100MHz
+    user_label: CLK120MHz
     configuration:
       pad_direction: Out
       pad_function: M

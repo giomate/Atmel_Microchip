@@ -7,7 +7,7 @@
 
 
 #include "SPI_Syn_Class.h"
-
+#include "driver_init.h"
 SPI_Syn_Class	*ptrSPISync;
 static	uint8_t	txStaticBuffer[SPI_SYN_BUFFER_SIZE];
 static	uint8_t	rxStaticBuffer[SPI_SYN_BUFFER_SIZE];
@@ -30,7 +30,7 @@ SPI_Syn_Class::~SPI_Syn_Class()
 {
 } //~SPI_Syn_Class
 
-void SPI_Syn_Class::init(){
+void SPI_Syn_Class::Init(){
 	spi_m_sync_get_io_descriptor(SPI, &spio);
 
 	spi_m_sync_enable(SPI);
@@ -70,6 +70,9 @@ int32_t  SPI_Syn_Class::Read(uint8_t * p, int32_t n){
 void SPI_Syn_Class::Disable(void){
 	spi_m_sync_disable(SPI);
 	
+}
+void SPI_Syn_Class::SetCS(bool st){
+	gpio_set_pin_level(CS_LMX,st);
 }
 
 

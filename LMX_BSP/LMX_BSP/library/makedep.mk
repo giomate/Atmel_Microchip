@@ -4,10 +4,6 @@
 
 atmel_start.c
 
-Device_Startup\startup_same54.c
-
-Device_Startup\system_same54.c
-
 driver_init.c
 
 examples\driver_examples.c

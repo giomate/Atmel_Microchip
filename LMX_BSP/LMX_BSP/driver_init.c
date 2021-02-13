@@ -73,9 +73,23 @@ void system_init(void)
 {
 	init_mcu();
 
+	// GPIO on PA03
+
+	gpio_set_pin_level(CS_LMX,
+	                   // <y> Initial level
+	                   // <id> pad_initial_level
+	                   // <false"> Low
+	                   // <true"> High
+	                   true);
+
+	// Set pin direction to output
+	gpio_set_pin_direction(CS_LMX, GPIO_DIRECTION_OUT);
+
+	gpio_set_pin_function(CS_LMX, GPIO_PIN_FUNCTION_OFF);
+
 	// GPIO on PB14
 
-	gpio_set_pin_direction(CLK100MHz,
+	gpio_set_pin_direction(CLK120MHz,
 	                       // <y> Pin direction
 	                       // <id> pad_direction
 	                       // <GPIO_DIRECTION_OFF"> Off
@@ -83,14 +97,14 @@ void system_init(void)
 	                       // <GPIO_DIRECTION_OUT"> Out
 	                       GPIO_DIRECTION_OUT);
 
-	gpio_set_pin_level(CLK100MHz,
+	gpio_set_pin_level(CLK120MHz,
 	                   // <y> Initial level
 	                   // <id> pad_initial_level
 	                   // <false"> Low
 	                   // <true"> High
 	                   false);
 
-	gpio_set_pin_pull_mode(CLK100MHz,
+	gpio_set_pin_pull_mode(CLK120MHz,
 	                       // <y> Pull configuration
 	                       // <id> pad_pull_config
 	                       // <GPIO_PULL_OFF"> Off
@@ -98,7 +112,7 @@ void system_init(void)
 	                       // <GPIO_PULL_DOWN"> Pull-down
 	                       GPIO_PULL_OFF);
 
-	gpio_set_pin_function(CLK100MHz,
+	gpio_set_pin_function(CLK120MHz,
 	                      // <y> Pin function
 	                      // <id> pad_function
 	                      // <i> Auto : use driver pinmux if signal is imported by driver, else turn off function

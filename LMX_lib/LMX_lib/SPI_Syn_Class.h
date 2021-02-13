@@ -30,11 +30,12 @@ public:
 	SPI_Syn_Class();
 	SPI_Syn_Class(spi_m_sync_descriptor *);
 	~SPI_Syn_Class();
-	void init(void);
+	void Init(void);
 	int32_t Enable(void);
 	void Disable(void);
 	int32_t Write( const uint8_t *  p, int32_t n);
 	int32_t  Read(uint8_t * p, int32_t n);
+	void SetCS(bool st);
 	
 	
 	bool	IsSPIReady(void);
