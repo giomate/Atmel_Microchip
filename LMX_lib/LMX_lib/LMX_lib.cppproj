@@ -130,6 +130,7 @@
   <armgcccpp.compiler.symbols.DefSymbols>
     <ListValues>
       <Value>DEBUG</Value>
+      <Value>ONLY_LOCK_SIGNAL</Value>
     </ListValues>
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
@@ -153,6 +154,7 @@
       <Value>../../../LMX_BSP/LMX_BSP/hpl/ramecc</Value>
       <Value>../../../LMX_BSP/LMX_BSP/hpl/sercom</Value>
       <Value>../../../LMX_BSP/LMX_BSP/hri</Value>
+      <Value>../../../LMX_BSP/LMX_BSP/hpl/tc</Value>
     </ListValues>
   </armgcccpp.compiler.directories.IncludePaths>
   <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>

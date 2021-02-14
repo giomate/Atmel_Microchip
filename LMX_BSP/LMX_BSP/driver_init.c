@@ -12,6 +12,17 @@
 #include <hal_init.h>
 
 struct spi_m_sync_descriptor SPI_0;
+struct timer_descriptor      TIMER_0;
+
+void EVENT_SYSTEM_0_init(void)
+{
+	hri_gclk_write_PCHCTRL_reg(GCLK, EVSYS_GCLK_ID_0, CONF_GCLK_EVSYS_CHANNEL_0_SRC | (1 << GCLK_PCHCTRL_CHEN_Pos));
+	hri_gclk_write_PCHCTRL_reg(GCLK, EVSYS_GCLK_ID_1, CONF_GCLK_EVSYS_CHANNEL_1_SRC | (1 << GCLK_PCHCTRL_CHEN_Pos));
+
+	hri_mclk_set_APBBMASK_EVSYS_bit(MCLK);
+
+	event_system_init();
+}
 
 void SPI_0_PORT_init(void)
 {
@@ -69,11 +80,38 @@ void SPI_0_init(void)
 	SPI_0_PORT_init();
 }
 
+/**
+ * \brief Timer initialization function
+ *
+ * Enables Timer peripheral, clocks and initializes Timer driver
+ */
+static void TIMER_0_init(void)
+{
+	hri_mclk_set_APBAMASK_TC0_bit(MCLK);
+	hri_gclk_write_PCHCTRL_reg(GCLK, TC0_GCLK_ID, CONF_GCLK_TC0_SRC | (1 << GCLK_PCHCTRL_CHEN_Pos));
+
+	timer_init(&TIMER_0, TC0, _tc_get_timer());
+}
+
 void system_init(void)
 {
 	init_mcu();
 
 	// GPIO on PA03
+
+	gpio_set_pin_level(CS_LMX1,
+	                   // <y> Initial level
+	                   // <id> pad_initial_level
+	                   // <false"> Low
+	                   // <true"> High
+	                   true);
+
+	// Set pin direction to output
+	gpio_set_pin_direction(CS_LMX1, GPIO_DIRECTION_OUT);
+
+	gpio_set_pin_function(CS_LMX1, GPIO_PIN_FUNCTION_OFF);
+
+	// GPIO on PA07
 
 	gpio_set_pin_level(CS_LMX,
 	                   // <y> Initial level
@@ -157,7 +195,7 @@ void system_init(void)
 	                       // <GPIO_PULL_OFF"> Off
 	                       // <GPIO_PULL_UP"> Pull-up
 	                       // <GPIO_PULL_DOWN"> Pull-down
-	                       GPIO_PULL_OFF);
+	                       GPIO_PULL_UP);
 
 	gpio_set_pin_function(clk_100,
 	                      // <y> Pin function
@@ -195,5 +233,37 @@ void system_init(void)
 
 	gpio_set_pin_function(CLK1, GPIO_PIN_FUNCTION_OFF);
 
+	// GPIO on PC15
+
+	gpio_set_pin_level(Ethernet_LED,
+	                   // <y> Initial level
+	                   // <id> pad_initial_level
+	                   // <false"> Low
+	                   // <true"> High
+	                   false);
+
+	// Set pin direction to output
+	gpio_set_pin_direction(Ethernet_LED, GPIO_DIRECTION_OUT);
+
+	gpio_set_pin_function(Ethernet_LED, GPIO_PIN_FUNCTION_OFF);
+
+	// GPIO on PC18
+
+	gpio_set_pin_level(LED0,
+	                   // <y> Initial level
+	                   // <id> pad_initial_level
+	                   // <false"> Low
+	                   // <true"> High
+	                   false);
+
+	// Set pin direction to output
+	gpio_set_pin_direction(LED0, GPIO_DIRECTION_OUT);
+
+	gpio_set_pin_function(LED0, GPIO_PIN_FUNCTION_OFF);
+
+	EVENT_SYSTEM_0_init();
+
 	SPI_0_init();
+
+	TIMER_0_init();
 }

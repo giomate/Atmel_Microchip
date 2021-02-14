@@ -174,13 +174,21 @@ main.d main.o: .././main.cpp ../../../LMX_BSP/LMX_BSP/atmel_start.h \
  ../../../LMX_BSP/LMX_BSP/hal/include/hpl_init.h \
  ../../../LMX_BSP/LMX_BSP/hal/include/hal_io.h \
  ../../../LMX_BSP/LMX_BSP/hal/include/hal_sleep.h \
+ ../../../LMX_BSP/LMX_BSP/hal/include/hal_evsys.h \
+ ../../../LMX_BSP/LMX_BSP/hal/include/hpl_evsys.h \
  ../../../LMX_BSP/LMX_BSP/hal/include/hal_spi_m_sync.h \
  ../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi_m_sync.h \
  ../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi.h \
  ../../../LMX_BSP/LMX_BSP/hal/utils/include/utils.h \
  ../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi_sync.h \
- .././lmx2694Handler.h .././lmx2694_Default_Configuration.h \
- .././SPI_Syn_Class.h ../../../LMX_BSP/LMX_BSP/driver_init.h
+ ../../../LMX_BSP/LMX_BSP/hal/include/hal_timer.h \
+ ../../../LMX_BSP/LMX_BSP/hal/utils/include/utils_list.h \
+ ../../../LMX_BSP/LMX_BSP/hal/include/hpl_timer.h \
+ ../../../LMX_BSP/LMX_BSP/hpl/tc/hpl_tc_base.h \
+ ../../../LMX_BSP/LMX_BSP/hal/include/hpl_pwm.h \
+ ../../../LMX_BSP/LMX_BSP/hal/include/hpl_irq.h .././lmx2694Handler.h \
+ .././lmx2694_Default_Configuration.h .././SPI_Syn_Class.h \
+ ../../../LMX_BSP/LMX_BSP/driver_init.h
 
 ../../../LMX_BSP/LMX_BSP/atmel_start.h:
 
@@ -534,6 +542,10 @@ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include
 
 ../../../LMX_BSP/LMX_BSP/hal/include/hal_sleep.h:
 
+../../../LMX_BSP/LMX_BSP/hal/include/hal_evsys.h:
+
+../../../LMX_BSP/LMX_BSP/hal/include/hpl_evsys.h:
+
 ../../../LMX_BSP/LMX_BSP/hal/include/hal_spi_m_sync.h:
 
 ../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi_m_sync.h:
@@ -543,6 +555,18 @@ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include
 ../../../LMX_BSP/LMX_BSP/hal/utils/include/utils.h:
 
 ../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi_sync.h:
+
+../../../LMX_BSP/LMX_BSP/hal/include/hal_timer.h:
+
+../../../LMX_BSP/LMX_BSP/hal/utils/include/utils_list.h:
+
+../../../LMX_BSP/LMX_BSP/hal/include/hpl_timer.h:
+
+../../../LMX_BSP/LMX_BSP/hpl/tc/hpl_tc_base.h:
+
+../../../LMX_BSP/LMX_BSP/hal/include/hpl_pwm.h:
+
+../../../LMX_BSP/LMX_BSP/hal/include/hpl_irq.h:
 
 .././lmx2694Handler.h:
 

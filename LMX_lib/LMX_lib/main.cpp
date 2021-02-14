@@ -14,7 +14,12 @@ lmx2694_Handler lmx;
 int main(void)
 {
 	atmel_start_init();
-	lmx.Init();
+	timer_start(&TIMER_0);
+	while(!lmx.Init()){
+		delay_ms(1000);
+		gpio_toggle_pin_level(LED0);
+	}
+	gpio_set_pin_level(LED0,true);
     /* Replace with your application code */
     while (1) 
     {

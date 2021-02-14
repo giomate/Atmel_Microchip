@@ -21,9 +21,14 @@ extern "C" {
 #include <hal_io.h>
 #include <hal_sleep.h>
 
+#include <hal_evsys.h>
+
 #include <hal_spi_m_sync.h>
+#include <hal_timer.h>
+#include <hpl_tc_base.h>
 
 extern struct spi_m_sync_descriptor SPI_0;
+extern struct timer_descriptor      TIMER_0;
 
 void SPI_0_PORT_init(void);
 void SPI_0_CLOCK_init(void);
