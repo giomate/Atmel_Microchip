@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ADF5610Ver7", "ADF5610_Handler\ADF5610Ver7\ADF5610Ver7.cppproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ArduinoCore", "ADF5610_Handler\ArduinoCore\ArduinoCore.cppproj", "{5B076D8F-21DD-45F9-B9D7-8705757BF86A}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ADF5610_lib", "ADF5610_lib\ADF5610_lib.cppproj", "{24C9E767-88DD-4899-A040-05263A15FC60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{5B076D8F-21DD-45F9-B9D7-8705757BF86A}.Debug|AVR.ActiveCfg = Debug|AVR
+		{5B076D8F-21DD-45F9-B9D7-8705757BF86A}.Debug|AVR.Build.0 = Debug|AVR
+		{5B076D8F-21DD-45F9-B9D7-8705757BF86A}.Release|AVR.ActiveCfg = Release|AVR
+		{5B076D8F-21DD-45F9-B9D7-8705757BF86A}.Release|AVR.Build.0 = Release|AVR
+		{24C9E767-88DD-4899-A040-05263A15FC60}.Debug|AVR.ActiveCfg = Debug|AVR
+		{24C9E767-88DD-4899-A040-05263A15FC60}.Debug|AVR.Build.0 = Debug|AVR
+		{24C9E767-88DD-4899-A040-05263A15FC60}.Release|AVR.ActiveCfg = Release|AVR
+		{24C9E767-88DD-4899-A040-05263A15FC60}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
