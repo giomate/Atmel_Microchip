@@ -33,7 +33,7 @@ void SecuenciaCorta(void );
 void SecuenciaLeer();
 void MostrarRegistros(int m);
 long Flipper(uint32_t recibido);
-long gcd(long a, long b);
+long GCD(long a, long b);
 //End of Auto generated function prototypes by Atmel Studio
 
 
@@ -87,43 +87,51 @@ void ConvertFreq(){
   
   byte VCOAdd=0;
   double fPD;
+   double N_Int;
+   double f_N,f_GCD;
+    uint32_t F_FracN,fPDfGCD ;
 
   
   //double PFDFreq = refin * ((1.0 + RD2refdoubl) / (R_Counter * (1.0 + RD1_Rdiv2))); //Phase detector frequency
   double fX=50; //Phase detector frequency
+   double  fDIV=freq;
+   double k=floor(log((14600)/(fDIV))/log(2));
+   byte kDIV=7-(byte)(k);
+   double fVCO = 7300*((freq*pow(2, k))/(14600)); //VCO
+    if (fVCO<4000){
+	    fPD = 1*fX; //Phase detector frequency
+	 }else{
+	    fPD = 2*fX; //Phase detector frequency
+    }
   
-  
-
-    double  fDIV=freq;
-    double k=floor(log((14600)/(fDIV))/log(2));
-    //Serial.print("kdiv: "); Serial.println((byte)k,HEX);
+  #ifdef EXACT_FREQ
+	  N_Int = floor(fVCO/fPD);   // N= 50 for 5 GHz   // Turn N into integer
+	f_N=N_Int*fPD;
+	f_GCD=GCD(long(fVCO),long(fPD));
+	fPDfGCD=(uint32_t)(fPD/f_GCD);
+	F_FracN=(uint32_t)(ceil(pow(2,24)*(fVCO-f_N)/(fPD)));
 	
-	
-	
-    byte kDIV=7-(byte)(k);
-   // Serial.println(kDIV,BIN);
-
-  
-  double fVCO = 7300*((freq*pow(2, k))/(14600)); //VCO
-  //Serial.println(fVCO);
-  if (fVCO<4000){
-    fPD = 1*fX; //Phase detector frequency
-  }else{
-    fPD = 2*fX; //Phase detector frequency
-  }
+  #else
+   
+   
+   
     
-  double N = fVCO /fPD;   // Calculate N
+    double N = fVCO /fPD;   // Calculate N
     
-  //Serial.println(N);
+    //Serial.println(N);
+    
+    N_Int = floor(fVCO/fPD);   // N= 50 for 5 GHz   // Turn N into integer
+    //Serial.println((uint32_t)N_Int,HEX);
+
+    double F_Frac1x = (N - N_Int) * pow(2, 24);   // Calculate Frac1 (N remainder * 2^24)
+
+    F_FracN = (uint32_t)F_Frac1x;  // turn Frac1 into an integer
+    //Serial.println(F_FracN,HEX);
+
   
-  double N_Int = floor(fVCO/fPD);   // N= 50 for 5 GHz   // Turn N into integer
-  //Serial.println((uint32_t)N_Int,HEX);
+#endif
 
-  double F_Frac1x = (N - N_Int) * pow(2, 24);   // Calculate Frac1 (N remainder * 2^24)
-
-  uint32_t F_FracN = (uint32_t)F_Frac1x;  // turn Frac1 into an integer
-  //Serial.println(F_FracN,HEX);
-
+  
 
   ////////////////// Set 32 bit register values R0 to R12 ///////////////////////////
   
@@ -138,18 +146,24 @@ void ConvertFreq(){
         RegWrite[i] =(uint32_t)(0x00FFFFFF&(F_FracN)); 
         break;
       case 5:
-        LeerRegistros((uint8_t)0x10);
-        
-        for (int j=15;j>=0;j--){
-          if(j>7){
-            //bitWrite(RegWrite[i], j, 0);
-            bitWrite(RegWrite[i], j, bitRead(RegRead[0x10],j-8));
-          }else{
-            bitWrite(RegWrite[i], j, 0);
-          }
-        }
-        bitWrite(RegWrite[i], 13,1);
-       // Serial.println(RegWrite[i],HEX);
+	 #ifdef NOT_SDO
+		RegWrite[i]=RegIni[i];
+	#else
+		 LeerRegistros((uint8_t)0x10);
+		 
+		 for (int j=15;j>=0;j--){
+			 if(j>7){
+				 //bitWrite(RegWrite[i], j, 0);
+				 bitWrite(RegWrite[i], j, bitRead(RegRead[0x10],j-8));
+				 }else{
+				 bitWrite(RegWrite[i], j, 0);
+			 }
+		 }
+		 bitWrite(RegWrite[i], 13,1);
+		
+#endif
+       
+ 
         break;
       case 8:
         if (fVCO<4000){
@@ -158,6 +172,12 @@ void ConvertFreq(){
           bitWrite(RegWrite[i], 19, 1);
         }
         break;
+		
+#ifdef EXACT_FREQ
+	 case 0xc:
+	 RegWrite[i]=(uint32_t)(0x3FFF&(fPDfGCD));
+	 break;
+#endif		
       case 20:
         RegWrite[i]=RegWrite[5];
         break;
@@ -250,65 +270,72 @@ void EscribirRegistros(uint8_t d) {
 
 
 void LeerRegistros(uint8_t d) {
-  byte  *recibidop;
-  uint32_t recibido32=0;
-  uint32_t recibido33=0;
-  byte readbuffer =0xFF;
-  byte receivedt[4];
-  byte received[4];
-  readbuffer&=(d<<3);
-  //bitSet(readbuffer,7);
-  //Serial.println(d, HEX);
-  
- // Serial.println(readbuffer, HEX);
+	
+	#ifdef NOT_SDO
+		RegRead[d]=RegWrite[d];
+	#else
+		 byte  *recibidop;
+		 uint32_t recibido32=0;
+		 uint32_t recibido33=0;
+		 byte readbuffer =0xFF;
+		 byte receivedt[4];
+		 byte received[4];
+		 readbuffer&=(d<<3);
+		 //bitSet(readbuffer,7);
+		 //Serial.println(d, HEX);
+		 
+		 // Serial.println(readbuffer, HEX);
 
-  
-  
+		 
+		 
 
-  #ifdef Legacy
+		 #ifdef Legacy
 
-  #else
-    
-    SPI.beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE0));
-    digitalWrite(SEN, LOW);
-    SPI.transfer(0x00);SPI.transfer(0x00);SPI.transfer(d);SPI.transfer(0x00);
+		 #else
+		 
+		 SPI.beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE0));
+		 digitalWrite(SEN, LOW);
+		 SPI.transfer(0x00);SPI.transfer(0x00);SPI.transfer(d);SPI.transfer(0x00);
 
-    digitalWrite(SEN, HIGH);
+		 digitalWrite(SEN, HIGH);
+		 
+		 //delay(1);
+		 
+		 
+		 #endif
+
+		 
+		 
+
+		 digitalWrite(SEN, LOW);
+		 
+		 // SPI.transfer(0x00);SPI.transfer(0x00);SPI.transfer(d);SPI.transfer(0x00);
+		 SPI.transfer(&recibido32,4);
+		 RegRead[d]=0;
+		 RegRead[d]=((recibido32&(0x000000FF))<<24)|((recibido32&(0x0000FF00))<<8);
+		 RegRead[d]|=((recibido32&(0xFF000000))>>24)|((recibido32&(0x00FF0000))>>8);
+		 RegRead[d]>>=7;
+		 bitClear(RegRead[d],24);
+		 
+		 SPI.endTransaction();
+		 digitalWrite(SEN, HIGH);
+
+		 
+		 
+		 
+
+		 //Serial.println(recibido32, HEX);
+		 //Serial.println(recibido33, HEX);
+		 //Serial.println((uint32_t)Flipper(recibido32), HEX);
+
+		 // }
+		 
+		 delay(1);
+		 //MostrarRegistros((int)d);
+		 
+		
+#endif
  
-    //delay(1);
-    
-   
-  #endif
-
-  
-  
-
-    digitalWrite(SEN, LOW);
-     
-    // SPI.transfer(0x00);SPI.transfer(0x00);SPI.transfer(d);SPI.transfer(0x00);
-     SPI.transfer(&recibido32,4);
-	 RegRead[d]=0;
-	 RegRead[d]=((recibido32&(0x000000FF))<<24)|((recibido32&(0x0000FF00))<<8);
-	 RegRead[d]|=((recibido32&(0xFF000000))>>24)|((recibido32&(0x00FF0000))>>8);
-	 RegRead[d]>>=7;
-	 bitClear(RegRead[d],24);
-	 
-    SPI.endTransaction();
-    digitalWrite(SEN, HIGH);
-
-  
-  
- 
-
-    //Serial.println(recibido32, HEX);
-    //Serial.println(recibido33, HEX);
-    //Serial.println((uint32_t)Flipper(recibido32), HEX);
-
- // }
-  
-     delay(1);
-    //MostrarRegistros((int)d);
-  
 
 
 }
@@ -329,7 +356,12 @@ void setup() {
   // ******************Screen mask static text*****************
   Serial.begin(115200);
   Serial.setTimeout(1000);
-  pinMode(12, INPUT_PULLUP); 
+#ifdef NOT_SDO
+	pinMode(MISO, INPUT); 
+#else
+	  pinMode(12, INPUT_PULLUP);
+#endif
+ 
   pinMode(SEN, OUTPUT);
   IniciarRegistros();
   #ifdef Legacy
@@ -359,7 +391,7 @@ void loop()
 {
 	
   double step=1.0/2048.0;
-  double upper_limit=3601.0,lower_limit=3599;
+  double upper_limit=3601.0,lower_limit=3599.0;
   freq=3600;
   bool dir=true;
  // IniciarRegistros();
@@ -413,7 +445,7 @@ void loop()
  
  
  
-  delay(1);
+  delay(100);
  }
 
 }
@@ -430,17 +462,21 @@ bool LockDetect(){
   if(digitalRead(MOSI)>0){
 	   locked = true;
   }else{
-	  
+ #ifdef NOT_SDO
+ #else
 	  LeerRegistros(18);
 	  delay(1);
-	 
+	  
 	  //if ((digitalRead(12)== HIGH))   // select lock/unlock
 	  if ((bitRead(RegRead[18],1)== HIGH)&&(bitRead(RegRead[18],2)== LOW))   // select lock/unlock
 	  {
-		locked = true;
-	  } else {
-		locked = false;
+		  locked = true;
+		  } else {
+		  locked = false;
 	  }
+#endif
+	  
+	  
 }
   return locked;
 }
@@ -474,26 +510,28 @@ void IniciarRegistros(){
       case 8:
         RegIni[i] = 0xC9BEFF;
         break;
-        case 9:
+      case 9:
         RegIni[i] = 0x3FFF;
         break;
-        case 10:
+      case 10:
         RegIni[i] = 0x2047;
         break;
-        case 11:
+      case 11:
         RegIni[i] = 0xF8061;
         break;
-        case 15:
+      case 15:
         RegIni[i] = 0x081;
         break;
-        case 20:
+      case 20:
         RegIni[i] = RegIni[5];
          break;
-        case 21:
-        RegIni[i] = 0x8E08;
+      case 21:
+       // RegIni[i] = 0x8E08;
+		     RegIni[i] = (0x01<<3)|(0x00<<7)|(0x07<<9)|(0x03<<12)|(0x01<<15);
          break;
-         case 22:
+       case 22:
         RegIni[i] = 0x390;
+		// RegIni[i] =(0x02<<3)|(0x07<<7)|(0x00);
          break;
         default:
         RegIni[i] = 0x0;
@@ -529,6 +567,7 @@ void SecuenciaCorta(void){
         
       }
 	  EscribirRegistros(5);
+	EscribirRegistros(0xc);
   EscribirRegistros(3);
   EscribirRegistros(4);
 }
@@ -565,14 +604,16 @@ long Flipper(uint32_t recibido){
   return (long)transformado;
 }
 
-long gcd(long a, long b) { 
-   if (a == 0 || b == 0) 
-      return 0; 
-   else if (a == b) 
-      return a; 
-   else if (a > b) 
-      return gcd(a-b, b); 
-   else return gcd(a, b-a); 
+long GCD(long a, long b) { 
+	if (a == 0)
+	return b;
+	else if (b == 0)
+	return a;
+
+	if (a < b)
+	return GCD(a, b % a);
+	else
+	return GCD(b, a % b);
 } 
 
 

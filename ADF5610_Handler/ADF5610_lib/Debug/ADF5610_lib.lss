@@ -6652,8 +6652,8 @@ static void __empty() {
     2b9c:	30 91 03 01 	lds	r19, 0x0103	; 0x800103 <__malloc_heap_start+0x1>
     2ba0:	30 93 e7 03 	sts	0x03E7, r19	; 0x8003e7 <__brkval+0x1>
     2ba4:	20 93 e6 03 	sts	0x03E6, r18	; 0x8003e6 <__brkval>
-    2ba8:	20 91 00 01 	lds	r18, 0x0100	; 0x800100 <__data_start>
-    2bac:	30 91 01 01 	lds	r19, 0x0101	; 0x800101 <__data_start+0x1>
+    2ba8:	20 91 00 01 	lds	r18, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+    2bac:	30 91 01 01 	lds	r19, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
     2bb0:	21 15       	cp	r18, r1
     2bb2:	31 05       	cpc	r19, r1
     2bb4:	41 f4       	brne	.+16     	; 0x2bc6 <malloc+0xea>
