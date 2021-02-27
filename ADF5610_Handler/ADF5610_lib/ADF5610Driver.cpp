@@ -11,10 +11,19 @@
 #include "string.h"
 #include "inttypes.h"
 #include "unistd.h"
-#include "Arduino.h"
+#ifdef ARDUINO_AVR_UNO
+	#include "Arduino.h"
+#else
+	#define bitRead(value, bit) (((value) >> (bit)) & 0x01)
+	#define bitSet(value, bit) ((value) |= (1UL << (bit)))
+	#define bitClear(value, bit) ((value) &= ~(1UL << (bit)))
+	#define bitToggle(value, bit) ((value) ^= (1UL << (bit)))
+	#define bitWrite(value, bit, bitvalue) ((bitvalue) ? bitSet(value, bit) : bitClear(value, bit))
+#endif
+
 
 //static SPI_Handler staticSPI;
-static SPI_Syn_Class staticSPI;
+static SPI_Syn_Class staticSPI(&SPI_0);
 
 ADF5610_Driver::ADF5610_Driver() {
 	// TODO Auto-generated constructor stub
@@ -51,17 +60,13 @@ void ADF5610_Driver::Init(void){
 }
 bool  ADF5610_Driver::InitPLL(void){
 
-	while((!IsLocked())|((!pll_started)|false)){
+	do{
 		CompleteConfigurationFlow(0);
 		ReadAllRegisters();
 		pll_started= bitRead(RegRead[1],1)&(bitRead(RegRead[1],0)==0);
 		delay(100);
-		if (!is_locked)
-		{
-			Serial.println("pll not started");
-		}
-	}
-	Serial.println("pll locked");
+	
+	}while((!IsLocked())|((!pll_started)|false))
 	return pll_started;
 }
 
@@ -126,24 +131,20 @@ bool ADF5610_Driver::LockDetect(void){
 }
 
 bool ADF5610_Driver::IsLocked(void){
-#ifdef NOT_SDI
-	if(digitalRead(MOSI)>0){
-		is_locked=true;
-	}else{
-		is_locked=false;
-	}
+#ifdef NOT_SDO
+	is_locked= gpio_get_pin_level(PA06);
 #else
 
-	bool locked=false;
-	if ((digitalRead(12)== HIGH)){
+
+	if (gpio_get_pin_level(PA06)){
 		is_locked = true;
 	}else{
 		ReadRegisters(18);
 		if ((bitRead(RegRead[18],1)== true)&&(bitRead(RegRead[18],2)== false))   // select lock/unlock
 		{
 			is_locked = true;
-			Serial.println("is locked");
-			} else {
+			
+		} else {
 			is_locked = false;
 		}
 	}
@@ -246,7 +247,7 @@ void ADF5610_Driver::ConvertU32FourByteArray(uint8_t *array,uint32_t  data){
 
 void ADF5610_Driver::ReadRegisters(uint8_t index) {
 
-#ifdef NOT_SDI
+#ifdef NOT_SDO
 	RegRead[index]=RegWrite[index];
 #else
 	spi->SetCS(false);
@@ -410,29 +411,37 @@ long ADF5610_Driver::Flipper(uint32_t recibido){
 }
 
 void ADF5610_Driver::CalculateVCOValues(void){
-  uint8_t VCOAdd=0;
-  double fPD;
- aux_register=0;
+	  uint8_t VCOAdd=0;
+	  double fPD;
+	 aux_register=0;
 
-  //double PFDFreq = refin * ((1.0 + RD2refdoubl) / (R_Counter * (1.0 + RD1_Rdiv2))); //Phase detector frequency
-  double fX=50; //Phase detector frequency
-
-
-
-    double  fDIV=target_frequency;
-    int k=floor(log((14600)/(fDIV))/log(2));
-    //  Serial.print("kdiv: "); Serial.println((byte)k,HEX);
-    uint8_t kDIV=7-(uint8_t)(k);
-   // Serial.println(kDIV,BIN);
+	  //double PFDFreq = refin * ((1.0 + RD2refdoubl) / (R_Counter * (1.0 + RD1_Rdiv2))); //Phase detector frequency
+	  double fX=50; //Phase detector frequency
 
 
-  double fVCO = 7300*((target_frequency*pow(2, k))/(14600)); //VCO
-  //Serial.println(fVCO);
-  if (fVCO<4000){
-    fPD = 1*fX; //Phase detector frequency
-  }else{
-    fPD = 2*fX; //Phase detector frequency
-  }
+
+		double  fDIV=target_frequency;
+		int k=floor(log((14600)/(fDIV))/log(2));
+		//  Serial.print("kdiv: "); Serial.println((byte)k,HEX);
+		uint8_t kDIV=7-(uint8_t)(k);
+	   // Serial.println(kDIV,BIN);
+
+
+	  double fVCO = 7300*((target_frequency*pow(2, k))/(14600)); //VCO
+	  //Serial.println(fVCO);
+	  if (fVCO<4000){
+		fPD = 1*fX; //Phase detector frequency
+	  }else{
+		fPD = 2*fX; //Phase detector frequency
+	  }
+#ifdef EXACT_FREQ
+    N_Int = floor(fVCO/fPD);   // N= 50 for 5 GHz   // Turn N into integer
+    f_N=N_Int*fPD;
+    f_GCD=GCD(long(fVCO),long(fPD));
+    fPDfGCD=(uint32_t)(fPD/f_GCD);
+    F_FracN=(uint32_t)(ceil(pow(2,24)*(fVCO-f_N)/(fPD)));
+    
+#else
 
   double N = fVCO /fPD;   // Calculate N
 
@@ -445,7 +454,7 @@ void ADF5610_Driver::CalculateVCOValues(void){
 
   uint32_t F_FracN = (uint32_t)F_Frac1x;  // turn Frac1 into an integer
  
-
+#endif
 
   for (int i = 0; i < 22; i++) {
     //Serial.println(i);
@@ -457,23 +466,22 @@ void ADF5610_Driver::CalculateVCOValues(void){
         RegWrite[i] =(uint32_t)(0x00FFFFFF&(F_FracN));
         break;
       case 5:
-        ReadRegisters((uint8_t)0x10);
-		//ShowRegisters(0x10);
-		for (int j=15;j>=0;j--){
-		  if(j>7){
-			//bitWrite(RegWrite[i], j, 0);
-			//  if(j!=13){
-				  bitWrite(RegWrite[i], j, bitRead(RegRead[0x10],j-8));
-			//  }
-
-		  }else{
-			bitWrite(RegWrite[i], j, 0);
-		  }
-		}
-
-
-        bitWrite(RegWrite[i], 13,1);
-       // Serial.println(RegWrite[i],HEX);
+   #ifdef NOT_SDO
+		 RegWrite[i]=RegIni[i];
+   #else
+		 ReadRegisters((uint8_t)0x10);
+   
+		  for (int j=15;j>=0;j--){
+			   if(j>7){
+				   //bitWrite(RegWrite[i], j, 0);
+				   bitWrite(RegWrite[i], j, bitRead(RegRead[0x10],j-8));
+				}else{
+				   bitWrite(RegWrite[i], j, 0);
+			   }
+		   }
+		   bitWrite(RegWrite[i], 13,1);
+   
+   #endif
         break;
       case 8:
         if (fVCO<4000){
@@ -482,6 +490,11 @@ void ADF5610_Driver::CalculateVCOValues(void){
           bitWrite(RegWrite[i], 19, 1);
         }
         break;
+#ifdef EXACT_FREQ
+		case 0xc:
+		RegWrite[i]=(uint32_t)(0x3FFF&(fPDfGCD));
+		break;
+#endif
       case 20:
     	  aux_register=RegWrite[5];
     	// bitClear(aux_register,7);
@@ -491,14 +504,14 @@ void ADF5610_Driver::CalculateVCOValues(void){
         RegWrite[i]=RegIni[i];
         break;
       case 22:
-      VCOAdd=0b00000010;
-        for (int j=3;j<16;j++){
-          if (j<7){
-            bitWrite(RegWrite[i], j, bitRead(VCOAdd,j-3));
-          }else{
-            bitWrite(RegWrite[i], j, bitRead(kDIV,j-7));
-          }
-        }
+		 VCOAdd=0b00000010;
+			for (int j=3;j<16;j++){
+				if (j<7){
+					bitWrite(RegWrite[i], j, bitRead(VCOAdd,j-3));
+				}else{
+					bitWrite(RegWrite[i], j, bitRead(kDIV,j-7));
+				}
+			}
         //Serial.println(RegWrite[i],HEX);
 
         break;

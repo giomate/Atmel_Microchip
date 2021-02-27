@@ -57,7 +57,7 @@ bool SPI_Syn_Class::Init(){
 	#endif
 		txBuffer=txStaticBuffer;
 		rxBuffer=txStaticBuffer;
-
+	ready=(SPI!=NULL);
 	return ready;
 
 	
@@ -86,19 +86,33 @@ int32_t SPI_Syn_Class::Enable(){
 int32_t  SPI_Syn_Class::Write(const uint8_t * p, int32_t n){
 	int32_t w;
 	wFlag=true;
+#ifdef ARDUINO_AVR_UNO
 	SPI.transfer((void*)p, n);
+#else
+	w=io_write(p,n);
 	wFlag=(bool)w;
+#endif
 	 return w;
 	
 }
 int32_t  SPI_Syn_Class::Read(uint8_t * p, int32_t n){
 	int32_t r;
 	rFlag=true;
+#ifdef ARDUINO_AVR_UNO
 	SPI.transfer((void*)p, n);
+#else
+	r=io_read(p,n);
+	rFlag=(bool)r;
+#endif
 	return  r;
 }
 void SPI_Syn_Class::Disable(void){
+#ifdef ARDUINO_AVR_UNO
 	SPI.endTransaction();
+#else
+	spi_m_sync_disable(SPI);
+#endif
+	
 	
 }
 void SPI_Syn_Class::SetCS(bool st){
@@ -119,7 +133,7 @@ void SPI_Syn_Class::SetCS(bool st){
 	 delay(1);
 
 	#else
-	gpio_set_pin_level(CS_LMX,st);
+	gpio_set_pin_level(CS_ADF5610,st);
 	#endif
 }
 

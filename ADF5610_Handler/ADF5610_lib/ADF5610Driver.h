@@ -43,6 +43,8 @@ private:
 	   uint8_t to_send[4];
 	   uint8_t dummy_byte;
 	   bool pll_started;
+	      double f_N,f_GCD;
+	      uint32_t F_FracN,fPDfGCD ;
 
 public:
 	ADF5610_Driver();

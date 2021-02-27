@@ -4,6 +4,8 @@
 
 ADF5610Driver.cpp
 
+main.cpp
+
 Sketch.cpp
 
 SPI_Syn_Class.cpp

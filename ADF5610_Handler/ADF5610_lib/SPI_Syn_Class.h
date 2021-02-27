@@ -11,6 +11,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdbool.h>
+#include "driver_init.h"
+#include "utils.h"
 #define  SPI_SYN_BUFFER_SIZE	32
 
 
@@ -23,16 +25,16 @@ public:
 		uint8_t	*rxBuffer;
 protected:
 private:
-	//spi_m_sync_descriptor *SPI;
-//	io_descriptor *spio;
-//	spi_xfer  *buffer;
+	spi_m_sync_descriptor *SPI;
+	io_descriptor *spio;
+	spi_xfer  *buffer;
 	bool	wFlag,rFlag;
 	int SEN;
 
 //functions
 public:
 	SPI_Syn_Class();
-//	SPI_Syn_Class(spi_m_sync_descriptor *);
+	SPI_Syn_Class(spi_m_sync_descriptor *);
 	~SPI_Syn_Class();
 	bool Init(void);
 	int32_t Enable(void);

@@ -7,10 +7,11 @@
 
 
 
-
+#ifdef ARDUINO_AVR_UNO
 #include <Arduino.h>
 #include "ADF5610Driver.h" 
 ADF5610_Driver adf;
+
 
 	
 	/* Initializes MCU, drivers and middleware */
@@ -35,3 +36,4 @@ void loop(){
 		adf.Init();
 
 }
+#endif
