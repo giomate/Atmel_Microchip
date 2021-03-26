@@ -300,7 +300,7 @@ void ADF5610_Driver::InitiateRegisters(void){
   for (int i = 0; i < 23; i++) {
     switch (i) {
     case 0:
-        //  RegIni[i] = 0x20;
+          RegIni[i] = 0x20;
           break;
       case 1:
         RegIni[i] = 0x2;

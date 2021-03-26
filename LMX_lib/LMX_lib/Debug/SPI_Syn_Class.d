@@ -1,9 +1,10 @@
 SPI_Syn_Class.d SPI_Syn_Class.o: .././SPI_Syn_Class.cpp \
- .././SPI_Syn_Class.h ../../../LMX_BSP/LMX_BSP/driver_init.h \
- ../../../LMX_BSP/LMX_BSP/atmel_start_pins.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hal_gpio.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_gpio.h \
- ../../../LMX_BSP/LMX_BSP/hal/utils/include/compiler.h \
+ .././SPI_Syn_Class.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/driver_init.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/atmel_start_pins.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_gpio.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_gpio.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/compiler.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\6.3.1\include\stddef.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\6.3.1\include\stdint.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\stdint.h \
@@ -13,192 +14,129 @@ SPI_Syn_Class.d SPI_Syn_Class.o: .././SPI_Syn_Class.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\_intsup.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-none-eabi\include\sys\_stdint.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\6.3.1\include\stdbool.h \
- ../../../LMX_BSP/LMX_BSP/hal/utils/include/parts.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/same54.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/same54p20a.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/core_cm4.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/parts.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/samd21.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/samd21j18a.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/core_cm0plus.h \
  C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/cmsis_version.h \
  C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/cmsis_compiler.h \
  C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/cmsis_gcc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/mpu_armv7.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/system_same54.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/ac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/adc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/aes.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/can.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/ccl.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/cmcc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/dac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/dmac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/dsu.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/eic.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/evsys.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/freqm.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/gclk.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/gmac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/hmatrixb.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/icm.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/i2s.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/mclk.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/nvmctrl.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/oscctrl.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/osc32kctrl.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/pac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/pcc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/pdec.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/pm.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/port.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/qspi.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/ramecc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/rstc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/rtc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/sdhc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/sercom.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/supc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/tc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/tcc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/trng.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/usb.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/wdt.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/ac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/adc0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/adc1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/aes.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/can0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/can1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/ccl.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/cmcc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/dac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/dmac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/dsu.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/eic.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/evsys.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/freqm.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/gclk.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/gmac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/hmatrix.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/icm.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/i2s.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/mclk.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/nvmctrl.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/oscctrl.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/osc32kctrl.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pac.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pcc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pdec.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pm.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/port.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pukcc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/qspi.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/ramecc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/rstc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/rtc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sdhc0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sdhc1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom2.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom3.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom4.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom5.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom6.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom7.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/supc.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc2.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc3.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc4.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc5.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc6.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc7.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc0.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc1.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc2.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc3.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc4.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/trng.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/usb.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/wdt.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/pio/same54p20a.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_e54.h \
- C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/sam.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_ac_e54.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hal_atomic.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_adc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_aes_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_can_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_ccl_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_cmcc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_dac_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_dmac_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_dsu_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_eic_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_evsys_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_freqm_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_gclk_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_gmac_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_hmatrixb_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_i2s_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_icm_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_mclk_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_nvmctrl_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_osc32kctrl_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_oscctrl_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_pac_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_pcc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_pdec_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_pm_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_port_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_qspi_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_ramecc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_rstc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_rtc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_sdhc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_sercom_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_supc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_tc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_tcc_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_trng_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_usb_e54.h \
- ../../../LMX_BSP/LMX_BSP/hri/hri_wdt_e54.h \
- ../../../LMX_BSP/LMX_BSP/hal/utils/include/err_codes.h \
- ../../../LMX_BSP/LMX_BSP/hpl/port/hpl_gpio_base.h \
- ../../../LMX_BSP/LMX_BSP/hal/utils/include/utils_assert.h \
- ../../../LMX_BSP/LMX_BSP/Config/hpl_port_config.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hal_delay.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_irq.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_reset.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_sleep.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hal_init.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_init.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hal_io.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hal_sleep.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hal_evsys.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_evsys.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hal_spi_m_sync.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi_m_sync.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi.h \
- ../../../LMX_BSP/LMX_BSP/hal/utils/include/utils.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi_sync.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hal_timer.h \
- ../../../LMX_BSP/LMX_BSP/hal/utils/include/utils_list.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_timer.h \
- ../../../LMX_BSP/LMX_BSP/hpl/tc/hpl_tc_base.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_pwm.h \
- ../../../LMX_BSP/LMX_BSP/hal/include/hpl_irq.h
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/system_samd21.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/ac.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/adc.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/dac.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/dmac.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/dsu.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/eic.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/evsys.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/gclk.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/hmatrixb.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/i2s.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/mtb.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/nvmctrl.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/pac.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/pm.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/port.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/rtc.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/sercom.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/sysctrl.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/tc.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/tcc.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/usb.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/wdt.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/ac.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/adc.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/dac.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/dmac.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/dsu.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/eic.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/evsys.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/gclk.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sbmatrix.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/i2s.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/mtb.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/nvmctrl.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/pac0.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/pac1.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/pac2.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/pm.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/port.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/ptc.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/rtc.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom0.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom1.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom2.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom3.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom4.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom5.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sysctrl.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc3.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc4.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc5.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc6.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc7.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tcc0.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tcc1.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tcc2.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/usb.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/wdt.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/pio/samd21j18a.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_d21.h \
+ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/sam.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_ac_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_atomic.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_adc_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_dac_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_dmac_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_dsu_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_eic_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_evsys_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_gclk_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_hmatrixb_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_i2s_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_mtb_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_nvic_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_nvmctrl_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_pac_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_pm_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_port_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_rtc_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_sercom_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_sysctrl_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_systemcontrol_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_systick_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_tc_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_tcc_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_usb_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_wdt_d21.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/err_codes.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/port/hpl_gpio_base.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/utils_assert.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_delay.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_irq.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_reset.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_sleep.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_init.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_init.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_io.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_sleep.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_spi_m_sync.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_spi_m_sync.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_spi.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/utils.h \
+ ../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_spi_sync.h
 
 .././SPI_Syn_Class.h:
 
-../../../LMX_BSP/LMX_BSP/driver_init.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/driver_init.h:
 
-../../../LMX_BSP/LMX_BSP/atmel_start_pins.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/atmel_start_pins.h:
 
-../../../LMX_BSP/LMX_BSP/hal/include/hal_gpio.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_gpio.h:
 
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_gpio.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_gpio.h:
 
-../../../LMX_BSP/LMX_BSP/hal/utils/include/compiler.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/compiler.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\6.3.1\include\stddef.h:
 
@@ -218,13 +156,13 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\arm-no
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\arm\arm-gnu-toolchain\lib\gcc\arm-none-eabi\6.3.1\include\stdbool.h:
 
-../../../LMX_BSP/LMX_BSP/hal/utils/include/parts.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/parts.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/same54.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/samd21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/same54p20a.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/samd21j18a.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/core_cm4.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/core_cm0plus.h:
 
 C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/cmsis_version.h:
 
@@ -232,336 +170,210 @@ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Inclu
 
 C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/cmsis_gcc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include/mpu_armv7.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/system_samd21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/system_same54.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/ac.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/ac.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/adc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/adc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/dac.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/aes.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/dmac.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/can.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/dsu.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/ccl.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/eic.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/cmcc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/evsys.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/dac.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/gclk.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/dmac.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/hmatrixb.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/dsu.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/i2s.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/eic.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/mtb.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/evsys.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/nvmctrl.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/freqm.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/pac.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/gclk.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/pm.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/gmac.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/port.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/hmatrixb.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/rtc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/icm.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/sercom.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/i2s.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/sysctrl.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/mclk.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/tc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/nvmctrl.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/tcc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/oscctrl.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/usb.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/osc32kctrl.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/component/wdt.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/pac.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/ac.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/pcc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/adc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/pdec.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/dac.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/pm.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/dmac.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/port.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/dsu.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/qspi.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/eic.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/ramecc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/evsys.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/rstc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/gclk.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/rtc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sbmatrix.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/sdhc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/i2s.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/sercom.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/mtb.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/supc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/nvmctrl.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/tc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/pac0.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/tcc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/pac1.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/trng.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/pac2.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/usb.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/pm.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/component/wdt.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/port.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/ac.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/ptc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/adc0.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/rtc.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/adc1.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom0.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/aes.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom1.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/can0.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom2.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/can1.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom3.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/ccl.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom4.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/cmcc.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sercom5.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/dac.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/sysctrl.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/dmac.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc3.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/dsu.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc4.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/eic.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc5.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/evsys.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc6.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/freqm.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tc7.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/gclk.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tcc0.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/gmac.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tcc1.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/hmatrix.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/tcc2.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/icm.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/usb.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/i2s.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/instance/wdt.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/mclk.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/pio/samd21j18a.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/nvmctrl.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/oscctrl.h:
+C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include/sam.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/osc32kctrl.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_ac_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pac.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_atomic.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pcc.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_adc_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pdec.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_dac_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pm.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_dmac_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/port.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_dsu_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/pukcc.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_eic_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/qspi.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_evsys_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/ramecc.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_gclk_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/rstc.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_hmatrixb_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/rtc.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_i2s_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sdhc0.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_mtb_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sdhc1.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_nvic_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom0.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_nvmctrl_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom1.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_pac_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom2.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_pm_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom3.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_port_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom4.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_rtc_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom5.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_sercom_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom6.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_sysctrl_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/sercom7.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_systemcontrol_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/supc.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_systick_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc0.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_tc_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc1.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_tcc_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc2.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_usb_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc3.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri/hri_wdt_d21.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc4.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/err_codes.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc5.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/port/hpl_gpio_base.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc6.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/utils_assert.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tc7.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_delay.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc0.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_irq.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc1.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_reset.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc2.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_sleep.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc3.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_init.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/tcc4.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_init.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/trng.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_io.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/usb.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_sleep.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/instance/wdt.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hal_spi_m_sync.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/pio/same54p20a.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_spi_m_sync.h:
 
-../../../LMX_BSP/LMX_BSP/hri/hri_e54.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_spi.h:
 
-C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include/sam.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include/utils.h:
 
-../../../LMX_BSP/LMX_BSP/hri/hri_ac_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hal_atomic.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_adc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_aes_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_can_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_ccl_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_cmcc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_dac_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_dmac_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_dsu_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_eic_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_evsys_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_freqm_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_gclk_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_gmac_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_hmatrixb_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_i2s_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_icm_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_mclk_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_nvmctrl_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_osc32kctrl_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_oscctrl_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_pac_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_pcc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_pdec_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_pm_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_port_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_qspi_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_ramecc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_rstc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_rtc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_sdhc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_sercom_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_supc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_tc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_tcc_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_trng_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_usb_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hri/hri_wdt_e54.h:
-
-../../../LMX_BSP/LMX_BSP/hal/utils/include/err_codes.h:
-
-../../../LMX_BSP/LMX_BSP/hpl/port/hpl_gpio_base.h:
-
-../../../LMX_BSP/LMX_BSP/hal/utils/include/utils_assert.h:
-
-../../../LMX_BSP/LMX_BSP/Config/hpl_port_config.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hal_delay.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_irq.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_reset.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_sleep.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hal_init.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_init.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hal_io.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hal_sleep.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hal_evsys.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_evsys.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hal_spi_m_sync.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi_m_sync.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi.h:
-
-../../../LMX_BSP/LMX_BSP/hal/utils/include/utils.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_spi_sync.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hal_timer.h:
-
-../../../LMX_BSP/LMX_BSP/hal/utils/include/utils_list.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_timer.h:
-
-../../../LMX_BSP/LMX_BSP/hpl/tc/hpl_tc_base.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_pwm.h:
-
-../../../LMX_BSP/LMX_BSP/hal/include/hpl_irq.h:
+../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include/hpl_spi_sync.h:

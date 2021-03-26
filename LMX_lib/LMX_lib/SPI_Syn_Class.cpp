@@ -72,7 +72,7 @@ void SPI_Syn_Class::Disable(void){
 	
 }
 void SPI_Syn_Class::SetCS(bool st){
-	gpio_set_pin_level(CS_LMX,st);
+	gpio_set_pin_level(lmx_CS,st);
 }
 
 

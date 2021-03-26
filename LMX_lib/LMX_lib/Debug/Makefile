@@ -38,8 +38,8 @@ SUBDIRS :=  \
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
-../Device_Startup/startup_same54.c \
-../Device_Startup/system_same54.c \
+../Device_Startup/startup_samd21.c \
+../Device_Startup/system_samd21.c \
 ../lmx2694Handler.cpp \
 ../main.cpp \
 ../SPI_Syn_Class.cpp
@@ -52,29 +52,29 @@ ASM_SRCS +=
 
 
 OBJS +=  \
-Device_Startup/startup_same54.o \
-Device_Startup/system_same54.o \
+Device_Startup/startup_samd21.o \
+Device_Startup/system_samd21.o \
 lmx2694Handler.o \
 main.o \
 SPI_Syn_Class.o
 
 OBJS_AS_ARGS +=  \
-Device_Startup/startup_same54.o \
-Device_Startup/system_same54.o \
+Device_Startup/startup_samd21.o \
+Device_Startup/system_samd21.o \
 lmx2694Handler.o \
 main.o \
 SPI_Syn_Class.o
 
 C_DEPS +=  \
-Device_Startup/startup_same54.d \
-Device_Startup/system_same54.d \
+Device_Startup/startup_samd21.d \
+Device_Startup/system_samd21.d \
 lmx2694Handler.d \
 main.d \
 SPI_Syn_Class.d
 
 C_DEPS_AS_ARGS +=  \
-Device_Startup/startup_same54.d \
-Device_Startup/system_same54.d \
+Device_Startup/startup_samd21.d \
+Device_Startup/system_samd21.d \
 lmx2694Handler.d \
 main.d \
 SPI_Syn_Class.d
@@ -88,46 +88,46 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 LIB_DEP+=  \
-C:/Users/GMateusDP/Documents/Trobina/Development/Software/Atmel_Microchip/LMX_BSP/LMX_BSP/Debug/libLMX_BSP.a
+C:/Users/GMateusDP/Documents/Trobina/Development/Software/Atmel_Microchip/LMX_SAMD21_BSP/LMX_SAMD21_BSP/Debug/libLMX_SAMD21_BSP.a
 
 LINKER_SCRIPT_DEP+=  \
-../Device_Startup/same54p20a_flash.ld \
-../Device_Startup/same54p20a_sram.ld
+../Device_Startup/samd21j18a_flash.ld \
+../Device_Startup/samd21j18a_sram.ld
 
 
 # AVR32/GNU C Compiler
-Device_Startup/startup_same54.o: ../Device_Startup/startup_same54.c
+Device_Startup/startup_samd21.o: ../Device_Startup/startup_samd21.c
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAME54P20A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m4 -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAMD21J18A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
-Device_Startup/system_same54.o: ../Device_Startup/system_same54.c
+Device_Startup/system_samd21.o: ../Device_Startup/system_samd21.c
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAME54P20A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m4 -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe$(QUOTE)  -x c -mthumb -D__SAMD21J18A__ -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include"  -O1 -ffunction-sections -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./lmx2694Handler.o: .././lmx2694Handler.cpp
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -mthumb -D__SAME54P20A__ -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include" -I"../../../LMX_BSP/LMX_BSP/Config" -I"../../../LMX_BSP/LMX_BSP" -I"../../../LMX_BSP/LMX_BSP/examples" -I"../../../LMX_BSP/LMX_BSP/hal/include" -I"../../../LMX_BSP/LMX_BSP/hal/utils/include" -I"../../../LMX_BSP/LMX_BSP/hpl/cmcc" -I"../../../LMX_BSP/LMX_BSP/hpl/core" -I"../../../LMX_BSP/LMX_BSP/hpl/dmac" -I"../../../LMX_BSP/LMX_BSP/hpl/gclk" -I"../../../LMX_BSP/LMX_BSP/hpl/mclk" -I"../../../LMX_BSP/LMX_BSP/hpl/osc32kctrl" -I"../../../LMX_BSP/LMX_BSP/hpl/oscctrl" -I"../../../LMX_BSP/LMX_BSP/hpl/pm" -I"../../../LMX_BSP/LMX_BSP/hpl/port" -I"../../../LMX_BSP/LMX_BSP/hpl/ramecc" -I"../../../LMX_BSP/LMX_BSP/hpl/sercom" -I"../../../LMX_BSP/LMX_BSP/hri" -I"../../../LMX_BSP/LMX_BSP/hpl/tc"  -O1 -ffunction-sections -fno-rtti -fno-exceptions -mlong-calls -g3 -Wall -mcpu=cortex-m4 -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -mthumb -D__SAMD21J18A__ -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/Config" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/examples" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/core" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/dmac" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/gclk" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/pm" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/port" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/sercom" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/sysctrl" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri"  -O1 -ffunction-sections -fno-rtti -fno-exceptions -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./main.o: .././main.cpp
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -mthumb -D__SAME54P20A__ -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include" -I"../../../LMX_BSP/LMX_BSP/Config" -I"../../../LMX_BSP/LMX_BSP" -I"../../../LMX_BSP/LMX_BSP/examples" -I"../../../LMX_BSP/LMX_BSP/hal/include" -I"../../../LMX_BSP/LMX_BSP/hal/utils/include" -I"../../../LMX_BSP/LMX_BSP/hpl/cmcc" -I"../../../LMX_BSP/LMX_BSP/hpl/core" -I"../../../LMX_BSP/LMX_BSP/hpl/dmac" -I"../../../LMX_BSP/LMX_BSP/hpl/gclk" -I"../../../LMX_BSP/LMX_BSP/hpl/mclk" -I"../../../LMX_BSP/LMX_BSP/hpl/osc32kctrl" -I"../../../LMX_BSP/LMX_BSP/hpl/oscctrl" -I"../../../LMX_BSP/LMX_BSP/hpl/pm" -I"../../../LMX_BSP/LMX_BSP/hpl/port" -I"../../../LMX_BSP/LMX_BSP/hpl/ramecc" -I"../../../LMX_BSP/LMX_BSP/hpl/sercom" -I"../../../LMX_BSP/LMX_BSP/hri" -I"../../../LMX_BSP/LMX_BSP/hpl/tc"  -O1 -ffunction-sections -fno-rtti -fno-exceptions -mlong-calls -g3 -Wall -mcpu=cortex-m4 -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -mthumb -D__SAMD21J18A__ -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/Config" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/examples" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/core" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/dmac" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/gclk" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/pm" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/port" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/sercom" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/sysctrl" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri"  -O1 -ffunction-sections -fno-rtti -fno-exceptions -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./SPI_Syn_Class.o: .././SPI_Syn_Class.cpp
 	@echo Building file: $<
 	@echo Invoking: ARM/GNU C Compiler : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -mthumb -D__SAME54P20A__ -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\SAME54_DFP\1.1.134\include" -I"../../../LMX_BSP/LMX_BSP/Config" -I"../../../LMX_BSP/LMX_BSP" -I"../../../LMX_BSP/LMX_BSP/examples" -I"../../../LMX_BSP/LMX_BSP/hal/include" -I"../../../LMX_BSP/LMX_BSP/hal/utils/include" -I"../../../LMX_BSP/LMX_BSP/hpl/cmcc" -I"../../../LMX_BSP/LMX_BSP/hpl/core" -I"../../../LMX_BSP/LMX_BSP/hpl/dmac" -I"../../../LMX_BSP/LMX_BSP/hpl/gclk" -I"../../../LMX_BSP/LMX_BSP/hpl/mclk" -I"../../../LMX_BSP/LMX_BSP/hpl/osc32kctrl" -I"../../../LMX_BSP/LMX_BSP/hpl/oscctrl" -I"../../../LMX_BSP/LMX_BSP/hpl/pm" -I"../../../LMX_BSP/LMX_BSP/hpl/port" -I"../../../LMX_BSP/LMX_BSP/hpl/ramecc" -I"../../../LMX_BSP/LMX_BSP/hpl/sercom" -I"../../../LMX_BSP/LMX_BSP/hri" -I"../../../LMX_BSP/LMX_BSP/hpl/tc"  -O1 -ffunction-sections -fno-rtti -fno-exceptions -mlong-calls -g3 -Wall -mcpu=cortex-m4 -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -mthumb -D__SAMD21J18A__ -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\arm\CMSIS\5.4.0\CMSIS\Core\Include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a\include" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/Config" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/examples" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/include" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hal/utils/include" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/core" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/dmac" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/gclk" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/pm" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/port" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/sercom" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hpl/sysctrl" -I"../../../LMX_SAMD21_BSP/LMX_SAMD21_BSP/hri"  -O1 -ffunction-sections -fno-rtti -fno-exceptions -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
@@ -157,7 +157,7 @@ all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
 $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
 	@echo Building target: $@
 	@echo Invoking: ARM/GNU Linker : 6.3.1
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -mthumb -Wl,-Map="LMX_lib.map" --specs=nano.specs -Wl,--start-group -lm -lLMX_BSP  -Wl,--end-group -L"..\\Device_Startup" -L"C:\Users\GMateusDP\Documents\Trobina\Development\Software\Atmel_Microchip\LMX_BSP\LMX_BSP\Debug"  -Wl,--gc-sections -mcpu=cortex-m4 -Tsame54p20a_flash.ld  
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -mthumb -Wl,-Map="LMX_lib.map" --specs=nano.specs -Wl,--start-group -lm -lLMX_SAMD21_BSP  -Wl,--end-group -L"..\\Device_Startup" -L"C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\LMX_SA~1\LMX_SA~1\Debug"  -Wl,--gc-sections -mcpu=cortex-m0plus -Tsamd21j18a_flash.ld  
 	@echo Finished building target: $@
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O binary "LMX_lib.elf" "LMX_lib.bin"
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature  "LMX_lib.elf" "LMX_lib.hex"

@@ -596,5 +596,5 @@ pads:
     mode: Digital output
     user_label: CS_ADF5610
     configuration:
-      pad_initial_level: High
+      pad_initial_level: Low
 toolchain_options: []
