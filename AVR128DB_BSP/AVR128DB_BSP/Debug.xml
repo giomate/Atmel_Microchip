@@ -18,8 +18,8 @@
       <Value>../utils</Value>
       <Value>../utils/assembler</Value>
       <Value>../</Value>
-      <Value>../Config</Value>
       <Value>../examples/include</Value>
+      <Value>../Config</Value>
       <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.6.76\include\</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>

@@ -180,14 +180,14 @@ void system_init()
 
 	// Set pin direction to output
 
-	CD_LMX_set_level(
+	CS_LMX_set_level(
 	    // <y> Initial level
 	    // <id> pad_initial_level
 	    // <false"> Low
 	    // <true"> High
 	    true);
 
-	CD_LMX_set_dir(PORT_DIR_OUT);
+	CS_LMX_set_dir(PORT_DIR_OUT);
 
 	CLKCTRL_init();
 

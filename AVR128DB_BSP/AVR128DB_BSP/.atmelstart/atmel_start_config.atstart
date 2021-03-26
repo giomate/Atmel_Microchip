@@ -481,11 +481,11 @@ pads:
     mode: Digital output
     user_label: PC2
     configuration: null
-  CD_LMX:
+  CS_LMX:
     name: PC3
     definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::pad::PC3
     mode: Digital output
-    user_label: CD_LMX
+    user_label: CS_LMX
     configuration:
       pad_initial_level: High
   PD1:
@@ -508,13 +508,6 @@ pads:
     configuration: null
 toolchain_options:
 - definition:
-    identifier: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::environment_definition::All:Microchip.Studio.xc8:7.0.0
-  configuration:
-    compiler_config:
-      xc8_compiler_miscellaneous_OtherFlags: -std=gnu99
-    linker_config:
-      xc8_linker_miscellaneous_LinkerFlags: ''
-- definition:
     identifier: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::environment_definition::All:Microchip.Studio.gcc:7.0.0
   configuration:
     compiler_config:
@@ -528,3 +521,10 @@ toolchain_options:
       avrgcc_compiler_miscellaneous_OtherFlags: -std=gnu99
     linker_config:
       avrgcc_linker_miscellaneous_LinkerFlags: ''
+- definition:
+    identifier: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::environment_definition::All:Microchip.Studio.xc8:7.0.0
+  configuration:
+    compiler_config:
+      xc8_compiler_miscellaneous_OtherFlags: -std=gnu99
+    linker_config:
+      xc8_linker_miscellaneous_LinkerFlags: ''

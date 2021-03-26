@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <ProjectGuid>{7486531d-f541-4bfd-b44a-e2a42e5e44fb}</ProjectGuid>
     <avrdevice>AVR128DB48</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -30,15 +30,15 @@
     <EraseKey />
     <AsfFrameworkConfig>
       <framework-data xmlns="">
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.50.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.50.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
     <Compiler>gcc</Compiler>
     <atStartFilePath>.atmelstart\atmel_start_config.atstart</atStartFilePath>
@@ -52,9 +52,9 @@
         </TopLevelComponents>
         <AcmeActionInfos>
           <AcmeProjectActionInfo Action="File" Source="main.c" IsConfig="false" Hash="k0AH7j+BrmdFhBPzCCMptA" />
-          <AcmeProjectActionInfo Action="File" Source="src/driver_init.c" IsConfig="false" Hash="tiEi7t8R09c4hEpYJFoYkg" />
+          <AcmeProjectActionInfo Action="File" Source="src/driver_init.c" IsConfig="false" Hash="XrUUO99ZcgXPG1JvPnGOkQ" />
           <AcmeProjectActionInfo Action="File" Source="include/driver_init.h" IsConfig="false" Hash="qmjRMPfpzwp5yrm2s0jRQA" />
-          <AcmeProjectActionInfo Action="File" Source="include/atmel_start_pins.h" IsConfig="false" Hash="ynHJ4+tyluNABRh05qyyCA" />
+          <AcmeProjectActionInfo Action="File" Source="include/atmel_start_pins.h" IsConfig="false" Hash="Ov5oyBjTixexoen/jXeF9g" />
           <AcmeProjectActionInfo Action="File" Source="driver_isr.c" IsConfig="false" Hash="pZzF31ZbSBlJ+OWONqIrIg" />
           <AcmeProjectActionInfo Action="File" Source="examples/include/spi_basic_example.h" IsConfig="false" Hash="U2nHD8/QcWi1FBbERcOMtQ" />
           <AcmeProjectActionInfo Action="File" Source="examples/src/spi_basic_example.c" IsConfig="false" Hash="RKuQmkWVEVXgFpFo/i9Cbg" />
@@ -199,6 +199,9 @@
   <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
 </AvrGcc>
     </ToolchainSettings>
+    <OutputFileName>libAVR128DB_BSP</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputType>StaticLibrary</OutputType>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Config\" />
