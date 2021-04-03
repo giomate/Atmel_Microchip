@@ -49,3 +49,22 @@ ISR(ZCD1_ZCD_vect)
 
 	ZCD1.STATUS = ZCD_CROSSIF_bm;
 }
+
+ISR(TCB0_INT_vect)
+{
+
+	TCB0.INTFLAGS = TCB_CAPT_bm;
+
+	TCB0.INTFLAGS = TCB_OVF_bm;
+}
+
+ISR(TCD0_TRIG_vect)
+{
+
+	/* Insert your TCD TRIGA interrupt handling code here */
+
+	/* Insert your TCD TRIGB interrupt handling code here */
+
+	/* TRIGA and TRIGB interrupt flags have to be cleared manually */
+	TCD0.INTFLAGS = TCD_TRIGA_bm | TCD_TRIGB_bm;
+}

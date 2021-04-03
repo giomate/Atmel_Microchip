@@ -36,6 +36,34 @@
 #include "driver_init.h"
 #include <system.h>
 
+/* configure the pins and initialize the registers */
+void USART_ASYNC_initialization(void)
+{
+
+	// Set pin direction to input
+	PB1_set_dir(PORT_DIR_IN);
+
+	PB1_set_pull_mode(
+	    // <y> Pull configuration
+	    // <id> pad_pull_config
+	    // <PORT_PULL_OFF"> Off
+	    // <PORT_PULL_UP"> Pull-up
+	    PORT_PULL_OFF);
+
+	// Set pin direction to output
+
+	PB0_set_level(
+	    // <y> Initial level
+	    // <id> pad_initial_level
+	    // <false"> Low
+	    // <true"> High
+	    false);
+
+	PB0_set_dir(PORT_DIR_OUT);
+
+	USART_ASYNC_init();
+}
+
 void EVENT_SYSTEM_0_initialization(void)
 {
 
@@ -144,16 +172,16 @@ void SPI_1_initialization(void)
 	SPI_1_init();
 }
 
-void TIMER_1_initialization(void)
+void TIMER_B_initialization(void)
 {
 
-	TIMER_1_init();
+	TIMER_B_init();
 }
 
-void TIMER_0_initialization(void)
+void TIMER_C_initialization(void)
 {
 
-	TIMER_0_init();
+	TIMER_C_init();
 }
 
 /**
@@ -189,7 +217,22 @@ void system_init()
 
 	CS_LMX_set_dir(PORT_DIR_OUT);
 
+	/* PORT setting on PC6 */
+
+	// Set pin direction to output
+
+	LED_0_set_level(
+	    // <y> Initial level
+	    // <id> pad_initial_level
+	    // <false"> Low
+	    // <true"> High
+	    true);
+
+	LED_0_set_dir(PORT_DIR_OUT);
+
 	CLKCTRL_init();
+
+	USART_ASYNC_initialization();
 
 	EVENT_SYSTEM_0_initialization();
 
@@ -205,9 +248,11 @@ void system_init()
 
 	SPI_1_initialization();
 
-	TIMER_1_initialization();
+	RTC_0_init();
 
-	TIMER_0_initialization();
+	TIMER_B_initialization();
+
+	TIMER_C_initialization();
 
 	BOD_init();
 }

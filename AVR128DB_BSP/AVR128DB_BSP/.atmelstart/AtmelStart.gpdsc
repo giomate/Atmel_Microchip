@@ -45,11 +45,14 @@
         <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/clkctrl/doc/clkctrl.rst"/>
         <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/cpuint/doc/cpuint.rst"/>
         <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/evsys/doc/evsys.rst"/>
+        <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/rtc/doc/rtc.rst"/>
         <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/slpctrl/doc/slpctrl.rst"/>
         <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/spi/doc/spi_basic.rst"/>
-        <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/timer/doc/tca.rst"/>
+        <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/timer/doc/tcb.rst"/>
         <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/timer/doc/tcd.rst"/>
+        <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/usart/doc/usart_basic.rst"/>
         <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="modules/zcd/doc/zcd.rst"/>
+        <file category="doc" condition="ARMCC, GCC, IAR, XC8" name="interface/USBUART/USBUART_click.rst"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="main.c"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/driver_init.c"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/driver_init.h"/>
@@ -58,12 +61,17 @@
         <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/mainpage.dox"/>
         <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/generator/doxyfile.doxygen"/>
         <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/generator/DoxygenLayout.xml"/>
+        <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/rtc.dox"/>
         <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/spi.dox"/>
         <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/spi_basic.dox"/>
         <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/system.dox"/>
         <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/timer.dox"/>
+        <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/usart.dox"/>
+        <file category="other" condition="ARMCC, GCC, IAR, XC8" name="doxygen/usart_basic.dox"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="examples/include/spi_basic_example.h"/>
+        <file category="header" condition="ARMCC, GCC, IAR, XC8" name="examples/include/usart_basic_example.h"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="examples/src/spi_basic_example.c"/>
+        <file category="source" condition="ARMCC, GCC, IAR, XC8" name="examples/src/usart_basic_example.c"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/bod.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/ccp.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/clkctrl.h"/>
@@ -72,21 +80,25 @@
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/port.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/protected_io.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/rstctrl.h"/>
+        <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/rtc.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/slpctrl.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/spi_basic.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/system.h"/>
-        <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/tca.h"/>
+        <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/tcb.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/tcd.h"/>
+        <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/usart_basic.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/zcd.h"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/bod.c"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/clkctrl.c"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/cpuint.c"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/evsys.c"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/protected_io.S"/>
+        <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/rtc.c"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/slpctrl.c"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/spi_basic.c"/>
-        <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/tca.c"/>
+        <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/tcb.c"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/tcd.c"/>
+        <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/usart_basic.c"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/zcd.c"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="utils/assembler.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="utils/assembler/gas.h"/>
@@ -96,6 +108,10 @@
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="utils/interrupt_avr8.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="utils/utils.h"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="utils/utils_assert.h"/>
+        <file category="header" condition="ARMCC, GCC, IAR, XC8" name="examples/include/click_example.h"/>
+        <file category="source" condition="ARMCC, GCC, IAR, XC8" name="examples/src/click_example.c"/>
+        <file category="header" condition="ARMCC, GCC, IAR, XC8" name="include/USBUART_click.h"/>
+        <file category="source" condition="ARMCC, GCC, IAR, XC8" name="src/USBUART_click.c"/>
         <file category="header" condition="ARMCC, GCC, IAR, XC8" name="atmel_start.h"/>
         <file category="source" condition="ARMCC, GCC, IAR, XC8" name="atmel_start.c"/>
         <file attr="config" category="header" condition="ARMCC, GCC, IAR, XC8" name="config/clock_config.h"/>
@@ -104,6 +120,8 @@
         <file category="include" condition="ARMCC, GCC, IAR, XC8" name="include"/>
         <file category="include" condition="ARMCC, GCC, IAR, XC8" name="utils"/>
         <file category="include" condition="ARMCC, GCC, IAR, XC8" name="utils/assembler"/>
+        <file category="include" condition="ARMCC, GCC, IAR, XC8" name="examples/include"/>
+        <file category="include" condition="ARMCC, GCC, IAR, XC8" name="include"/>
         <file category="include" condition="ARMCC, GCC, IAR, XC8" name=""/>
       </files>
     </component>

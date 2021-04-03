@@ -7,14 +7,22 @@
 
 #include "lmx2694Handler.h"
 #include "math.h"
+#include "util\delay.h"
+#include <stdio.h>
+#include <string.h>
+
 
 #include "string.h"
-static SPI_Syn_Class staticSPI(&SPI_0);
+//#include "SPI_Async_Handler.h"
+
+static SPI_Async_Handler staticSPI;
+
+//static SPI_Syn_Class staticSPI;
 static uint16_t local_read_registers[0x73];
 static uint16_t local_write_registers[0x73];
 static const int channel_divider_values[]={2,4,6,8,12,16,24,32,48,64,72,96,128,192};
 const uint8_t channel_divider_size=14;
-const uint32_t precision=0xffffffff;
+
 
 lmx2694_Handler::lmx2694_Handler() {
 	// TODO Auto-generated constructor stub
@@ -22,7 +30,7 @@ lmx2694_Handler::lmx2694_Handler() {
 	read_registers=local_write_registers;
 	channel_divider=1;
 	channel_index=0;
-	step=(4400.0-400.0)/(1024*32.0);
+	step=(MAX_SENSOR_FREQUENCY-MIN_WOOBLING_FREQUENCY)/(1024.0*2);
 	current_frequency=4000;
 	target_frequency=current_frequency+step;
 	direction=true;
@@ -36,19 +44,19 @@ lmx2694_Handler::~lmx2694_Handler() {
 	// TODO Auto-generated destructor stub
 }
 bool lmx2694_Handler::Init(){
-	spi=&staticSPI;
-	spi->Init();
-	spi->SetCS(true);
+	spi_lmx=&staticSPI;
+	spi_lmx->Init();
+	spi_lmx->SetCS(true);
 	Power_Down();
 	Program_Reset();
 	Initiate_Registers();
-	delay_ms(10);
+	_delay_ms(10);
 	
 	Toggle_FCAL_EN();
 	//Set_MASH_ORDER(1);
 #if ONLY_LOCK_SIGNAL
-	delay_ms(100);
-	return IsLocked();
+	_delay_ms(100);
+	return Is_Locked();
 #else
 	return ((Read_Single_Register(0x6e)>>9)&0x02);
 #endif
@@ -69,16 +77,16 @@ int lmx2694_Handler::Set_MASH_ORDER(uint8_t mo){
 	int_result=Write_Single_Register(44,register_value);
 	return int_result;
 }
-bool lmx2694_Handler::IsLocked(void){
+bool lmx2694_Handler::Is_Locked(void){
 	
-	is_locked=gpio_get_pin_level(PA06);
+	is_locked=PC1_get_level();
 	if (is_locked)
 	{
 	} 
 	else
 	{
-		delay_ms(10);
-		is_locked=gpio_get_pin_level(PA06);
+		_delay_ms(10);
+		is_locked=PC1_get_level();
 	}
 	
 	if (is_locked)
@@ -132,7 +140,7 @@ uint32_t lmx2694_Handler::Get_N_Divider(bool mbr){
 	} 
 	else
 	{
-		N_divider=(uint32_t)(write_registers[34]<<16)+write_registers[36];
+		N_divider=(uint32_t)(((uint32_t)write_registers[34])<<16)+write_registers[36];
 	}
 	return N_divider;
 }
@@ -142,7 +150,7 @@ uint32_t lmx2694_Handler::Get_Numerator(bool mbr){
 	} 
 	else
 	{
-		numerator=(uint32_t)(write_registers[42]<<16)+write_registers[43];
+		numerator=(uint32_t)(((uint32_t)write_registers[42])<<16)+write_registers[43];
 	}
 	return numerator;
 }
@@ -152,7 +160,7 @@ uint32_t lmx2694_Handler::Get_Denominator(bool mbr){
 	}
 	else
 	{
-		denominator=(uint32_t)(write_registers[38]<<16)+write_registers[39];
+		denominator=(uint32_t)(((uint32_t)write_registers[38])<<16)+write_registers[39];
 	}
 	return denominator;
 }
@@ -162,7 +170,7 @@ float lmx2694_Handler::Calculate_Current_Frequency(bool mbr){
 	} 
 	else
 	{
-		vco_frequency=REFERENCE_FREQUENCY*2*(float(Get_N_Divider(false))+float(Get_Numerator(false))/float(Get_Denominator(false)));
+		vco_frequency=REFERENCE_FREQUENCY*2*(float(Get_N_Divider(false))+(float(Get_Numerator(false))/float(Get_Denominator(false))));
 	}
 	return vco_frequency;
 }
@@ -240,6 +248,7 @@ float lmx2694_Handler::Set_Target_Frequency(float tf){
 		}
 		
 	}
+	return fraction;
 
 }
 void  lmx2694_Handler::Write_Division_Registers(void){
@@ -352,18 +361,18 @@ void lmx2694_Handler::Program_PFD_DLY_SEL(void){
 }
 
 void lmx2694_Handler::Calculate_Fraction(float fr){
-	gcd=GCD(round(fr*precision),precision);
-	numerator=round(fr*precision)/gcd;
-	denominator=precision/gcd;
+	gcd=GCD((uint32_t)(round(fr*PRECISION)),PRECISION);
+	numerator=(uint32_t)(round(fr*PRECISION)/gcd);
+	denominator=PRECISION/gcd;
 }
 
 
 bool lmx2694_Handler::Power_Down(){
-	spi->SetCS(false);
+	spi_lmx->SetCS(false);
 	Get_Three_Bytes((uint32_t)PROGRAM_POWERDOWN);
-	int_result=spi->Write(write_bytes,3);
+	int_result=spi_lmx->Write(write_bytes,3);
 	bool_result=int_result>0;
-	spi->SetCS(true);
+	spi_lmx->SetCS(true);
 	return bool_result;
 }
 bool lmx2694_Handler::Write_FCAL_EN(bool st){
@@ -389,23 +398,23 @@ bool lmx2694_Handler::Write_FCAL_EN(bool st){
 }
 bool lmx2694_Handler::Toggle_FCAL_EN(){
 	Write_FCAL_EN(false);
-	delay_us(100);
+	_delay_us(100);
 	bool_result=Write_FCAL_EN(true);
 
 	return bool_result;
 }
 bool lmx2694_Handler::Program_Reset(){
-	spi->SetCS(false);
+	spi_lmx->SetCS(false);
 	Get_Three_Bytes((uint32_t)PROGRAM_RESET_1);
-	int_result=spi->Write(write_bytes,3);
+	int_result=spi_lmx->Write(write_bytes,3);
 	//bool_result=int_result>0;
-	spi->SetCS(true);
-	delay_us(100);
-	spi->SetCS(false);
+	spi_lmx->SetCS(true);
+	_delay_us(100);
+	spi_lmx->SetCS(false);
 	Get_Three_Bytes((uint32_t)PROGRAM_RESET_0);
-	int_result=spi->Write(write_bytes,3);
+	int_result=spi_lmx->Write(write_bytes,3);
 	bool_result=int_result>0;
-	spi->SetCS(true);
+	spi_lmx->SetCS(true);
 	return bool_result;
 }
 void lmx2694_Handler::Get_Three_Bytes(uint32_t data){
@@ -439,9 +448,9 @@ int lmx2694_Handler::Write_Single_Register(uint8_t index,uint16_t data){
 	} 
 	else
 	{
-		spi->SetCS(false);
+		spi_lmx->SetCS(false);
 		Make_Three_Bytes(index,data);
-		int_result=spi->Write(write_bytes,3);
+		int_result=spi_lmx->Write(write_bytes,3);
 		if (int_result>0)
 		{
 				write_registers[index]=data;
@@ -450,7 +459,7 @@ int lmx2694_Handler::Write_Single_Register(uint8_t index,uint16_t data){
 		{
 		}
 
-		spi->SetCS(true);
+		spi_lmx->SetCS(true);
 	}
 	
 	return int_result;
@@ -460,16 +469,16 @@ uint16_t lmx2694_Handler::Read_Single_Register(uint8_t index){
 	register_value=0;
 	uint16_t  last_value=0xff;
 	while((register_value==0)|(register_value==0xffff)){
-		spi->SetCS(false);
+		spi_lmx->SetCS(false);
 			private_index=index|0x80;
 			memset(read_bytes,0,3);
-			int_result=spi->Write(&private_index,1);
-			int_result=spi->Read(read_bytes,2);
+			int_result=spi_lmx->Write(&private_index,1);
+			int_result=spi_lmx->Read(read_bytes,2);
 		//	Make_Three_Bytes(private_index,0);
 			
 		//	int_result=spi->TransferData(write_bytes,3,read_bytes,3);
 			register_value=read_bytes[0]*256+read_bytes[1];
-			spi->SetCS(true);
+			spi_lmx->SetCS(true);
 	}
 
 	read_registers[index]=register_value;
@@ -490,11 +499,11 @@ int lmx2694_Handler::Set_MUXOUT_READBACK(bool st){
 bool lmx2694_Handler::Self_Test(){
 	error_counter=0;
 	while(error_counter<0xff){
-		if (IsLocked())
+		if (Is_Locked())
 		{
 			if (direction)
 			{
-					if (current_frequency+step>MAX_SENSOR_FREQUENCY)
+					if ((current_frequency+step)>MAX_SENSOR_FREQUENCY)
 					{
 						direction=false;
 					}
@@ -504,7 +513,7 @@ bool lmx2694_Handler::Self_Test(){
 			} 
 			else
 			{
-				if (current_frequency-step<MIN_PLL_FREQUENCY)
+				if ((current_frequency-step)<MIN_WOOBLING_FREQUENCY)
 				{
 					direction=true;
 				} 
@@ -514,16 +523,68 @@ bool lmx2694_Handler::Self_Test(){
 			}
 		
 			target_frequency=direction?current_frequency+step:current_frequency-step;
+			printf("current Frequency : %f \n\r", target_frequency);
 			Set_Target_Frequency(target_frequency);
 			error_counter=0;
-			delay_ms(10);
+			_delay_ms(10);
 		} 
 		else
 		{
 			error_counter++;
-			delay_ms(100+10*error_counter);
+			_delay_ms(100+10*error_counter);
 			Set_Target_Frequency(current_frequency);
-			delay_ms(100);
+			_delay_ms(100);
 		}
 	}
+	return false;
+}
+
+bool	lmx2694_Handler::Start_Woobling(float ul, float ll){
+	direction=true;
+
+	Set_Target_Frequency((ul+ll)/2);
+	
+	_delay_ms(100);
+	step=(ul+ll)/(2*1024);
+	upper_limit=ul;
+	lower_limit=ll;
+	return Keep_Woobling();
+}
+bool lmx2694_Handler::Keep_Woobling(void){
+	error_counter=0;
+
+		if (Is_Locked())
+		{
+			if (direction)
+			{
+				if ((current_frequency+step)>upper_limit)
+				{
+					direction=false;
+				}
+				else
+				{
+				}
+			}
+			else
+			{
+				if ((current_frequency-step)<lower_limit)
+				{
+					direction=true;
+				}
+				else
+				{
+				}
+			}
+			
+			target_frequency=direction?current_frequency+step:current_frequency-step;
+			printf("LMX Frequency : %f \n\r", target_frequency);
+			Set_Target_Frequency(target_frequency);
+
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+
 }

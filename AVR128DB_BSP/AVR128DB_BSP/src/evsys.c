@@ -45,7 +45,7 @@ int8_t EVENT_SYSTEM_0_init()
 
 	EVSYS.CHANNEL0 = EVSYS_CHANNEL0_ZCD0_gc; /* Zero Cross Detect 0 out */
 
-	// EVSYS.CHANNEL1 = EVSYS_CHANNEL1_OFF_gc; /* Off */
+	EVSYS.CHANNEL1 = EVSYS_CHANNEL1_ZCD1_gc; /* Zero Cross Detect 1 out */
 
 	// EVSYS.CHANNEL2 = EVSYS_CHANNEL2_OFF_gc; /* Off */
 
@@ -119,7 +119,7 @@ int8_t EVENT_SYSTEM_0_init()
 
 	// EVSYS.USERTCA1CNTB = EVSYS_USER_OFF_gc; /* Off */
 
-	// EVSYS.USERTCB0CAPT = EVSYS_USER_OFF_gc; /* Off */
+	EVSYS.USERTCB0CAPT = EVSYS_USER_CHANNEL0_gc; /* Connect user to event channel 0 */
 
 	// EVSYS.USERTCB0COUNT = EVSYS_USER_OFF_gc; /* Off */
 
@@ -137,7 +137,7 @@ int8_t EVENT_SYSTEM_0_init()
 
 	EVSYS.USERTCD0INPUTA = EVSYS_USER_CHANNEL0_gc; /* Connect user to event channel 0 */
 
-	// EVSYS.USERTCD0INPUTB = EVSYS_USER_OFF_gc; /* Off */
+	EVSYS.USERTCD0INPUTB = EVSYS_USER_CHANNEL1_gc; /* Connect user to event channel 1 */
 
 	// EVSYS.USEROPAMP0ENABLE = EVSYS_USER_OFF_gc; /* Off */
 

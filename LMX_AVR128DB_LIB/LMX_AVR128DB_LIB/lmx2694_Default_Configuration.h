@@ -7,10 +7,10 @@
 
 #ifndef LMX2694_DEFAULT_CONFIGURATION_H_
 #define LMX2694_DEFAULT_CONFIGURATION_H_
-#include "compiler.h"
-// #include <stdlib.h>
-// #include <stdint.h>
-// #include <stdbool.h>
+//#include "mcc_generated_files/mcc.h"
+ #include <stdlib.h>
+ #include <stdint.h>
+ #include <stdbool.h>
 
 #define OUT_PWR_DOWN 0xAc1fE3
 
@@ -26,6 +26,7 @@
 #define MAX_SENSOR_FREQUENCY 4400
 #define OUT_MUX_VCO	0x01
 #define REFERENCE_FREQUENCY 100
+#define MIN_WOOBLING_FREQUENCY 3600
 #define MIN_PLL_FREQUENCY 400
 
 

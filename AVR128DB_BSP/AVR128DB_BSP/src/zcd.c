@@ -61,10 +61,10 @@ int8_t ZCD_0_init()
 int8_t ZCD_1_init()
 {
 
-	// ZCD1.CTRLA = 0 << ZCD_ENABLE_bp /* Setting: disabled */
-	//		 | 0 << ZCD_OUTEN_bp /* Setting: disabled */
-	//		 | 0 << ZCD_RUNSTDBY_bp /* Setting: disabled */
-	//		 | 0 << ZCD_INVERT_bp; /* Setting: disabled */
+	ZCD1.CTRLA = 1 << ZCD_ENABLE_bp     /* Setting: enabled */
+	             | 0 << ZCD_OUTEN_bp    /* Setting: disabled */
+	             | 0 << ZCD_RUNSTDBY_bp /* Setting: disabled */
+	             | 0 << ZCD_INVERT_bp;  /* Setting: disabled */
 
 	ZCD1.INTCTRL = ZCD_INTMODE_FALLING_gc; /* Interrupt on falling input signal */
 

@@ -1,0 +1,1168 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+                              main.o (atmel_start_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o) (system_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (EVENT_SYSTEM_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (OPERATIONAL_AMPLIFIER_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (RTC_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (SLPCTRL_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (SPI_ADF_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (TIMER_RISING_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (TIMER_C_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (USART_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (ZCD_Rising_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (BOD_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (CLKCTRL_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o) (CPUINT_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(protected_io.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o) (protected_write_io)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+                              main.o (__divmodsi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o) (__negsi2)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o (exit)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+                              main.o (__do_global_ctors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+                              main.o (__do_global_dtors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o) (__udivmodsi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o) (__tablejump2__)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o) (__iob)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+                              main.o (printf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o) (vfprintf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o) (strnlen_P)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o) (strnlen)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o) (fputc)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o) (__ultoa_invert)
+
+Allocating common symbols
+Common symbol       size              file
+
+__iob               0x6               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text          0x00000000        0x0 Zero_Cross_Counter.o
+ .data          0x00000000        0x0 Zero_Cross_Counter.o
+ .bss           0x00000000        0x0 Zero_Cross_Counter.o
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_EnableSystem
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_DisableSystem
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0PositiveInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0NegativeInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0TopResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0BottomResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0WiperResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0SettleTime
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_OPAMP_IsOP0Settled
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0OffsetCalibration
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1PositiveInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1NegativeInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1TopResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1BottomResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1WiperResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1SettleTime
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_OPAMP_IsOP1Settled
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1OffsetCalibration
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2PositiveInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2NegativeInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2TopResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2BottomResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2WiperResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2SettleTime
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_OPAMP_IsOP2Settled
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2OffsetCalibration
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .text.SLPCTRL_set_sleep_mode
+                0x00000000       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_ADF_enable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_ADF_disable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_ADF_exchange_byte
+                0x00000000       0x1a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_ADF_exchange_block
+                0x00000000       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_ADF_write_block
+                0x00000000       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_ADF_read_block
+                0x00000000       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_LMX_enable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_LMX_disable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_LMX_exchange_byte
+                0x00000000       0x1a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_LMX_exchange_block
+                0x00000000       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_LMX_write_block
+                0x00000000       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text.SPI_LMX_read_block
+                0x00000000       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text.USART_0_enable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text.USART_0_enable_rx
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text.USART_0_enable_tx
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text.USART_0_disable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text.USART_0_get_data
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text.USART_0_is_tx_ready
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text.USART_0_is_rx_ready
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text.USART_0_is_tx_busy
+                0x00000000       0x14 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text.USART_0_read
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(protected_io.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(protected_io.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(protected_io.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00804000         0x00004000         rw !x
+eeprom           0x00810000         0x00000200         rw !x
+fuse             0x00820000         0x00000010         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x804000
+                0x00008000                __RODATA_PM_OFFSET__ = 0x8000
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+LOAD main.o
+LOAD Zero_Cross_Counter.o
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a
+LOAD C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a
+END GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4\libavr128db48.a
+END GROUP
+                [0x00000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00804000]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x802000
+                [0x00020000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x100000
+                [0x00004000]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000200]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000010]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xec8
+ *(.vectors)
+ .vectors       0x00000000       0xf4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x000000f4                . = ALIGN (0x2)
+                0x000000f4                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000f4        0x0 linker stubs
+ *(.trampolines*)
+                0x000000f4                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x000000f4                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000f4                __ctors_start = .
+ *(.ctors)
+ .ctors         0x000000f4        0x2 main.o
+                0x000000f6                __ctors_end = .
+                0x000000f6                __dtors_start = .
+ *(.dtors)
+ .dtors         0x000000f6        0x2 main.o
+                0x000000f8                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000f8        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+                0x000000f8                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000f8        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000104       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+                0x00000104                __do_copy_data
+ .init4         0x0000011e       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+                0x0000011e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x0000012e       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+                0x0000012e                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000144        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ *(.init9)
+ *(.text)
+ .text          0x0000014c        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+                0x0000014c                __vector_38
+                0x0000014c                __vector_22
+                0x0000014c                __vector_1
+                0x0000014c                __vector_32
+                0x0000014c                __vector_34
+                0x0000014c                __vector_24
+                0x0000014c                __vector_12
+                0x0000014c                __vector_55
+                0x0000014c                __vector_46
+                0x0000014c                __bad_interrupt
+                0x0000014c                __vector_6
+                0x0000014c                __vector_35
+                0x0000014c                __vector_39
+                0x0000014c                __vector_3
+                0x0000014c                __vector_23
+                0x0000014c                __vector_30
+                0x0000014c                __vector_45
+                0x0000014c                __vector_25
+                0x0000014c                __vector_11
+                0x0000014c                __vector_54
+                0x0000014c                __vector_13
+                0x0000014c                __vector_19
+                0x0000014c                __vector_56
+                0x0000014c                __vector_7
+                0x0000014c                __vector_49
+                0x0000014c                __vector_41
+                0x0000014c                __vector_43
+                0x0000014c                __vector_27
+                0x0000014c                __vector_33
+                0x0000014c                __vector_47
+                0x0000014c                __vector_37
+                0x0000014c                __vector_4
+                0x0000014c                __vector_44
+                0x0000014c                __vector_51
+                0x0000014c                __vector_9
+                0x0000014c                __vector_2
+                0x0000014c                __vector_21
+                0x0000014c                __vector_15
+                0x0000014c                __vector_36
+                0x0000014c                __vector_58
+                0x0000014c                __vector_29
+                0x0000014c                __vector_60
+                0x0000014c                __vector_40
+                0x0000014c                __vector_8
+                0x0000014c                __vector_26
+                0x0000014c                __vector_48
+                0x0000014c                __vector_57
+                0x0000014c                __vector_53
+                0x0000014c                __vector_10
+                0x0000014c                __vector_50
+                0x0000014c                __vector_16
+                0x0000014c                __vector_59
+                0x0000014c                __vector_18
+                0x0000014c                __vector_20
+                0x0000014c                __vector_42
+                0x00000150                . = ALIGN (0x2)
+ *(.text.*)
+ .text._Z41__static_initialization_and_destruction_0ii
+                0x00000150       0x3a main.o
+ .text._Z10RTC_enablev
+                0x0000018a       0x14 main.o
+                0x0000018a                _Z10RTC_enablev
+ .text.__vector_5
+                0x0000019e       0x24 main.o
+                0x0000019e                __vector_5
+ .text.main     0x000001c2       0xe8 main.o
+                0x000001c2                main
+ .text._GLOBAL__sub_I__Z10RTC_enablev
+                0x000002aa        0xe main.o
+ .text._GLOBAL__sub_D__Z10RTC_enablev
+                0x000002b8        0xe main.o
+ .text.__vector_28
+                0x000002c6       0x42 Zero_Cross_Counter.o
+                0x000002c6                __vector_28
+ .text.__vector_52
+                0x00000308       0x3a Zero_Cross_Counter.o
+                0x00000308                __vector_52
+ .text._ZN18Zero_Cross_CounterC2Ev
+                0x00000342        0xa Zero_Cross_Counter.o
+                0x00000342                _ZN18Zero_Cross_CounterC1Ev
+                0x00000342                _ZN18Zero_Cross_CounterC2Ev
+ .text._ZN18Zero_Cross_CounterD2Ev
+                0x0000034c        0x2 Zero_Cross_Counter.o
+                0x0000034c                _ZN18Zero_Cross_CounterD2Ev
+                0x0000034c                _ZN18Zero_Cross_CounterD1Ev
+ .text._ZN18Zero_Cross_Counter15CaptureCounterCEv
+                0x0000034e       0x34 Zero_Cross_Counter.o
+                0x0000034e                _ZN18Zero_Cross_Counter15CaptureCounterCEv
+ .text.__vector_17
+                0x00000382       0x6e Zero_Cross_Counter.o
+                0x00000382                __vector_17
+ .text._ZN18Zero_Cross_Counter22CaptureCounterB_RisingEv
+                0x000003f0       0x10 Zero_Cross_Counter.o
+                0x000003f0                _ZN18Zero_Cross_Counter22CaptureCounterB_RisingEv
+ .text.__vector_14
+                0x00000400       0x76 Zero_Cross_Counter.o
+                0x00000400                __vector_14
+ .text._ZN18Zero_Cross_Counter23CaptureCounterB_FallingEv
+                0x00000476       0x10 Zero_Cross_Counter.o
+                0x00000476                _ZN18Zero_Cross_Counter23CaptureCounterB_FallingEv
+ .text.__vector_31
+                0x00000486       0x76 Zero_Cross_Counter.o
+                0x00000486                __vector_31
+ .text.atmel_start_init
+                0x000004fc        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+                0x000004fc                atmel_start_init
+ .text.mcu_init
+                0x00000502       0x92 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x00000502                mcu_init
+ .text.OPERATIONAL_AMPLIFIER_0_initialization
+                0x00000594       0x2a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x00000594                OPERATIONAL_AMPLIFIER_0_initialization
+ .text.USART_0_initialization
+                0x000005be       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x000005be                USART_0_initialization
+ .text.EVENT_SYSTEM_0_initialization
+                0x000005e0        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x000005e0                EVENT_SYSTEM_0_initialization
+ .text.ZCD_Rising_initialization
+                0x000005e6       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x000005e6                ZCD_Rising_initialization
+ .text.ZCD_Falling_initialization
+                0x000005fe       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x000005fe                ZCD_Falling_initialization
+ .text.SPI_ADF_initialization
+                0x00000616       0x2e C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x00000616                SPI_ADF_initialization
+ .text.SPI_LMX_initialization
+                0x00000644       0x2e C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x00000644                SPI_LMX_initialization
+ .text.TIMER_RISING_initialization
+                0x00000672        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x00000672                TIMER_RISING_initialization
+ .text.TIMER_Falling_initialization
+                0x00000678        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x00000678                TIMER_Falling_initialization
+ .text.TIMER_C_initialization
+                0x0000067e        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x0000067e                TIMER_C_initialization
+ .text.system_init
+                0x00000684       0x72 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                0x00000684                system_init
+ .text.EVENT_SYSTEM_0_init
+                0x000006f6       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+                0x000006f6                EVENT_SYSTEM_0_init
+ .text.OPERATIONAL_AMPLIFIER_0_init
+                0x00000718       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+                0x00000718                OPERATIONAL_AMPLIFIER_0_init
+ .text.RTC_0_init
+                0x0000073a       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+                0x0000073a                RTC_0_init
+ .text.SLPCTRL_init
+                0x0000075c        0x4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+                0x0000075c                SLPCTRL_init
+ .text.SPI_ADF_init
+                0x00000760       0x12 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+                0x00000760                SPI_ADF_init
+ .text.SPI_LMX_init
+                0x00000772       0x12 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+                0x00000772                SPI_LMX_init
+ .text.TIMER_RISING_init
+                0x00000784       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+                0x00000784                TIMER_RISING_init
+ .text.TIMER_Falling_init
+                0x000007a8       0x16 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+                0x000007a8                TIMER_Falling_init
+ .text.TIMER_C_init
+                0x000007be       0x2c C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+                0x000007be                TIMER_C_init
+ .text.USART_0_init
+                0x000007ea       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+                0x000007ea                USART_0_init
+ .text.USART_0_write
+                0x0000080a        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+                0x0000080a                USART_0_write
+ .text.USART_0_printCHAR
+                0x00000818        0xa C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+                0x00000818                USART_0_printCHAR
+ .text.ZCD_Rising_init
+                0x00000822        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+                0x00000822                ZCD_Rising_init
+ .text.ZCD_Falling_init
+                0x00000830       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+                0x00000830                ZCD_Falling_init
+ .text.BOD_init
+                0x00000840        0x8 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+                0x00000840                BOD_init
+ .text.CLKCTRL_init
+                0x00000848       0x34 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+                0x00000848                CLKCTRL_init
+ .text.CPUINT_init
+                0x0000087c        0x4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+                0x0000087c                CPUINT_init
+ .text.protected_write_io
+                0x00000880        0xa C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(protected_io.o)
+                0x00000880                protected_write_io
+ .text.libgcc.div
+                0x0000088a       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+                0x0000088a                __divmodsi4
+ .text.libgcc.div
+                0x000008b8       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+                0x000008b8                __negsi2
+ .text.libgcc.div
+                0x000008c8       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+                0x000008c8                __udivmodsi4
+ .text.libgcc   0x0000090c       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+                0x0000090c                __tablejump2__
+ .text.avr-libc
+                0x0000091e       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+                0x0000091e                printf
+ .text.avr-libc
+                0x00000946      0x408 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
+                0x00000946                vfprintf
+ .text.avr-libc
+                0x00000d4e       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+                0x00000d4e                strnlen_P
+ .text.avr-libc
+                0x00000d64       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+                0x00000d64                strnlen
+ .text.avr-libc
+                0x00000d7a       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+                0x00000d7a                fputc
+ .text.avr-libc
+                0x00000df2       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+                0x00000df2                __ultoa_invert
+                0x00000eae                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000eae        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+                0x00000eae                _exit
+                0x00000eae                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ .fini6         0x00000eae       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+                0x00000eae                __do_global_dtors
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000ec4        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000ec8                _etext = .
+
+.data           0x00804000       0x3c load address 0x00000ec8
+                0x00804000                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.USART_0_stream
+                0x00804000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+                0x00804000                USART_0_stream
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0080400e       0x2e main.o
+ *(.gnu.linkonce.r*)
+                0x0080403c                . = ALIGN (0x2)
+                0x0080403c                _edata = .
+                0x0080403c                PROVIDE (__data_end, .)
+
+.bss            0x0080403c       0x1a
+                0x0080403c                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss._ZL7counter
+                0x0080403c        0xc main.o
+ .bss._ZL21capture_value_falling
+                0x00804048        0x2 Zero_Cross_Counter.o
+ .bss._ZL20capture_value_rising
+                0x0080404a        0x2 Zero_Cross_Counter.o
+ .bss.ptr_zero_cross_handler
+                0x0080404c        0x2 Zero_Cross_Counter.o
+                0x0080404c                ptr_zero_cross_handler
+ .bss.SPI_LMX_desc
+                0x0080404e        0x1 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .bss.SPI_ADF_desc
+                0x0080404f        0x1 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ *(COMMON)
+ COMMON         0x00804050        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+                0x00804050                __iob
+                0x00804056                PROVIDE (__bss_end, .)
+                0x00000ec8                __data_load_start = LOADADDR (.data)
+                0x00000f04                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00804056        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00804056                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x5c
+ *(.comment)
+ .comment       0x00000000       0x30 main.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 Zero_Cross_Counter.o
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+ .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+ .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+ .comment       0x00000030       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(vfprintf_std.o)
+                                 0x2d (size before relaxing)
+ .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x490
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x48 main.o
+ .debug_aranges
+                0x00000048       0x68 Zero_Cross_Counter.o
+ .debug_aranges
+                0x000000b0       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .debug_aranges
+                0x000000d0       0x78 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .debug_aranges
+                0x00000148       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .debug_aranges
+                0x00000168       0xf0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .debug_aranges
+                0x00000258       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .debug_aranges
+                0x00000278       0x28 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .debug_aranges
+                0x000002a0       0x88 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .debug_aranges
+                0x00000328       0x28 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .debug_aranges
+                0x00000350       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .debug_aranges
+                0x00000370       0x78 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .debug_aranges
+                0x000003e8       0x28 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .debug_aranges
+                0x00000410       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .debug_aranges
+                0x00000430       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .debug_aranges
+                0x00000450       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+ .debug_aranges
+                0x00000470       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(protected_io.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x886c
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x2f42 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_info    0x00002f42      0x77f main.o
+ .debug_info    0x000036c1      0x9e9 Zero_Cross_Counter.o
+ .debug_info    0x000040aa       0x9a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .debug_info    0x00004144     0x157f C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .debug_info    0x000056c3      0x8b0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .debug_info    0x00005f73      0xa33 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .debug_info    0x000069a6      0x389 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .debug_info    0x00006d2f      0x136 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .debug_info    0x00006e65      0x46d C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .debug_info    0x000072d2      0x2ae C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .debug_info    0x00007580      0x589 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .debug_info    0x00007b09      0x492 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .debug_info    0x00007f9b      0x17a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .debug_info    0x00008115      0x188 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .debug_info    0x0000829d      0x48f C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .debug_info    0x0000872c       0x8d C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+ .debug_info    0x000087b9       0xb3 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(protected_io.o)
+
+.debug_abbrev   0x00000000     0x40b0
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000     0x2cc2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_abbrev  0x00002cc2      0x356 main.o
+ .debug_abbrev  0x00003018      0x24b Zero_Cross_Counter.o
+ .debug_abbrev  0x00003263       0x63 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .debug_abbrev  0x000032c6      0x1f2 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .debug_abbrev  0x000034b8       0xaf C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .debug_abbrev  0x00003567      0x12f C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .debug_abbrev  0x00003696       0xe6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .debug_abbrev  0x0000377c       0xc4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .debug_abbrev  0x00003840      0x19f C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .debug_abbrev  0x000039df       0xf3 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .debug_abbrev  0x00003ad2       0xe6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .debug_abbrev  0x00003bb8      0x20d C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .debug_abbrev  0x00003dc5       0xaf C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .debug_abbrev  0x00003e74       0xaf C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .debug_abbrev  0x00003f23      0x128 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .debug_abbrev  0x0000404b       0x51 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+ .debug_abbrev  0x0000409c       0x14 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(protected_io.o)
+
+.debug_line     0x00000000     0x2118
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x205 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_line    0x00000205      0x345 main.o
+ .debug_line    0x0000054a      0x282 Zero_Cross_Counter.o
+ .debug_line    0x000007cc       0x60 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .debug_line    0x0000082c      0x4f5 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .debug_line    0x00000d21      0x12d C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .debug_line    0x00000e4e      0x3a0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .debug_line    0x000011ee      0x128 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .debug_line    0x00001316      0x120 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .debug_line    0x00001436      0x375 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .debug_line    0x000017ab      0x15f C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .debug_line    0x0000190a      0x134 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .debug_line    0x00001a3e      0x260 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .debug_line    0x00001c9e      0x134 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .debug_line    0x00001dd2      0x10c C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .debug_line    0x00001ede      0x13a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .debug_line    0x00002018       0xa5 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+ .debug_line    0x000020bd       0x5b C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(protected_io.o)
+
+.debug_frame    0x00000000      0x888
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xcc main.o
+ .debug_frame   0x000000cc      0x1c4 Zero_Cross_Counter.o
+ .debug_frame   0x00000290       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .debug_frame   0x000002b4       0xd4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .debug_frame   0x00000388       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .debug_frame   0x000003ac      0x1c4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .debug_frame   0x00000570       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .debug_frame   0x00000594       0x34 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .debug_frame   0x000005c8       0xf4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .debug_frame   0x000006bc       0x34 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .debug_frame   0x000006f0       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .debug_frame   0x00000714       0xd4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .debug_frame   0x000007e8       0x34 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .debug_frame   0x0000081c       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .debug_frame   0x00000840       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .debug_frame   0x00000864       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+
+.debug_str      0x00000000     0x59ca
+ *(.debug_str)
+ .debug_str     0x00000000     0x14f0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_str     0x000014f0      0x601 main.o
+                                0x68d (size before relaxing)
+ .debug_str     0x00001af1      0x28b Zero_Cross_Counter.o
+                                0x70a (size before relaxing)
+ .debug_str     0x00001d7c      0x146 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+                                0x1c7 (size before relaxing)
+ .debug_str     0x00001ec2      0x6ca C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+                                0x8d8 (size before relaxing)
+ .debug_str     0x0000258c     0x13f0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+                               0x15ed (size before relaxing)
+ .debug_str     0x0000397c     0x1256 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+                               0x1465 (size before relaxing)
+ .debug_str     0x00004bd2      0x201 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+                                0x491 (size before relaxing)
+ .debug_str     0x00004dd3       0xb9 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+                                0x27e (size before relaxing)
+ .debug_str     0x00004e8c      0x22b C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+                                0x42a (size before relaxing)
+ .debug_str     0x000050b7      0x130 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+                                0x397 (size before relaxing)
+ .debug_str     0x000051e7      0x1d7 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+                                0x54e (size before relaxing)
+ .debug_str     0x000053be      0x1d5 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+                                0x3ff (size before relaxing)
+ .debug_str     0x00005593       0x73 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+                                0x282 (size before relaxing)
+ .debug_str     0x00005606       0x75 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+                                0x26a (size before relaxing)
+ .debug_str     0x0000567b      0x33f C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+                                0x55d (size before relaxing)
+ .debug_str     0x000059ba       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+                                0x1ba (size before relaxing)
+
+.debug_loc      0x00000000     0x127f
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x2cb main.o
+ .debug_loc     0x000002cb      0x335 Zero_Cross_Counter.o
+ .debug_loc     0x00000600      0x635 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .debug_loc     0x00000c35      0x1ef C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .debug_loc     0x00000e24       0x21 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .debug_loc     0x00000e45      0x34c C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .debug_loc     0x00001191       0x47 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .debug_loc     0x000011d8       0xa7 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x370
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x38 main.o
+ .debug_ranges  0x00000038       0x58 Zero_Cross_Counter.o
+ .debug_ranges  0x00000090       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(atmel_start.o)
+ .debug_ranges  0x000000a0       0x68 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(driver_init.o)
+ .debug_ranges  0x00000108       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(evsys.o)
+ .debug_ranges  0x00000118       0xe0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(opamp_basic.o)
+ .debug_ranges  0x000001f8       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(rtc.o)
+ .debug_ranges  0x00000208       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(slpctrl.o)
+ .debug_ranges  0x00000220       0x78 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(spi_basic.o)
+ .debug_ranges  0x00000298       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcb.o)
+ .debug_ranges  0x000002b0       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(tcd.o)
+ .debug_ranges  0x000002c0       0x68 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(usart_basic.o)
+ .debug_ranges  0x00000328       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(zcd.o)
+ .debug_ranges  0x00000340       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(bod.o)
+ .debug_ranges  0x00000350       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(clkctrl.o)
+ .debug_ranges  0x00000360       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR_CU~1\AVR_CU~1\test_app\libAVR_CURIOSITY_BSP.a(cpuint.o)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(Zero_Cross_Detector_lib.elf elf32-avr)
+LOAD linker stubs

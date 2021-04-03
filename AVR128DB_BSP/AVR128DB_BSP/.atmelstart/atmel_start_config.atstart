@@ -18,7 +18,16 @@ board:
   device: AVR128DB48
 details: null
 application: null
-middlewares: {}
+middlewares:
+  USB_UART_CLICK_0:
+    user_label: USB_UART_CLICK_0
+    configuration:
+      add_click_example: true
+    definition: Microchip:clickboard:1.0.0::USBUART_clickboard
+    functionality: USB_UART_Click
+    api: Click:Interface:USBUART
+    dependencies:
+      USART Async: USART_ASYNC
 drivers:
   CLKCTRL:
     user_label: CLKCTRL
@@ -26,18 +35,18 @@ drivers:
     functionality: System
     api: Drivers:CLKCTRL:Init
     configuration:
-      $input: 72000000
-      $input_id: PLL
-      RESERVED_InputFreq: 72000000
-      RESERVED_InputFreq_id: PLL
+      $input: 8000000
+      $input_id: Internal high-frequency oscillator
+      RESERVED_InputFreq: 8000000
+      RESERVED_InputFreq_id: Internal high-frequency oscillator
       _$freq_output_32kHz divided by 32: 1024
-      _$freq_output_External clock: 8000000
+      _$freq_output_External clock: '16000000'
       _$freq_output_Internal high-frequency oscillator: 24000000
       _$freq_output_Main Clock (CLK_MAIN): 24000000
-      _$freq_output_PLL: 72000000
-      _$freq_output_TCD0 Clock (CLK_TCD0): 72000000
+      _$freq_output_PLL: 24000000
+      _$freq_output_TCD0 Clock (CLK_TCD0): 24000000
       clkctrl_mclkctrla_cksel: Internal high-frequency oscillator
-      clkctrl_mclkctrla_clkout: false
+      clkctrl_mclkctrla_clkout: true
       clkctrl_mclkctrlb_pdiv: '2'
       clkctrl_mclkctrlb_pen: false
       clkctrl_mclkctrlc_cfden: false
@@ -46,9 +55,9 @@ drivers:
       clkctrl_mclkintctrl_inttype: Regular Interrupt
       clkctrl_oschfctrla_autotune: false
       clkctrl_oschfctrla_freqsel: '24'
-      clkctrl_oschfctrla_runstdby: false
+      clkctrl_oschfctrla_runstdby: true
       clkctrl_oschftune_tune: 0
-      clkctrl_pllctrla_mulfac: '3'
+      clkctrl_pllctrla_mulfac: '1'
       clkctrl_pllctrla_runstdby: false
       clkctrl_pllctrla_source: Internal high-frequency oscillator
       clkctrl_xosc32kctrla_csut: 1k cycles
@@ -56,7 +65,7 @@ drivers:
       clkctrl_xosc32kctrla_runstdby: false
       clkctrl_xosc32kctrla_sel: false
       clkctrl_xoschfctrla_csuthf: 256 XOSCHF cycles
-      clkctrl_xoschfctrla_enable: false
+      clkctrl_xoschfctrla_enable: true
       clkctrl_xoschfctrla_frqrange: Max 8 MHz XTAL Frequency
       clkctrl_xoschfctrla_runstdby: false
       clkctrl_xoschfctrla_sel: External Crystal
@@ -67,19 +76,19 @@ drivers:
       enable_intHigh: true
       enable_main: true
       enable_osc32K: true
-      enable_pll: true
-      enable_pll_enable: true
+      enable_pll: false
+      enable_pll_enable: false
       enable_tcd0: true
       enable_xosc3212kctrla: false
       extclk_clksel_clksel: External clock
-      externalclock: 8000000
+      externalclock: 16000000
       nvm_clock_source: Main Clock (CLK_MAIN)
       osc32k_clksel_clksel: Internal 32.768 kHz oscillator
       osculp1k_clksel_clksel: Internal high-frequency oscillator
       ram_clock_source: Main Clock (CLK_MAIN)
-      tcd0_ctrla_clksel: PLL
+      tcd0_ctrla_clksel: Internal high-frequency oscillator
       tcd0_ctrla_syncpres: '1'
-      xosc32kctrla_arch_enable: false
+      xosc32kctrla_arch_enable: true
     optional_signals: []
     variant: null
     clocks:
@@ -90,6 +99,57 @@ drivers:
           external: false
           external_frequency: 0
         configuration: {}
+  USART_ASYNC:
+    user_label: USART_ASYNC
+    definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::USART3::driver_config_definition::Async.Polled.Mode::Drivers:USART:Basic
+    functionality: USART
+    api: Drivers:USART:Basic
+    configuration:
+      baud_rate: 9600
+      ctrla_abeie: false
+      ctrla_dreie: false
+      ctrla_lbme: false
+      ctrla_rxcie: false
+      ctrla_rxsie: false
+      ctrla_txcie: false
+      ctrlb_mpcm: false
+      ctrlb_odme: false
+      ctrlb_rxen: true
+      ctrlb_rxmode: Normal mode
+      ctrlb_sfden: false
+      ctrlb_txen: true
+      ctrlc_chsize: 'Character size: 8 bit'
+      ctrlc_cmode: Asynchronous USART
+      ctrlc_pmode: No Parity
+      ctrlc_sbmode: 1 stop bit
+      ctrlc_ucpha: false
+      ctrlc_udord: false
+      dbgctrl_abmbp: false
+      dbgctrl_dbgrun: false
+      evctrl_irei: false
+      printf_support: true
+      rxplctrl_rxpl: 0
+      txplctrl_txpl: 0
+      usart_ctrla_rs485: RS485 Mode disabled
+    optional_signals: []
+    variant:
+      specification: CMODE=0
+      required_signals:
+      - name: USART3/RXD
+        pad: PB1
+        label: RXD
+      - name: USART3/TXD
+        pad: PB0
+        label: TXD
+    clocks:
+      domain_group:
+        nodes:
+        - name: USART
+          input: Main Clock (CLK_MAIN)
+          external: false
+          external_frequency: 0
+        configuration:
+          usart_clock_source: Main Clock (CLK_MAIN)
   EVENT_SYSTEM_0:
     user_label: EVENT_SYSTEM_0
     definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::EVSYS::driver_config_definition::EVSYS::Drivers:EVSYS:Init
@@ -97,7 +157,7 @@ drivers:
     api: Drivers:EVSYS:Init
     configuration:
       evsys_channel0_gen: Zero Cross Detect 0 out
-      evsys_channel1_gen: 'Off'
+      evsys_channel1_gen: Zero Cross Detect 1 out
       evsys_channel2_gen: 'Off'
       evsys_channel3_gen: 'Off'
       evsys_channel4_gen: 'Off'
@@ -146,7 +206,7 @@ drivers:
       evsys_user_tca0_cntb: 'Off'
       evsys_user_tca1_cnta: 'Off'
       evsys_user_tca1_cntb: 'Off'
-      evsys_user_tcb0_capt: 'Off'
+      evsys_user_tcb0_capt: Connect user to event channel 0
       evsys_user_tcb0_count: 'Off'
       evsys_user_tcb1_capt: 'Off'
       evsys_user_tcb1_count: 'Off'
@@ -155,7 +215,7 @@ drivers:
       evsys_user_tcb3_capt: 'Off'
       evsys_user_tcb3_count: 'Off'
       evsys_user_tcd0_inputa: Connect user to event channel 0
-      evsys_user_tcd0_inputb: 'Off'
+      evsys_user_tcd0_inputb: Connect user to event channel 1
     optional_signals: []
     variant: null
     clocks:
@@ -222,7 +282,7 @@ drivers:
       enable_zcdout: false
       inc_isr_harness: true
       inv_out_polarity: false
-      zcd_ctrla_enable: false
+      zcd_ctrla_enable: true
       zcd_intmode: Interrupt on falling input signal
     optional_signals:
     - identifier: ZCD_1:IN
@@ -321,61 +381,90 @@ drivers:
           external_frequency: 0
         configuration:
           spi_clock_source: Main Clock (CLK_MAIN)
-  TIMER_1:
-    user_label: TIMER_1
-    definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::TCA1::driver_config_definition::Normal.Mode::Drivers:TCA:Init
-    functionality: Timer
-    api: Drivers:TCA:Init
+  RTC_0:
+    user_label: RTC_0
+    definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::RTC::driver_config_definition::RTC::Drivers:RTC:Init
+    functionality: RTC
+    api: Drivers:RTC:Init
     configuration:
+      $input: 0
+      $input_id: Internal 32.768 kHz oscillator
+      RESERVED_InputFreq: 0
+      RESERVED_InputFreq_id: Internal 32.768 kHz oscillator
+      _$freq_output_RTC Clock (CLK_RTC): 1024
+      enable_rtc: true
       inc_isr_harness: false
-      tca_cmp0: 0
-      tca_cmp1: 0
-      tca_cmp2: 0
-      tca_cnt: 0
-      tca_ctrla_clksel: System Clock
-      tca_ctrla_enable: false
-      tca_ctrla_runstdby: false
-      tca_ctrlb_alupd: false
-      tca_ctrlb_cmp0en: false
-      tca_ctrlb_cmp1en: false
-      tca_ctrlb_cmp2en: false
-      tca_ctrlb_wgmode: Normal Mode
-      tca_ctrlc_cmp0ov: false
-      tca_ctrlc_cmp1ov: false
-      tca_ctrlc_cmp2ov: false
-      tca_dbgctrl_dbgrun: false
-      tca_evctrl_cntaei: false
-      tca_evctrl_cntbei: false
-      tca_evctrl_evacta: Count on positive edge event
-      tca_evctrl_evactb: Count on prescaled clock. Event controls count direction.
-        Up-count when event line is 0, down-count when event line is 1.
-      tca_intctrl_cmp0: false
-      tca_intctrl_cmp1: false
-      tca_intctrl_cmp2: false
-      tca_intctrl_ovf: false
-      tca_per: 65535
+      rtc_clksel_clksel: Internal 32.768 kHz oscillator
+      rtc_cmp: 0
+      rtc_cnt: 0
+      rtc_ctrla_prescaler: '32'
+      rtc_ctrla_rtcen: true
+      rtc_ctrla_runstdby: false
+      rtc_dbgctrl_dbgrun: false
+      rtc_intctrl_cmp: false
+      rtc_intctrl_ovf: false
+      rtc_per: 1024
+      rtc_pitctrla_period: 'Off'
+      rtc_pitctrla_piten: true
+      rtc_pitdbgctrl_dbgrun: false
+      rtc_pitintctrl_pi: false
     optional_signals: []
     variant: null
     clocks:
       domain_group:
         nodes:
-        - name: TCA
+        - name: RTC
+          input: RTC Clock (CLK_RTC)
+          external: false
+          external_frequency: 0
+        configuration:
+          rtc_clock_source: RTC Clock (CLK_RTC)
+  TIMER_B:
+    user_label: TIMER_B
+    definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::TCB0::driver_config_definition::Init::Drivers:TCB:Init
+    functionality: Timer
+    api: Drivers:TCB:Init
+    configuration:
+      inc_isr_harness: true
+      tcb_ccmp: 0
+      tcb_cnt: 0
+      tcb_ctrla_cascade: false
+      tcb_ctrla_clksel: CLK_PER
+      tcb_ctrla_enable: true
+      tcb_ctrla_runstdby: false
+      tcb_ctrla_syncupd: false
+      tcb_ctrlb_async: false
+      tcb_ctrlb_ccmpen: false
+      tcb_ctrlb_ccmpinit: false
+      tcb_ctrlb_cntmode: Input Capture Frequency measurement
+      tcb_dbgctrl_dbgrun: false
+      tcb_evctrl_captei: true
+      tcb_evctrl_edge: false
+      tcb_evctrl_filter: false
+      tcb_intctrl_capt: true
+      tcb_intctrl_ovf: true
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: TCB
           input: Main Clock (CLK_MAIN)
           external: false
           external_frequency: 0
         configuration:
-          tca_clock_source: Main Clock (CLK_MAIN)
-  TIMER_0:
-    user_label: TIMER_0
+          tcb_clock_source: Main Clock (CLK_MAIN)
+  TIMER_C:
+    user_label: TIMER_C
     definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::TCD0::driver_config_definition::Init::Drivers:TCD:Init
     functionality: Timer
     api: Drivers:TCD:Init
     configuration:
-      inc_isr_harness: false
+      inc_isr_harness: true
       tcd_cmpaclr: 0
       tcd_cmpaset: 4095
       tcd_cmpbclr: 0
-      tcd_cmpbset: 2047
+      tcd_cmpbset: 4095
       tcd_ctrla_cntpres: Sync clock divided by 1
       tcd_ctrla_enable: true
       tcd_ctrlb_wgmode: One ramp mode
@@ -394,16 +483,16 @@ drivers:
       tcd_dlyctrl_dlysel: No delay
       tcd_dlyctrl_dlytrig: Compare A set
       tcd_dlyval_dlyval: 0
-      tcd_evctrla_action: Event trigger a fault
+      tcd_evctrla_action: Event trigger a fault and capture
       tcd_evctrla_cfg: Neither Filter nor Asynchronous Event is enabled
-      tcd_evctrla_edge: The falling edge or low level of event generates retrigger
+      tcd_evctrla_edge: The rising edge or high level of event generates retrigger
         or fault action
       tcd_evctrla_trigei: true
-      tcd_evctrlb_action: Event trigger a fault
+      tcd_evctrlb_action: Event trigger a fault and capture
       tcd_evctrlb_cfg: Neither Filter nor Asynchronous Event is enabled
-      tcd_evctrlb_edge: The falling edge or low level of event generates retrigger
+      tcd_evctrlb_edge: The rising edge or high level of event generates retrigger
         or fault action
-      tcd_evctrlb_trigei: false
+      tcd_evctrlb_trigei: true
       tcd_faultctrl_cmpa: false
       tcd_faultctrl_cmpaen: false
       tcd_faultctrl_cmpb: false
@@ -415,8 +504,8 @@ drivers:
       tcd_inputctrla_inputmode: Input has no actions
       tcd_inputctrlb_inputmode: Input has no actions
       tcd_intctrl_ovf: false
-      tcd_intctrl_triga: false
-      tcd_intctrl_trigb: false
+      tcd_intctrl_triga: true
+      tcd_intctrl_trigb: true
     optional_signals: []
     variant: null
     clocks:
@@ -463,6 +552,18 @@ pads:
     user_label: CS_ADF
     configuration:
       pad_initial_level: Low
+  PB0:
+    name: PB0
+    definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::pad::PB0
+    mode: Digital output
+    user_label: PB0
+    configuration: null
+  PB1:
+    name: PB1
+    definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::pad::PB1
+    mode: Digital input
+    user_label: PB1
+    configuration: null
   PC0:
     name: PC0
     definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::pad::PC0
@@ -488,6 +589,13 @@ pads:
     user_label: CS_LMX
     configuration:
       pad_initial_level: High
+  LED_0:
+    name: PC6
+    definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::pad::PC6
+    mode: Digital output
+    user_label: LED_0
+    configuration:
+      pad_initial_level: High
   PD1:
     name: PD1
     definition: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::pad::PD1
@@ -508,6 +616,13 @@ pads:
     configuration: null
 toolchain_options:
 - definition:
+    identifier: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::environment_definition::All:Microchip.Studio.xc8:7.0.0
+  configuration:
+    compiler_config:
+      xc8_compiler_miscellaneous_OtherFlags: -std=gnu99
+    linker_config:
+      xc8_linker_miscellaneous_LinkerFlags: ''
+- definition:
     identifier: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::environment_definition::All:Microchip.Studio.gcc:7.0.0
   configuration:
     compiler_config:
@@ -521,10 +636,3 @@ toolchain_options:
       avrgcc_compiler_miscellaneous_OtherFlags: -std=gnu99
     linker_config:
       avrgcc_linker_miscellaneous_LinkerFlags: ''
-- definition:
-    identifier: Microchip:AVRDB_48_drivers:1.0.0::AVR128DB48::environment_definition::All:Microchip.Studio.xc8:7.0.0
-  configuration:
-    compiler_config:
-      xc8_compiler_miscellaneous_OtherFlags: -std=gnu99
-    linker_config:
-      xc8_linker_miscellaneous_LinkerFlags: ''

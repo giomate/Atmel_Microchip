@@ -42,6 +42,9 @@
 #include <atmel_start_pins.h>
 
 #include <clkctrl.h>
+
+#include <usart_basic.h>
+
 #include <evsys.h>
 #include <slpctrl.h>
 #include <cpuint.h>
@@ -53,8 +56,10 @@
 
 #include <spi_basic.h>
 
+#include <rtc.h>
+
 #include <interrupt_avr8.h>
-#include <tca.h>
+#include <tcb.h>
 
 #include <interrupt_avr8.h>
 #include <tcd.h>
