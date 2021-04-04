@@ -34,7 +34,7 @@
 
 static uint8_t rx[16];
 
-uint8_t USART_ASYNC_test_usart_basic(void)
+uint8_t USART_0_test_usart_basic(void)
 {
 	uint8_t i;
 
@@ -52,7 +52,7 @@ uint8_t USART_ASYNC_test_usart_basic(void)
 	// Initialize rx buffer so strncmp() check will work
 	memset(rx, 0, sizeof(rx));
 	for (i = 0; i < strlen("hello"); i++) {
-		rx[i] = USART_ASYNC_read(); // Blocks until character is available
+		rx[i] = USART_0_read(); // Blocks until character is available
 	}
 
 	// Compare received and expected data

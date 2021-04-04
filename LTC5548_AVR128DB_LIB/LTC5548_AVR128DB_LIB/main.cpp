@@ -38,14 +38,18 @@ int main(void)
 	atmel_start_init();
 
 	RTC_enable();
-	ENABLE_INTERRUPTS();
+	
 	ltc.Init();
+	
+ENABLE_INTERRUPTS();
     /* Replace with your application code */
     while (1) 
     {
+			
 		ltc.Read_Frequency_Values();
+		//	DISABLE_INTERRUPTS();
 		//ltc.lmx->Keep_Woobling();
-	//	ltc.Check_Mixer();
+		ltc.Check_Mixer();
 		
     }
 }

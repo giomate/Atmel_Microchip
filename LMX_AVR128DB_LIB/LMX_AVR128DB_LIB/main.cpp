@@ -13,6 +13,7 @@
 #include <atomic.h>
 #include <util/delay.h>  
 #include <clock_config.h>
+#include "avr/interrupt.h"
 #include "lmx2694Handler.h"
  static lmx2694_Handler lmx;
 

@@ -43,7 +43,7 @@ void SPI_Async_Handler::Init(){
 
 	Enable();
 	// Register callback function releasing SS when transfer is complete
-	SPI_LMX_register_callback(LMX_SPI_Transfer_Done);
+//	SPI_LMX_register_callback(LMX_SPI_Transfer_Done);
 	transfer_done=true;
 
 	
@@ -60,8 +60,8 @@ int8_t  SPI_Async_Handler::Write(const uint8_t * p, uint8_t n){
 	{
 		transfer_done=false;
 		SPI_LMX_write_block((void *)p, n);
-				while (SPI_LMX_status_busy())
-				; // Wait for the transfer to complete
+	//			while (SPI_LMX_status_busy())
+	//			; // Wait for the transfer to complete
 				return n;
 
 	} 
@@ -83,8 +83,8 @@ int8_t  SPI_Async_Handler::Read(uint8_t * p,uint8_t n){
 	{
 			transfer_done=false;
 			SPI_LMX_read_block((void*)p, n);
-			while (SPI_LMX_status_busy())
-			; // Wait for the transfer to complete
+		//	while (SPI_LMX_status_busy())
+		//	; // Wait for the transfer to complete
 			return n;
 	} 
 	else

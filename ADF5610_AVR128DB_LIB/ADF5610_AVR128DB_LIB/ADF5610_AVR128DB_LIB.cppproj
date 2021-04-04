@@ -168,7 +168,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'test_app' ">
     <ToolchainSettings>
-      <AvrGccCpp xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+      <AvrGccCpp>
         <avrgcc.common.Device>-mmcu=avr128db48 -B "%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48"</avrgcc.common.Device>
         <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
         <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
@@ -187,7 +187,6 @@
             <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.7.85\include\</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
-        <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
         <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
         <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
         <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
@@ -197,23 +196,21 @@
         <avrgcccpp.compiler.symbols.DefSymbols>
           <ListValues>
             <Value>DEBUG</Value>
-            <Value>__DELAY_BACKWARD_COMPATIBLE__</Value>
             <Value>NOT_SDO</Value>
           </ListValues>
         </avrgcccpp.compiler.symbols.DefSymbols>
         <avrgcccpp.compiler.directories.IncludePaths>
           <ListValues>
             <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.7.85\include\</Value>
-            <Value>../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include</Value>
-            <Value>../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include</Value>
-            <Value>../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils</Value>
-            <Value>../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler</Value>
-            <Value>../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src</Value>
-            <Value>../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/</Value>
-            <Value>../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/examples/include</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/include</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/utils</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/utils/assembler</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/src</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/Config</Value>
           </ListValues>
         </avrgcccpp.compiler.directories.IncludePaths>
-        <avrgcccpp.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcccpp.compiler.optimization.level>
         <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
         <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
         <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
@@ -238,6 +235,75 @@
     <OutputType>Executable</OutputType>
     <OutputPath>bin\test_app\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'library' ">
+    <ToolchainSettings>
+      <AvrGccCpp xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+        <avrgcc.common.Device>-mmcu=avr128db48 -B "%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48"</avrgcc.common.Device>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.7.85\include\</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>NOT_SDO</Value>
+          </ListValues>
+        </avrgcccpp.compiler.symbols.DefSymbols>
+        <avrgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.7.85\include\</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/examples/include</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/include</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/utils</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/utils/assembler</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/src</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/</Value>
+            <Value>../../../AVR128DB_BSP/AVR128DB_BSP/Config</Value>
+          </ListValues>
+        </avrgcccpp.compiler.directories.IncludePaths>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.linker.general.UseVprintfLibrary>True</avrgcccpp.linker.general.UseVprintfLibrary>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+        <avrgcccpp.linker.miscellaneous.LinkerFlags>-lprintf_flt</avrgcccpp.linker.miscellaneous.LinkerFlags>
+        <avrgcccpp.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.7.85\include\</Value>
+          </ListValues>
+        </avrgcccpp.assembler.general.IncludePaths>
+        <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+      </AvrGccCpp>
+    </ToolchainSettings>
+    <OutputFileName>libADF5610_AVR128DB_LIB</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputType>StaticLibrary</OutputType>
+    <OutputPath>bin\library\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="ADF5610Driver.cpp">
       <SubType>compile</SubType>
@@ -256,9 +322,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AVR_CURIOSITY_BSP\AVR_CURIOSITY_BSP\AVR_CURIOSITY_BSP.cproj">
-      <Name>AVR_CURIOSITY_BSP</Name>
-      <Project>{90dfe693-45ed-4445-b270-1f7b78eddc65}</Project>
+    <ProjectReference Include="..\..\AVR128DB_BSP\AVR128DB_BSP\AVR128DB_BSP.cproj">
+      <Name>AVR128DB_BSP</Name>
+      <Project>{91804c71-bd98-42c9-bcaf-fa426e1887ee}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

@@ -72,7 +72,7 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 LIB_DEP+=  \
-C:/Users/GMateusDP/Documents/Trobina/Development/Software/Atmel_Microchip/AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Debug/libAVR_CURIOSITY_BSP.a
+C:/Users/GMateusDP/Documents/Trobina/Development/Software/Atmel_Microchip/AVR128DB_BSP/AVR128DB_BSP/Debug/libAVR128DB_BSP.a
 
 LINKER_SCRIPT_DEP+= 
 
@@ -81,14 +81,14 @@ LINKER_SCRIPT_DEP+=
 ./main.o: .././main.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG  -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./Zero_Cross_Counter.o: .././Zero_Cross_Counter.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG  -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 

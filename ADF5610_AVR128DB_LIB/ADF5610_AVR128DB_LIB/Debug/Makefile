@@ -77,7 +77,7 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 LIB_DEP+=  \
-C:/Users/GMateusDP/Documents/Trobina/Development/Software/Atmel_Microchip/AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Debug/libAVR_CURIOSITY_BSP.a
+C:/Users/GMateusDP/Documents/Trobina/Development/Software/Atmel_Microchip/AVR128DB_BSP/AVR128DB_BSP/Debug/libAVR128DB_BSP.a
 
 LINKER_SCRIPT_DEP+= 
 

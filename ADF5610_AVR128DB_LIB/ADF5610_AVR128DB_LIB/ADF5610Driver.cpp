@@ -60,7 +60,7 @@ bool ADF5610_Driver::Init(void){
 	spi_adf->Write(to_send,4);
 		
 	spi_adf->SetCS(true);
-		return true;
+
 	 InitiateRegisters();
 	return InitPLL();
 	// CompleteConfigurationFlow(0);
@@ -74,7 +74,7 @@ bool  ADF5610_Driver::InitPLL(void){
 		ReadAllRegisters();
 		pll_started= bitRead(RegRead[1],1)&(bitRead(RegRead[1],0)==0);
 		_delay_ms(100);
-		
+		asm("nop");
 	
 	}while((!Is_Locked())|((!pll_started)|false));
 	return pll_started;
@@ -159,6 +159,7 @@ bool ADF5610_Driver::LockDetect(void){
 bool ADF5610_Driver::Is_Locked(void){
 #ifdef NOT_SDO
 	is_locked= CS_ADF_get_level();
+	//is_locked=	PORTA_get_pin_level(7);
 #else
 
 
@@ -243,7 +244,7 @@ void  ADF5610_Driver::WriteRegisters(uint8_t index) {
 					  //    spi->Write(&dummy_byte);
 				      //}
 		
-			 usleep(1);
+			 usleep(10);
 		   spi_adf->SetCS(true);
 		 
 

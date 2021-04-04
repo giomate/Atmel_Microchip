@@ -37,15 +37,11 @@
 #include <spi_basic.h>
 #include <atmel_start_pins.h>
 
-typedef struct SPI_0_descriptor_s {
-	spi_transfer_status_t  status;
-	uint8_t *              data;
-	uint8_t                size;
-	spi_transfer_type_t    type;
-	spi_transfer_done_cb_t cb;
-} SPI_0_descriptor_t;
+typedef struct SPI_ADF_descriptor_s {
+	spi_transfer_status_t status;
+} SPI_ADF_descriptor_t;
 
-static SPI_0_descriptor_t SPI_0_desc;
+static SPI_ADF_descriptor_t SPI_ADF_desc;
 
 /**
  * \brief Initialize SPI interface
@@ -56,7 +52,7 @@ static SPI_0_descriptor_t SPI_0_desc;
  * \retval 0 the SPI init was successful
  * \retval 1 the SPI init was not successful
  */
-void SPI_0_init()
+void SPI_ADF_init()
 {
 
 	SPI0.CTRLA = 0 << SPI_CLK2X_bp    /* Enable Double Speed: disabled */
@@ -70,189 +66,124 @@ void SPI_0_init()
 	//		 | SPI_MODE_0_gc /* SPI Mode 0 */
 	//		 | 0 << SPI_SSD_bp; /* Slave Select Disable: disabled */
 
-	SPI0.INTCTRL = 0 << SPI_DREIE_bp    /* Data Register Empty Interrupt Enable: disabled */
-	               | 1 << SPI_IE_bp     /* Interrupt Enable: enabled */
-	               | 0 << SPI_RXCIE_bp  /* Receive Complete Interrupt Enable: disabled */
-	               | 0 << SPI_SSIE_bp   /* Slave Select Trigger Interrupt Enable: disabled */
-	               | 0 << SPI_TXCIE_bp; /* Transfer Complete Interrupt Enable: disabled */
+	// SPI0.INTCTRL = 0 << SPI_DREIE_bp /* Data Register Empty Interrupt Enable: disabled */
+	//		 | 0 << SPI_IE_bp /* Interrupt Enable: disabled */
+	//		 | 0 << SPI_RXCIE_bp /* Receive Complete Interrupt Enable: disabled */
+	//		 | 0 << SPI_SSIE_bp /* Slave Select Trigger Interrupt Enable: disabled */
+	//		 | 0 << SPI_TXCIE_bp; /* Transfer Complete Interrupt Enable: disabled */
 
-	SPI_0_desc.status = SPI_FREE;
-	SPI_0_desc.cb     = NULL;
+	SPI_ADF_desc.status = SPI_FREE;
 }
 
 /**
- * \brief Enable SPI_0
+ * \brief Enable SPI_ADF
  * 1. If supported by the clock system, enables the clock to the SPI
  * 2. Enables the SPI module by setting the enable-bit in the SPI control register
  *
  * \return Nothing
  */
-void SPI_0_enable()
+void SPI_ADF_enable()
 {
 	SPI0.CTRLA |= SPI_ENABLE_bm;
 }
 
 /**
- * \brief Disable SPI_0
+ * \brief Disable SPI_ADF
  * 1. Disables the SPI module by clearing the enable-bit in the SPI control register
  * 2. If supported by the clock system, disables the clock to the SPI
  *
  * \return Nothing
  */
-void SPI_0_disable()
+void SPI_ADF_disable()
 {
 	SPI0.CTRLA &= ~SPI_ENABLE_bm;
 }
 
-/*
-  Callback function is typically used to:
-  In master mode: Release SS after transfer as finished.
-  In slave mode: Implement SPI protocol, setting up next transfer
-                 after the previous one (i.e. data transfer phase
-                 after control/command phase).
-*/
-void SPI_0_register_callback(spi_transfer_done_cb_t f)
-{
-	SPI_0_desc.cb = f;
-}
-
-ISR(SPI0_INT_vect)
-{
-	/* SPI_0_desc.data points to array element
-	   to write the received data to. The data to be transmitted
-	   is in the next array element.
-	*/
-	uint8_t rdata = SPI0.DATA;
-	uint8_t wdata = 0;
-
-	SPI0.INTFLAGS = SPI_RXCIF_bm;
-
-	if (SPI_0_desc.type != SPI_WRITE) {
-		*SPI_0_desc.data = rdata;
-	}
-
-	SPI_0_desc.data++;
-
-	if (SPI_0_desc.type != SPI_READ)
-		wdata = *SPI_0_desc.data;
-
-	SPI_0_desc.size--;
-	// if more bytes to be transferred
-	if (SPI_0_desc.size != 0) {
-		// more data to send, send a byte
-		SPI0.DATA = wdata;
-	}
-
-	// if last byte has been transferred, update status
-	// and optionally call callback
-	else {
-		SPI_0_desc.status = SPI_DONE;
-		if (SPI_0_desc.cb != NULL) {
-			SPI_0_desc.cb();
-		}
-	}
-}
-
 /**
- * \brief Check if SPI bus is FREE.
+ * \brief Exchange one byte over SPI SPI_ADF. Blocks until done.
  *
- * \return SPI free status
- * \retval true  SPI bus is FREE
- * \retval false SPI bus is not FREE
- */
-bool SPI_0_status_free()
-{
-	return (SPI_0_desc.status == SPI_FREE);
-}
-
-/**
- * \brief Check if SPI bus is IDLE.
+ * \param[in] data The byte to transfer
  *
- * \return SPI IDLE status
- * \retval true  SPI bus is IDLE
- * \retval false SPI bus is not IDLE
+ * \return Received data byte.
  */
-bool SPI_0_status_idle()
+uint8_t SPI_ADF_exchange_byte(uint8_t data)
 {
-	return (SPI_0_desc.status == SPI_IDLE);
-}
-
-/**
- * \brief Check if SPI bus is BUSY.
- *
- * \return SPI BUSY status
- * \retval true  SPI bus is BUSY
- * \retval false SPI bus is not BUSY
- */
-bool SPI_0_status_busy()
-{
-	return (SPI_0_desc.status == SPI_BUSY);
-}
-
-/**
- * \brief Check if SPI bus is DONE.
- *
- * \return SPI DONE status
- * \retval true  SPI bus is DONE
- * \retval false SPI bus is not DONE
- */
-bool SPI_0_status_done()
-{
-	return (SPI_0_desc.status == SPI_DONE);
-}
-
-uint8_t SPI_0_exchange_byte(uint8_t data)
-{
-	SPI_0_desc.data   = (uint8_t *)&data;
-	SPI_0_desc.size   = 1;
-	SPI_0_desc.type   = SPI_READ;
-	SPI_0_desc.status = SPI_BUSY;
-
-	SPI0.DATA = *SPI_0_desc.data;
-	while (SPI_0_desc.status == SPI_BUSY)
+	// Blocking wait for SPI free makes the function work
+	// seamlessly also with IRQ drivers.
+	while (SPI_ADF_desc.status == SPI_BUSY)
 		;
-	return data;
+	SPI0.DATA = data;
+	while (!(SPI0.INTFLAGS & SPI_RXCIF_bm))
+		;
+	return SPI0.DATA;
 }
 
-void SPI_0_exchange_block(void *block, uint8_t size)
+/**
+ * \brief Exchange a buffer over SPI SPI_ADF. Blocks if using polled driver.
+ *
+ * \param[inout] block The buffer to transfer. Received data is returned here.
+ * \param[in] size The size of buffer to transfer
+ *
+ * \return Nothing.
+ */
+void SPI_ADF_exchange_block(void *block, uint8_t size)
 {
-	SPI_0_desc.data   = (uint8_t *)block;
-	SPI_0_desc.size   = size;
-	SPI_0_desc.type   = SPI_EXCHANGE;
-	SPI_0_desc.status = SPI_BUSY;
-
-	SPI0.DATA = *SPI_0_desc.data;
+	uint8_t *b = (uint8_t *)block;
+	while (size--) {
+		SPI0.DATA = *b;
+		while (!(SPI0.INTFLAGS & SPI_RXCIF_bm))
+			;
+		*b = SPI0.DATA;
+		b++;
+	}
 }
 
-void SPI_0_write_block(void *block, uint8_t size)
+/**
+ * \brief Write a buffer over SPI SPI_ADF. Blocks if using polled driver.
+ *
+ * \param[in] block The buffer to transfer
+ * \param[in] size The size of buffer to transfer
+ *
+ * \return Nothing.
+ */
+void SPI_ADF_write_block(void *block, uint8_t size)
 {
-	SPI_0_desc.data   = (uint8_t *)block;
-	SPI_0_desc.size   = size;
-	SPI_0_desc.type   = SPI_WRITE;
-	SPI_0_desc.status = SPI_BUSY;
-
-	SPI0.DATA = *SPI_0_desc.data;
+	uint8_t *b = (uint8_t *)block;
+	while (size--) {
+		SPI0.DATA = *b;
+		while (!(SPI0.INTFLAGS & SPI_RXCIF_bm))
+			;
+		b++;
+	}
 }
 
-void SPI_0_read_block(void *block, uint8_t size)
+/**
+ * \brief Read a buffer over SPI SPI_ADF. Blocks if using polled driver.
+ *
+ * Zeros are transmitted out of the SPI.
+ *
+ * \param[out] block Received data is written here.
+ * \param[in] size The size of buffer to transfer
+ *
+ * \return Nothing.
+ */
+void SPI_ADF_read_block(void *block, uint8_t size)
 {
-	SPI_0_desc.data   = (uint8_t *)block;
-	SPI_0_desc.size   = size;
-	SPI_0_desc.type   = SPI_READ;
-	SPI_0_desc.status = SPI_BUSY;
-
-	SPI0.DATA = 0;
+	uint8_t *b = (uint8_t *)block;
+	while (size--) {
+		SPI0.DATA = 0;
+		while (!(SPI0.INTFLAGS & SPI_RXCIF_bm))
+			;
+		*b = SPI0.DATA;
+		b++;
+	}
 }
 
-typedef struct SPI_1_descriptor_s {
-	spi_transfer_status_t  status;
-	uint8_t *              data;
-	uint8_t                size;
-	spi_transfer_type_t    type;
-	spi_transfer_done_cb_t cb;
-} SPI_1_descriptor_t;
+typedef struct SPI_LMX_descriptor_s {
+	spi_transfer_status_t status;
+} SPI_LMX_descriptor_t;
 
-static SPI_1_descriptor_t SPI_1_desc;
+static SPI_LMX_descriptor_t SPI_LMX_desc;
 
 /**
  * \brief Initialize SPI interface
@@ -263,7 +194,7 @@ static SPI_1_descriptor_t SPI_1_desc;
  * \retval 0 the SPI init was successful
  * \retval 1 the SPI init was not successful
  */
-void SPI_1_init()
+void SPI_LMX_init()
 {
 
 	SPI1.CTRLA = 0 << SPI_CLK2X_bp    /* Enable Double Speed: disabled */
@@ -277,176 +208,115 @@ void SPI_1_init()
 	//		 | SPI_MODE_0_gc /* SPI Mode 0 */
 	//		 | 0 << SPI_SSD_bp; /* Slave Select Disable: disabled */
 
-	SPI1.INTCTRL = 0 << SPI_DREIE_bp    /* Data Register Empty Interrupt Enable: disabled */
-	               | 1 << SPI_IE_bp     /* Interrupt Enable: enabled */
-	               | 0 << SPI_RXCIE_bp  /* Receive Complete Interrupt Enable: disabled */
-	               | 0 << SPI_SSIE_bp   /* Slave Select Trigger Interrupt Enable: disabled */
-	               | 0 << SPI_TXCIE_bp; /* Transfer Complete Interrupt Enable: disabled */
+	// SPI1.INTCTRL = 0 << SPI_DREIE_bp /* Data Register Empty Interrupt Enable: disabled */
+	//		 | 0 << SPI_IE_bp /* Interrupt Enable: disabled */
+	//		 | 0 << SPI_RXCIE_bp /* Receive Complete Interrupt Enable: disabled */
+	//		 | 0 << SPI_SSIE_bp /* Slave Select Trigger Interrupt Enable: disabled */
+	//		 | 0 << SPI_TXCIE_bp; /* Transfer Complete Interrupt Enable: disabled */
 
-	SPI_1_desc.status = SPI_FREE;
-	SPI_1_desc.cb     = NULL;
+	SPI_LMX_desc.status = SPI_FREE;
 }
 
 /**
- * \brief Enable SPI_1
+ * \brief Enable SPI_LMX
  * 1. If supported by the clock system, enables the clock to the SPI
  * 2. Enables the SPI module by setting the enable-bit in the SPI control register
  *
  * \return Nothing
  */
-void SPI_1_enable()
+void SPI_LMX_enable()
 {
 	SPI1.CTRLA |= SPI_ENABLE_bm;
 }
 
 /**
- * \brief Disable SPI_1
+ * \brief Disable SPI_LMX
  * 1. Disables the SPI module by clearing the enable-bit in the SPI control register
  * 2. If supported by the clock system, disables the clock to the SPI
  *
  * \return Nothing
  */
-void SPI_1_disable()
+void SPI_LMX_disable()
 {
 	SPI1.CTRLA &= ~SPI_ENABLE_bm;
 }
 
-/*
-  Callback function is typically used to:
-  In master mode: Release SS after transfer as finished.
-  In slave mode: Implement SPI protocol, setting up next transfer
-                 after the previous one (i.e. data transfer phase
-                 after control/command phase).
-*/
-void SPI_1_register_callback(spi_transfer_done_cb_t f)
-{
-	SPI_1_desc.cb = f;
-}
-
-ISR(SPI1_INT_vect)
-{
-	/* SPI_1_desc.data points to array element
-	   to write the received data to. The data to be transmitted
-	   is in the next array element.
-	*/
-	uint8_t rdata = SPI1.DATA;
-	uint8_t wdata = 0;
-
-	SPI1.INTFLAGS = SPI_RXCIF_bm;
-
-	if (SPI_1_desc.type != SPI_WRITE) {
-		*SPI_1_desc.data = rdata;
-	}
-
-	SPI_1_desc.data++;
-
-	if (SPI_1_desc.type != SPI_READ)
-		wdata = *SPI_1_desc.data;
-
-	SPI_1_desc.size--;
-	// if more bytes to be transferred
-	if (SPI_1_desc.size != 0) {
-		// more data to send, send a byte
-		SPI1.DATA = wdata;
-	}
-
-	// if last byte has been transferred, update status
-	// and optionally call callback
-	else {
-		SPI_1_desc.status = SPI_DONE;
-		if (SPI_1_desc.cb != NULL) {
-			SPI_1_desc.cb();
-		}
-	}
-}
-
 /**
- * \brief Check if SPI bus is FREE.
+ * \brief Exchange one byte over SPI SPI_LMX. Blocks until done.
  *
- * \return SPI free status
- * \retval true  SPI bus is FREE
- * \retval false SPI bus is not FREE
- */
-bool SPI_1_status_free()
-{
-	return (SPI_1_desc.status == SPI_FREE);
-}
-
-/**
- * \brief Check if SPI bus is IDLE.
+ * \param[in] data The byte to transfer
  *
- * \return SPI IDLE status
- * \retval true  SPI bus is IDLE
- * \retval false SPI bus is not IDLE
+ * \return Received data byte.
  */
-bool SPI_1_status_idle()
+uint8_t SPI_LMX_exchange_byte(uint8_t data)
 {
-	return (SPI_1_desc.status == SPI_IDLE);
-}
-
-/**
- * \brief Check if SPI bus is BUSY.
- *
- * \return SPI BUSY status
- * \retval true  SPI bus is BUSY
- * \retval false SPI bus is not BUSY
- */
-bool SPI_1_status_busy()
-{
-	return (SPI_1_desc.status == SPI_BUSY);
-}
-
-/**
- * \brief Check if SPI bus is DONE.
- *
- * \return SPI DONE status
- * \retval true  SPI bus is DONE
- * \retval false SPI bus is not DONE
- */
-bool SPI_1_status_done()
-{
-	return (SPI_1_desc.status == SPI_DONE);
-}
-
-uint8_t SPI_1_exchange_byte(uint8_t data)
-{
-	SPI_1_desc.data   = (uint8_t *)&data;
-	SPI_1_desc.size   = 1;
-	SPI_1_desc.type   = SPI_READ;
-	SPI_1_desc.status = SPI_BUSY;
-
-	SPI1.DATA = *SPI_1_desc.data;
-	while (SPI_1_desc.status == SPI_BUSY)
+	// Blocking wait for SPI free makes the function work
+	// seamlessly also with IRQ drivers.
+	while (SPI_LMX_desc.status == SPI_BUSY)
 		;
-	return data;
+	SPI1.DATA = data;
+	while (!(SPI1.INTFLAGS & SPI_RXCIF_bm))
+		;
+	return SPI1.DATA;
 }
 
-void SPI_1_exchange_block(void *block, uint8_t size)
+/**
+ * \brief Exchange a buffer over SPI SPI_LMX. Blocks if using polled driver.
+ *
+ * \param[inout] block The buffer to transfer. Received data is returned here.
+ * \param[in] size The size of buffer to transfer
+ *
+ * \return Nothing.
+ */
+void SPI_LMX_exchange_block(void *block, uint8_t size)
 {
-	SPI_1_desc.data   = (uint8_t *)block;
-	SPI_1_desc.size   = size;
-	SPI_1_desc.type   = SPI_EXCHANGE;
-	SPI_1_desc.status = SPI_BUSY;
-
-	SPI1.DATA = *SPI_1_desc.data;
+	uint8_t *b = (uint8_t *)block;
+	while (size--) {
+		SPI1.DATA = *b;
+		while (!(SPI1.INTFLAGS & SPI_RXCIF_bm))
+			;
+		*b = SPI1.DATA;
+		b++;
+	}
 }
 
-void SPI_1_write_block(void *block, uint8_t size)
+/**
+ * \brief Write a buffer over SPI SPI_LMX. Blocks if using polled driver.
+ *
+ * \param[in] block The buffer to transfer
+ * \param[in] size The size of buffer to transfer
+ *
+ * \return Nothing.
+ */
+void SPI_LMX_write_block(void *block, uint8_t size)
 {
-	SPI_1_desc.data   = (uint8_t *)block;
-	SPI_1_desc.size   = size;
-	SPI_1_desc.type   = SPI_WRITE;
-	SPI_1_desc.status = SPI_BUSY;
-
-	SPI1.DATA = *SPI_1_desc.data;
+	uint8_t *b = (uint8_t *)block;
+	while (size--) {
+		SPI1.DATA = *b;
+		while (!(SPI1.INTFLAGS & SPI_RXCIF_bm))
+			;
+		b++;
+	}
 }
 
-void SPI_1_read_block(void *block, uint8_t size)
+/**
+ * \brief Read a buffer over SPI SPI_LMX. Blocks if using polled driver.
+ *
+ * Zeros are transmitted out of the SPI.
+ *
+ * \param[out] block Received data is written here.
+ * \param[in] size The size of buffer to transfer
+ *
+ * \return Nothing.
+ */
+void SPI_LMX_read_block(void *block, uint8_t size)
 {
-	SPI_1_desc.data   = (uint8_t *)block;
-	SPI_1_desc.size   = size;
-	SPI_1_desc.type   = SPI_READ;
-	SPI_1_desc.status = SPI_BUSY;
-
-	SPI1.DATA = 0;
+	uint8_t *b = (uint8_t *)block;
+	while (size--) {
+		SPI1.DATA = 0;
+		while (!(SPI1.INTFLAGS & SPI_RXCIF_bm))
+			;
+		*b = SPI1.DATA;
+		b++;
+	}
 }

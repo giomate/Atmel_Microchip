@@ -47,22 +47,15 @@ static void drive_slave_select_high()
 	// Control GPIO to drive SS_bar high
 }
 
-uint8_t SPI_0_test_spi_basic(void)
+uint8_t SPI_ADF_test_spi_basic(void)
 {
-
-	// Register callback function releasing SS when transfer is complete
-	SPI_0_register_callback(drive_slave_select_high);
-
-	// SPI Basic driver is in IRQ-mode, enable global interrupts.
-	ENABLE_INTERRUPTS();
 
 	// Test driver, assume that the SPI MISO and MOSI pins have been looped back
 
 	drive_slave_select_low();
-	SPI_0_exchange_block(buffer, sizeof(buffer));
+	SPI_ADF_exchange_block(buffer, sizeof(buffer));
 
-	while (SPI_0_status_busy())
-		; // Wait for the transfer to complete
+	drive_slave_select_high();
 
 	// Check that the correct data was received
 	if (strncmp((char *)buffer, "data", strlen("data")))
@@ -72,22 +65,15 @@ uint8_t SPI_0_test_spi_basic(void)
 	return 1;
 }
 
-uint8_t SPI_1_test_spi_basic(void)
+uint8_t SPI_LMX_test_spi_basic(void)
 {
-
-	// Register callback function releasing SS when transfer is complete
-	SPI_1_register_callback(drive_slave_select_high);
-
-	// SPI Basic driver is in IRQ-mode, enable global interrupts.
-	ENABLE_INTERRUPTS();
 
 	// Test driver, assume that the SPI MISO and MOSI pins have been looped back
 
 	drive_slave_select_low();
-	SPI_1_exchange_block(buffer, sizeof(buffer));
+	SPI_LMX_exchange_block(buffer, sizeof(buffer));
 
-	while (SPI_1_status_busy())
-		; // Wait for the transfer to complete
+	drive_slave_select_high();
 
 	// Check that the correct data was received
 	if (strncmp((char *)buffer, "data", strlen("data")))

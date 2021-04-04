@@ -1,0 +1,1572 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3.o)
+                              ADF5610Driver.o (__subsf3)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3.o) (__addsf3x)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(cmpsf2.o)
+                              ADF5610Driver.o (__ltsf2)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3.o)
+                              ADF5610Driver.o (__divsf3)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3x.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3.o) (__divsf3x)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixsfsi.o)
+                              ADF5610Driver.o (__fixsfsi)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixunssfsi.o)
+                              ADF5610Driver.o (__fixunssfsi)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floatsisf.o)
+                              ADF5610Driver.o (__floatsisf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floor.o)
+                              ADF5610Driver.o (floor)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_cmp.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(cmpsf2.o) (__fp_cmp)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_inf.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o) (__fp_inf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mintl.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floor.o) (__fp_mintl)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mpack.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floor.o) (__fp_mpack)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_nan.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o) (__fp_nan)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscA.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o) (__fp_pscA)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscB.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o) (__fp_pscB)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_round.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3.o) (__fp_round)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_split3.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o) (__fp_split3)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_trunc.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floor.o) (__fp_trunc)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_zero.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o) (__fp_zero)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(gesf2.o)
+                              ADF5610Driver.o (__gtsf2)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(log.o)
+                              ADF5610Driver.o (log)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3.o)
+                              ADF5610Driver.o (__mulsf3)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3x.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(log.o) (__mulsf3x)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(pow.o)
+                              ADF5610Driver.o (pow)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(exp.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(pow.o) (exp)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_powser.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(log.o) (__fp_powser)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(inverse.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(exp.o) (inverse)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(ldexp.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(exp.o) (ldexp)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(modf.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(exp.o) (modf)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+                              main.o (atmel_start_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o) (system_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (EVENT_SYSTEM_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (OPERATIONAL_AMPLIFIER_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (RTC_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (SLPCTRL_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (SPI_ADF_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (TIMER_RISING_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (TIMER_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (USART_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (VREF_0_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (ZCD_RISING_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (BOD_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (CLKCTRL_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o) (CPUINT_init)
+C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(protected_io.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o) (protected_write_io)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o)
+                              (vfprintf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+                              ADF5610Driver.o (__divmodsi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o) (__negsi2)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o (exit)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+                              ADF5610Driver.o (__tablejump2__)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+                              ADF5610Driver.o (__do_copy_data)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+                              ADF5610Driver.o (__do_clear_bss)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+                              ADF5610Driver.o (__do_global_ctors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+                              ADF5610Driver.o (__do_global_dtors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o) (__udivmodsi4)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ftoa_engine.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o) (__ftoa_engine)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o) (strnlen_P)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(memset.o)
+                              ADF5610Driver.o (memset)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o) (strnlen)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o) (fputc)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+                              C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o) (__iob)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+                              ADF5610Driver.o (printf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+                              ADF5610Driver.o (puts)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o) (__ultoa_invert)
+
+Allocating common symbols
+Common symbol       size              file
+
+__iob               0x6               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .text          0x00000000        0x0 ADF5610Driver.o
+ .data          0x00000000        0x0 ADF5610Driver.o
+ .bss           0x00000000        0x0 ADF5610Driver.o
+ .text._ZN14ADF5610_Driver20Set_Target_FrequencyEf
+                0x00000000       0x54 ADF5610Driver.o
+ .text._ZN14ADF5610_Driver10LockDetectEv
+                0x00000000       0x76 ADF5610Driver.o
+ .text._ZN14ADF5610_Driver3GCDEll
+                0x00000000      0x106 ADF5610Driver.o
+ .text._ZN14ADF5610_Driver7FlipperEm
+                0x00000000      0x15e ADF5610Driver.o
+ .text._ZN14ADF5610_Driver12CalculateGCDEll
+                0x00000000      0x11e ADF5610Driver.o
+ .text._ZN14ADF5610_Driver14Start_WooblingEff
+                0x00000000      0x116 ADF5610Driver.o
+ .text._ZN14ADF5610_Driver13Keep_WooblingEv
+                0x00000000      0x2ca ADF5610Driver.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text          0x00000000        0x0 SPI_Syn_Class_ADF.o
+ .data          0x00000000        0x0 SPI_Syn_Class_ADF.o
+ .bss           0x00000000        0x0 SPI_Syn_Class_ADF.o
+ .bss._ZL14txStaticBuffer
+                0x00000000       0x20 SPI_Syn_Class_ADF.o
+ .bss._ZL14rxStaticBuffer
+                0x00000000       0x20 SPI_Syn_Class_ADF.o
+ .text._ZN17SPI_Syn_Class_ADF7DisableEv
+                0x00000000       0x1e SPI_Syn_Class_ADF.o
+ .text._ZN17SPI_Syn_Class_ADF10IsSPIReadyEv
+                0x00000000       0x1a SPI_Syn_Class_ADF.o
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3x.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3x.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixsfsi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixsfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixsfsi.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floatsisf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floatsisf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floor.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floor.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floor.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_inf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_inf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mintl.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mintl.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mintl.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mpack.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mpack.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mpack.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_nan.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_nan.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_round.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_round.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_round.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_split3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_split3.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_trunc.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_trunc.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_trunc.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_zero.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_zero.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(gesf2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(gesf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(gesf2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(log.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(log.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(log.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(pow.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(pow.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(pow.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(exp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(exp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(exp.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_powser.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_powser.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_powser.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(inverse.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(inverse.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(inverse.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(ldexp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(ldexp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(ldexp.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(modf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(modf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(modf.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .text.ZCD_RISING_initialization
+                0x00000000       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .text.ZCD_FALLING_initialization
+                0x00000000       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .text.TIMER_RISING_initialization
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .text.TIMER_FALLING_initialization
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .text.TIMER_0_initialization
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_EnableSystem
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_DisableSystem
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0PositiveInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0NegativeInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0TopResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0BottomResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0WiperResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0SettleTime
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_OPAMP_IsOP0Settled
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP0OffsetCalibration
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1PositiveInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1NegativeInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1TopResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1BottomResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1WiperResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1SettleTime
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_OPAMP_IsOP1Settled
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP1OffsetCalibration
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2PositiveInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2NegativeInMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2TopResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2BottomResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2WiperResMux
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2SettleTime
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_OPAMP_IsOP2Settled
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text.OPERATIONAL_AMPLIFIER_0_SetOP2OffsetCalibration
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .text.SLPCTRL_set_sleep_mode
+                0x00000000       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text.SPI_ADF_disable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text.SPI_ADF_exchange_byte
+                0x00000000       0x1a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text.SPI_ADF_exchange_block
+                0x00000000       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text.SPI_LMX_enable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text.SPI_LMX_disable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text.SPI_LMX_exchange_byte
+                0x00000000       0x1a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text.SPI_LMX_exchange_block
+                0x00000000       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text.SPI_LMX_write_block
+                0x00000000       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text.SPI_LMX_read_block
+                0x00000000       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .text.TIMER_RISING_init
+                0x00000000       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .text.TIMER_FALLING_init
+                0x00000000       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .debug_info    0x00000000      0x2ae C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .debug_abbrev  0x00000000       0xf3 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .debug_aranges
+                0x00000000       0x28 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .debug_ranges  0x00000000       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .debug_line    0x00000000      0x165 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .debug_str     0x00000000      0x38c C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .comment       0x00000000       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .debug_frame   0x00000000       0x34 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcb.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .text.TIMER_0_init
+                0x00000000       0x2a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .debug_info    0x00000000      0x589 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .debug_abbrev  0x00000000       0xe6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .debug_aranges
+                0x00000000       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .debug_ranges  0x00000000       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .debug_line    0x00000000      0x12e C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .debug_str     0x00000000      0x543 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .comment       0x00000000       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .debug_frame   0x00000000       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(tcd.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text.USART_0_enable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text.USART_0_enable_rx
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text.USART_0_enable_tx
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text.USART_0_disable
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text.USART_0_get_data
+                0x00000000        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text.USART_0_is_tx_ready
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text.USART_0_is_rx_ready
+                0x00000000        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text.USART_0_is_tx_busy
+                0x00000000       0x14 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text.USART_0_read
+                0x00000000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .text.ZCD_RISING_init
+                0x00000000        0xa C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .text.ZCD_FALLING_init
+                0x00000000        0xa C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .debug_info    0x00000000      0x150 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .debug_abbrev  0x00000000       0x95 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .debug_aranges
+                0x00000000       0x28 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .debug_ranges  0x00000000       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .debug_line    0x00000000      0x128 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .debug_str     0x00000000      0x211 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .comment       0x00000000       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .debug_frame   0x00000000       0x34 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(zcd.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+ .text          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(protected_io.o)
+ .data          0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(protected_io.o)
+ .bss           0x00000000        0x0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(protected_io.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ftoa_engine.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ftoa_engine.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ftoa_engine.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00804000         0x00004000         rw !x
+eeprom           0x00810000         0x00000200         rw !x
+fuse             0x00820000         0x00000010         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x804000
+                0x00008000                __RODATA_PM_OFFSET__ = 0x8000
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+LOAD ADF5610Driver.o
+LOAD main.o
+LOAD SPI_Syn_Class_ADF.o
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a
+LOAD C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a
+END GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4\libavr128db48.a
+END GROUP
+                [0x00000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00804000]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x802000
+                [0x00020000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x100000
+                [0x00004000]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000200]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000010]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x3dda
+ *(.vectors)
+ .vectors       0x00000000       0xf4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table._ZN14ADF5610_Driver17InitiateRegistersEv
+                0x000000f4       0x2e ADF5610Driver.o
+ .progmem.gcc_sw_table._ZN14ADF5610_Driver18CalculateVCOValuesEv
+                0x00000122       0x28 ADF5610Driver.o
+ .progmem.gcc_fplib
+                0x0000014a       0x5a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(log.o)
+ .progmem.gcc_fplib
+                0x000001a4       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(exp.o)
+                0x000001cc                . = ALIGN (0x2)
+                0x000001cc                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000001cc        0x0 linker stubs
+ *(.trampolines*)
+                0x000001cc                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ .progmem.data  0x000001cc        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o)
+ *libc.a:*(.progmem.data)
+ .progmem.data  0x000001d4       0xfa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ftoa_engine.o)
+ *(.progmem*)
+                0x000002ce                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000002ce                __ctors_start = .
+ *(.ctors)
+ .ctors         0x000002ce        0x2 ADF5610Driver.o
+ .ctors         0x000002d0        0x2 main.o
+                0x000002d2                __ctors_end = .
+                0x000002d2                __dtors_start = .
+ *(.dtors)
+ .dtors         0x000002d2        0x2 ADF5610Driver.o
+ .dtors         0x000002d4        0x2 main.o
+                0x000002d6                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000002d6        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+                0x000002d6                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000002d6        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000002e2       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+                0x000002e2                __do_copy_data
+ .init4         0x000002fc       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
+                0x000002fc                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x0000030c       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_ctors.o)
+                0x0000030c                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000322        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ *(.init9)
+ *(.text)
+ .text          0x0000032a        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+                0x0000032a                __vector_38
+                0x0000032a                __vector_22
+                0x0000032a                __vector_28
+                0x0000032a                __vector_1
+                0x0000032a                __vector_32
+                0x0000032a                __vector_34
+                0x0000032a                __vector_24
+                0x0000032a                __vector_12
+                0x0000032a                __vector_55
+                0x0000032a                __vector_46
+                0x0000032a                __bad_interrupt
+                0x0000032a                __vector_6
+                0x0000032a                __vector_31
+                0x0000032a                __vector_35
+                0x0000032a                __vector_39
+                0x0000032a                __vector_3
+                0x0000032a                __vector_23
+                0x0000032a                __vector_30
+                0x0000032a                __vector_45
+                0x0000032a                __vector_25
+                0x0000032a                __vector_11
+                0x0000032a                __vector_54
+                0x0000032a                __vector_13
+                0x0000032a                __vector_17
+                0x0000032a                __vector_19
+                0x0000032a                __vector_56
+                0x0000032a                __vector_7
+                0x0000032a                __vector_49
+                0x0000032a                __vector_41
+                0x0000032a                __vector_43
+                0x0000032a                __vector_27
+                0x0000032a                __vector_33
+                0x0000032a                __vector_47
+                0x0000032a                __vector_52
+                0x0000032a                __vector_37
+                0x0000032a                __vector_4
+                0x0000032a                __vector_44
+                0x0000032a                __vector_51
+                0x0000032a                __vector_9
+                0x0000032a                __vector_2
+                0x0000032a                __vector_21
+                0x0000032a                __vector_15
+                0x0000032a                __vector_36
+                0x0000032a                __vector_58
+                0x0000032a                __vector_29
+                0x0000032a                __vector_60
+                0x0000032a                __vector_40
+                0x0000032a                __vector_8
+                0x0000032a                __vector_26
+                0x0000032a                __vector_48
+                0x0000032a                __vector_14
+                0x0000032a                __vector_57
+                0x0000032a                __vector_53
+                0x0000032a                __vector_10
+                0x0000032a                __vector_50
+                0x0000032a                __vector_16
+                0x0000032a                __vector_59
+                0x0000032a                __vector_18
+                0x0000032a                __vector_20
+                0x0000032a                __vector_42
+                0x0000032e                . = ALIGN (0x2)
+ *(.text.*)
+ .text.PORTA_get_pin_level
+                0x0000032e       0x3e ADF5610Driver.o
+ .text.CS_ADF_get_level
+                0x0000036c       0x14 ADF5610Driver.o
+ .text._ZN14ADF5610_DriverC2Ev
+                0x00000380      0x142 ADF5610Driver.o
+                0x00000380                _ZN14ADF5610_DriverC2Ev
+                0x00000380                _ZN14ADF5610_DriverC1Ev
+ .text._ZN14ADF5610_DriverD2Ev
+                0x000004c2       0x1a ADF5610Driver.o
+                0x000004c2                _ZN14ADF5610_DriverD1Ev
+                0x000004c2                _ZN14ADF5610_DriverD2Ev
+ .text._ZN14ADF5610_Driver4InitEv
+                0x000004dc       0x84 ADF5610Driver.o
+                0x000004dc                _ZN14ADF5610_Driver4InitEv
+ .text._ZN14ADF5610_Driver7InitPLLEv
+                0x00000560      0x194 ADF5610Driver.o
+                0x00000560                _ZN14ADF5610_Driver7InitPLLEv
+ .text._ZN14ADF5610_Driver16SetNextFrequencyEv
+                0x000006f4       0x22 ADF5610Driver.o
+                0x000006f4                _ZN14ADF5610_Driver16SetNextFrequencyEv
+ .text._ZN14ADF5610_Driver13ShowRegistersEi
+                0x00000716      0x190 ADF5610Driver.o
+                0x00000716                _ZN14ADF5610_Driver13ShowRegistersEi
+ .text._ZN14ADF5610_Driver9Is_LockedEv
+                0x000008a6       0x36 ADF5610Driver.o
+                0x000008a6                _ZN14ADF5610_Driver9Is_LockedEv
+ .text._ZN14ADF5610_Driver14WriteRegistersEh
+                0x000008dc      0x27e ADF5610Driver.o
+                0x000008dc                _ZN14ADF5610_Driver14WriteRegistersEh
+ .text._ZN14ADF5610_Driver23ConvertU32FourByteArrayEPhm
+                0x00000b5a       0x88 ADF5610Driver.o
+                0x00000b5a                _ZN14ADF5610_Driver23ConvertU32FourByteArrayEPhm
+ .text._ZN14ADF5610_Driver13ReadRegistersEh
+                0x00000be2      0x39a ADF5610Driver.o
+                0x00000be2                _ZN14ADF5610_Driver13ReadRegistersEh
+ .text._ZN14ADF5610_Driver17InitiateRegistersEv
+                0x00000f7c      0x3d6 ADF5610Driver.o
+                0x00000f7c                _ZN14ADF5610_Driver17InitiateRegistersEv
+ .text._ZN14ADF5610_Driver25CompleteConfigurationFlowEj
+                0x00001352       0xbc ADF5610Driver.o
+                0x00001352                _ZN14ADF5610_Driver25CompleteConfigurationFlowEj
+ .text._ZN14ADF5610_Driver22ShortConfigurationFlowEv
+                0x0000140e       0x40 ADF5610Driver.o
+                0x0000140e                _ZN14ADF5610_Driver22ShortConfigurationFlowEv
+ .text._ZN14ADF5610_Driver11WriteSubVCOEv
+                0x0000144e       0x38 ADF5610Driver.o
+                0x0000144e                _ZN14ADF5610_Driver11WriteSubVCOEv
+ .text._ZN14ADF5610_Driver16ReadAllRegistersEv
+                0x00001486       0x42 ADF5610Driver.o
+                0x00001486                _ZN14ADF5610_Driver16ReadAllRegistersEv
+ .text._ZN14ADF5610_Driver18CalculateVCOValuesEv
+                0x000014c8      0x6e2 ADF5610Driver.o
+                0x000014c8                _ZN14ADF5610_Driver18CalculateVCOValuesEv
+ .text._ZN14ADF5610_Driver8SelfTestEh
+                0x00001baa      0x48c ADF5610Driver.o
+                0x00001baa                _ZN14ADF5610_Driver8SelfTestEh
+ .text._ZN14ADF5610_Driver6usleepEl
+                0x00002036      0x224 ADF5610Driver.o
+                0x00002036                _ZN14ADF5610_Driver6usleepEl
+ .text._Z41__static_initialization_and_destruction_0ii
+                0x0000225a       0x52 ADF5610Driver.o
+ .text._GLOBAL__sub_I__ZN14ADF5610_DriverC2Ev
+                0x000022ac       0x1a ADF5610Driver.o
+ .text._GLOBAL__sub_D__ZN14ADF5610_DriverC2Ev
+                0x000022c6       0x1a ADF5610Driver.o
+ .text.PORTB_toggle_pin_level
+                0x000022e0       0x3e main.o
+ .text.LED0_toggle_level
+                0x0000231e       0x16 main.o
+ .text._Z10RTC_enablev
+                0x00002334       0x40 main.o
+                0x00002334                _Z10RTC_enablev
+ .text.__vector_5
+                0x00002374       0x70 main.o
+                0x00002374                __vector_5
+ .text.main     0x000023e4      0x12c main.o
+                0x000023e4                main
+ .text._Z41__static_initialization_and_destruction_0ii
+                0x00002510       0x52 main.o
+ .text._GLOBAL__sub_I_adf
+                0x00002562       0x1a main.o
+ .text._GLOBAL__sub_D_adf
+                0x0000257c       0x1a main.o
+ .text.PORTA_set_pin_level
+                0x00002596       0x74 SPI_Syn_Class_ADF.o
+ .text.CS_ADF_set_level
+                0x0000260a       0x1e SPI_Syn_Class_ADF.o
+ .text._ZN17SPI_Syn_Class_ADFC2Ev
+                0x00002628       0x26 SPI_Syn_Class_ADF.o
+                0x00002628                _ZN17SPI_Syn_Class_ADFC2Ev
+                0x00002628                _ZN17SPI_Syn_Class_ADFC1Ev
+ .text._ZN17SPI_Syn_Class_ADFD2Ev
+                0x0000264e       0x1a SPI_Syn_Class_ADF.o
+                0x0000264e                _ZN17SPI_Syn_Class_ADFD1Ev
+                0x0000264e                _ZN17SPI_Syn_Class_ADFD2Ev
+ .text._ZN17SPI_Syn_Class_ADF4InitEv
+                0x00002668       0x2c SPI_Syn_Class_ADF.o
+                0x00002668                _ZN17SPI_Syn_Class_ADF4InitEv
+ .text._ZN17SPI_Syn_Class_ADF6EnableEv
+                0x00002694       0x1e SPI_Syn_Class_ADF.o
+                0x00002694                _ZN17SPI_Syn_Class_ADF6EnableEv
+ .text._ZN17SPI_Syn_Class_ADF5WriteEPKhh
+                0x000026b2       0x3c SPI_Syn_Class_ADF.o
+                0x000026b2                _ZN17SPI_Syn_Class_ADF5WriteEPKhh
+ .text._ZN17SPI_Syn_Class_ADF4ReadEPhh
+                0x000026ee       0x3c SPI_Syn_Class_ADF.o
+                0x000026ee                _ZN17SPI_Syn_Class_ADF4ReadEPhh
+ .text._ZN17SPI_Syn_Class_ADF5SetCSEb
+                0x0000272a       0x26 SPI_Syn_Class_ADF.o
+                0x0000272a                _ZN17SPI_Syn_Class_ADF5SetCSEb
+ .text.avr-libc.fplib
+                0x00002750        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3.o)
+                0x00002750                __subsf3
+                0x00002752                __addsf3
+ .text.avr-libc.fplib
+                0x0000275e       0xcc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(addsf3x.o)
+                0x00002780                __addsf3x
+ .text.avr-libc.fplib
+                0x0000282a        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(cmpsf2.o)
+                0x0000282a                __nesf2
+                0x0000282a                __eqsf2
+                0x0000282a                __cmpsf2
+                0x0000282a                __ltsf2
+                0x0000282a                __lesf2
+ .text.avr-libc.fplib
+                0x00002834        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3.o)
+                0x00002834                __divsf3
+ .text.avr-libc.fplib
+                0x0000283c       0xdc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(divsf3x.o)
+                0x0000285c                __divsf3x
+                0x00002862                __divsf3_pse
+ .text.avr-libc.fplib
+                0x00002918        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixsfsi.o)
+                0x00002918                __fixsfsi
+ .text.avr-libc.fplib
+                0x00002926       0x5e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fixunssfsi.o)
+                0x00002926                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00002984       0x7a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floatsisf.o)
+                0x00002984                __floatunsisf
+                0x00002988                __floatsisf
+ .text.avr-libc.fplib
+                0x000029fe       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(floor.o)
+                0x000029fe                floor
+ .text.avr-libc.fplib
+                0x00002a2c       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_cmp.o)
+                0x00002a2c                __fp_cmp
+ .text.avr-libc.fplib
+                0x00002a74        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_inf.o)
+                0x00002a74                __fp_inf
+ .text.avr-libc.fplib
+                0x00002a80       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mintl.o)
+                0x00002a80                __fp_mintl
+ .text.avr-libc.fplib
+                0x00002ab6       0x1c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_mpack.o)
+                0x00002ab6                __fp_mpack
+                0x00002aba                __fp_mpack_finite
+ .text.avr-libc.fplib
+                0x00002ad2        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_nan.o)
+                0x00002ad2                __fp_nan
+ .text.avr-libc.fplib
+                0x00002ad8        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscA.o)
+                0x00002ad8                __fp_pscA
+ .text.avr-libc.fplib
+                0x00002ae6        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_pscB.o)
+                0x00002ae6                __fp_pscB
+ .text.avr-libc.fplib
+                0x00002af4       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_round.o)
+                0x00002af4                __fp_round
+ .text.avr-libc.fplib
+                0x00002b16       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_split3.o)
+                0x00002b16                __fp_split3
+                0x00002b26                __fp_splitA
+ .text.avr-libc.fplib
+                0x00002b5a       0x30 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_trunc.o)
+                0x00002b5a                __fp_trunc
+ .text.avr-libc.fplib
+                0x00002b8a        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_zero.o)
+                0x00002b8a                __fp_zero
+                0x00002b8c                __fp_szero
+ .text.avr-libc.fplib
+                0x00002b98        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(gesf2.o)
+                0x00002b98                __gesf2
+                0x00002b98                __gtsf2
+ .text.avr-libc.fplib
+                0x00002ba2       0xa0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(log.o)
+                0x00002bb2                log
+ .text.avr-libc.fplib
+                0x00002c42        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3.o)
+                0x00002c42                __mulsf3
+ .text.avr-libc.fplib
+                0x00002c4a       0xd2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(mulsf3x.o)
+                0x00002c68                __mulsf3x
+                0x00002c6e                __mulsf3_pse
+ .text.avr-libc.fplib
+                0x00002d1c       0xa0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(pow.o)
+                0x00002d1c                pow
+ .text.avr-libc.fplib
+                0x00002dbc       0x74 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(exp.o)
+                0x00002dcc                exp
+ .text.avr-libc.fplib
+                0x00002e30       0x4e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(fp_powser.o)
+                0x00002e30                __fp_powser
+ .text.avr-libc.fplib
+                0x00002e7e       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(inverse.o)
+                0x00002e7e                inverse
+ .text.avr-libc.fplib
+                0x00002e8e       0x74 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(ldexp.o)
+                0x00002e96                ldexp
+ .text.avr-libc.fplib
+                0x00002f02       0x68 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a(modf.o)
+                0x00002f02                modf
+                0x00002f02                modff
+ .text.atmel_start_init
+                0x00002f6a        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+                0x00002f6a                atmel_start_init
+ .text.mcu_init
+                0x00002f70       0x92 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+                0x00002f70                mcu_init
+ .text.OPERATIONAL_AMPLIFIER_0_initialization
+                0x00003002       0x2a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+                0x00003002                OPERATIONAL_AMPLIFIER_0_initialization
+ .text.USART_0_initialization
+                0x0000302c       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+                0x0000302c                USART_0_initialization
+ .text.EVENT_SYSTEM_0_initialization
+                0x0000304e        0x6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+                0x0000304e                EVENT_SYSTEM_0_initialization
+ .text.SPI_ADF_initialization
+                0x00003054       0x2e C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+                0x00003054                SPI_ADF_initialization
+ .text.SPI_LMX_initialization
+                0x00003082       0x2e C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+                0x00003082                SPI_LMX_initialization
+ .text.system_init
+                0x000030b0       0x56 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+                0x000030b0                system_init
+ .text.EVENT_SYSTEM_0_init
+                0x00003106       0x1e C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+                0x00003106                EVENT_SYSTEM_0_init
+ .text.OPERATIONAL_AMPLIFIER_0_init
+                0x00003124       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+                0x00003124                OPERATIONAL_AMPLIFIER_0_init
+ .text.RTC_0_init
+                0x00003146       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+                0x00003146                RTC_0_init
+ .text.SLPCTRL_init
+                0x00003168        0x4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+                0x00003168                SLPCTRL_init
+ .text.SPI_ADF_init
+                0x0000316c        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+                0x0000316c                SPI_ADF_init
+ .text.SPI_ADF_enable
+                0x00003178        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+                0x00003178                SPI_ADF_enable
+ .text.SPI_ADF_write_block
+                0x00003184       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+                0x00003184                SPI_ADF_write_block
+ .text.SPI_ADF_read_block
+                0x000031a4       0x22 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+                0x000031a4                SPI_ADF_read_block
+ .text.SPI_LMX_init
+                0x000031c6        0xc C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+                0x000031c6                SPI_LMX_init
+ .text.USART_0_init
+                0x000031d2       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+                0x000031d2                USART_0_init
+ .text.USART_0_write
+                0x000031f2        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+                0x000031f2                USART_0_write
+ .text.USART_0_printCHAR
+                0x00003200        0xa C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+                0x00003200                USART_0_printCHAR
+ .text.VREF_0_init
+                0x0000320a        0xa C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+                0x0000320a                VREF_0_init
+ .text.BOD_init
+                0x00003214        0x8 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+                0x00003214                BOD_init
+ .text.CLKCTRL_init
+                0x0000321c       0x1c C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+                0x0000321c                CLKCTRL_init
+ .text.CPUINT_init
+                0x00003238        0x4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+                0x00003238                CPUINT_init
+ .text.protected_write_io
+                0x0000323c        0xa C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(protected_io.o)
+                0x0000323c                protected_write_io
+ .text.avr-libc
+                0x00003246      0x740 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o)
+                0x00003246                vfprintf
+ .text.libgcc.div
+                0x00003986       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_divmodsi4.o)
+                0x00003986                __divmodsi4
+ .text.libgcc.div
+                0x000039b4       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_negsi2.o)
+                0x000039b4                __negsi2
+ .text.libgcc   0x000039c4       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_tablejump2.o)
+                0x000039c4                __tablejump2__
+ .text.libgcc.div
+                0x000039d6       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+                0x000039d6                __udivmodsi4
+ .text.avr-libc
+                0x00003a1a      0x1b0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ftoa_engine.o)
+                0x00003a1a                __ftoa_engine
+ .text.avr-libc
+                0x00003bca       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen_P.o)
+                0x00003bca                strnlen_P
+ .text.avr-libc
+                0x00003be0        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(memset.o)
+                0x00003be0                memset
+ .text.avr-libc
+                0x00003bee       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strnlen.o)
+                0x00003bee                strnlen
+ .text.avr-libc
+                0x00003c04       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+                0x00003c04                fputc
+ .text.avr-libc
+                0x00003c7c       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+                0x00003c7c                printf
+ .text.avr-libc
+                0x00003ca4       0x60 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+                0x00003ca4                puts
+ .text.avr-libc
+                0x00003d04       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(ultoa_invert.o)
+                0x00003d04                __ultoa_invert
+                0x00003dc0                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00003dc0        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+                0x00003dc0                _exit
+                0x00003dc0                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ .fini6         0x00003dc0       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_dtors.o)
+                0x00003dc0                __do_global_dtors
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00003dd6        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00003dda                _etext = .
+
+.data           0x00804000       0xaa load address 0x00003dda
+                0x00804000                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.USART_0_stream
+                0x00804000        0xe C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+                0x00804000                USART_0_stream
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ .rodata        0x0080400e       0x94 ADF5610Driver.o
+ .rodata        0x008040a2        0x8 main.o
+ *(.rodata*)
+ *(.gnu.linkonce.r*)
+                0x008040aa                . = ALIGN (0x2)
+                0x008040aa                _edata = .
+                0x008040aa                PROVIDE (__data_end, .)
+
+.bss            0x008040aa      0x174
+                0x008040aa                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss._ZL9staticSPI
+                0x008040aa        0x5 ADF5610Driver.o
+ .bss.adf       0x008040af      0x165 main.o
+                0x008040af                adf
+ .bss.ptrSPISync_adf
+                0x00804214        0x2 SPI_Syn_Class_ADF.o
+                0x00804214                ptrSPISync_adf
+ .bss.SPI_LMX_desc
+                0x00804216        0x1 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .bss.SPI_ADF_desc
+                0x00804217        0x1 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ *(COMMON)
+ COMMON         0x00804218        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+                0x00804218                __iob
+                0x0080421e                PROVIDE (__bss_end, .)
+                0x00003dda                __data_load_start = LOADADDR (.data)
+                0x00003e84                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080421e        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x0080421e                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x5c
+ *(.comment)
+ .comment       0x00000000       0x30 ADF5610Driver.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 main.o
+ .comment       0x00000030       0x31 SPI_Syn_Class_ADF.o
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .comment       0x00000030       0x31 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+ .comment       0x00000030       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libprintf_flt.a(vfprintf_flt.o)
+                                 0x2d (size before relaxing)
+ .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(iob.o)
+ .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(printf.o)
+ .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x560
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000      0x108 ADF5610Driver.o
+ .debug_aranges
+                0x00000108       0x58 main.o
+ .debug_aranges
+                0x00000160       0x70 SPI_Syn_Class_ADF.o
+ .debug_aranges
+                0x000001d0       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .debug_aranges
+                0x000001f0       0x78 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .debug_aranges
+                0x00000268       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .debug_aranges
+                0x00000288       0xf0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .debug_aranges
+                0x00000378       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .debug_aranges
+                0x00000398       0x28 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .debug_aranges
+                0x000003c0       0x88 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .debug_aranges
+                0x00000448       0x78 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .debug_aranges
+                0x000004c0       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .debug_aranges
+                0x000004e0       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .debug_aranges
+                0x00000500       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .debug_aranges
+                0x00000520       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+ .debug_aranges
+                0x00000540       0x20 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(protected_io.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x8fe1
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x2f42 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_info    0x00002f42     0x1222 ADF5610Driver.o
+ .debug_info    0x00004164      0xbe0 main.o
+ .debug_info    0x00004d44      0x55c SPI_Syn_Class_ADF.o
+ .debug_info    0x000052a0       0x9a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .debug_info    0x0000533a     0x1462 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .debug_info    0x0000679c      0x8b0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .debug_info    0x0000704c      0xa33 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .debug_info    0x00007a7f      0x389 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .debug_info    0x00007e08      0x136 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .debug_info    0x00007f3e      0x46d C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .debug_info    0x000083ab      0x492 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .debug_info    0x0000883d      0x15d C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .debug_info    0x0000899a      0x188 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .debug_info    0x00008b22      0x38a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .debug_info    0x00008eac       0x8d C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+ .debug_info    0x00008f39       0xa8 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(protected_io.o)
+
+.debug_abbrev   0x00000000     0x4204
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000     0x2cc2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_abbrev  0x00002cc2      0x3ad ADF5610Driver.o
+ .debug_abbrev  0x0000306f      0x30f main.o
+ .debug_abbrev  0x0000337e      0x223 SPI_Syn_Class_ADF.o
+ .debug_abbrev  0x000035a1       0x63 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .debug_abbrev  0x00003604      0x1e1 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .debug_abbrev  0x000037e5       0xaf C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .debug_abbrev  0x00003894      0x12f C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .debug_abbrev  0x000039c3       0xe6 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .debug_abbrev  0x00003aa9       0xc4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .debug_abbrev  0x00003b6d      0x19f C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .debug_abbrev  0x00003d0c      0x20d C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .debug_abbrev  0x00003f19       0xaf C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .debug_abbrev  0x00003fc8       0xaf C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .debug_abbrev  0x00004077      0x128 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .debug_abbrev  0x0000419f       0x51 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+ .debug_abbrev  0x000041f0       0x14 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(protected_io.o)
+
+.debug_line     0x00000000     0x2d90
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x205 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_line    0x00000205      0xeba ADF5610Driver.o
+ .debug_line    0x000010bf      0x378 main.o
+ .debug_line    0x00001437      0x2f4 SPI_Syn_Class_ADF.o
+ .debug_line    0x0000172b       0x60 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .debug_line    0x0000178b      0x4da C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .debug_line    0x00001c65      0x127 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .debug_line    0x00001d8c      0x3a0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .debug_line    0x0000212c      0x128 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .debug_line    0x00002254      0x120 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .debug_line    0x00002374      0x369 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .debug_line    0x000026dd      0x260 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .debug_line    0x0000293d      0x10d C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .debug_line    0x00002a4a      0x10c C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .debug_line    0x00002b56      0x13a C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .debug_line    0x00002c90       0xa5 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+ .debug_line    0x00002d35       0x5b C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(protected_io.o)
+
+.debug_frame    0x00000000      0xce0
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x484 ADF5610Driver.o
+ .debug_frame   0x00000484      0x158 main.o
+ .debug_frame   0x000005dc      0x174 SPI_Syn_Class_ADF.o
+ .debug_frame   0x00000750       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .debug_frame   0x00000774       0xd4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .debug_frame   0x00000848       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .debug_frame   0x0000086c      0x1c4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .debug_frame   0x00000a30       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .debug_frame   0x00000a54       0x34 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .debug_frame   0x00000a88       0xf4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .debug_frame   0x00000b7c       0xd4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .debug_frame   0x00000c50       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .debug_frame   0x00000c74       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .debug_frame   0x00000c98       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .debug_frame   0x00000cbc       0x24 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+
+.debug_str      0x00000000     0x59d6
+ *(.debug_str)
+ .debug_str     0x00000000     0x14f0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_str     0x000014f0      0xadc ADF5610Driver.o
+                                0xb7a (size before relaxing)
+ .debug_str     0x00001fcc      0x12c main.o
+                                0xb8b (size before relaxing)
+ .debug_str     0x000020f8       0xa3 SPI_Syn_Class_ADF.o
+                                0x48f (size before relaxing)
+ .debug_str     0x0000219b      0x14c C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+                                0x1bc (size before relaxing)
+ .debug_str     0x000022e7      0x663 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+                                0x88b (size before relaxing)
+ .debug_str     0x0000294a     0x1406 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+                               0x15e2 (size before relaxing)
+ .debug_str     0x00003d50     0x1256 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+                               0x145a (size before relaxing)
+ .debug_str     0x00004fa6      0x201 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+                                0x486 (size before relaxing)
+ .debug_str     0x000051a7       0xb9 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+                                0x273 (size before relaxing)
+ .debug_str     0x00005260      0x22b C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+                                0x41f (size before relaxing)
+ .debug_str     0x0000548b      0x1e2 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+                                0x3f4 (size before relaxing)
+ .debug_str     0x0000566d       0xc4 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+                                0x28d (size before relaxing)
+ .debug_str     0x00005731       0x75 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+                                0x25f (size before relaxing)
+ .debug_str     0x000057a6      0x220 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+                                0x428 (size before relaxing)
+ .debug_str     0x000059c6       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+                                0x1af (size before relaxing)
+
+.debug_loc      0x00000000     0x1b9d
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x9f7 ADF5610Driver.o
+ .debug_loc     0x000009f7      0x2b4 main.o
+ .debug_loc     0x00000cab      0x316 SPI_Syn_Class_ADF.o
+ .debug_loc     0x00000fc1      0x5e5 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .debug_loc     0x000015a6      0x1ef C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .debug_loc     0x00001795       0x21 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .debug_loc     0x000017b6      0x34c C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .debug_loc     0x00001b02       0x47 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .debug_loc     0x00001b49       0x54 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x450
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0xf8 ADF5610Driver.o
+ .debug_ranges  0x000000f8       0x48 main.o
+ .debug_ranges  0x00000140       0x60 SPI_Syn_Class_ADF.o
+ .debug_ranges  0x000001a0       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(atmel_start.o)
+ .debug_ranges  0x000001b0       0x68 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(driver_init.o)
+ .debug_ranges  0x00000218       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(evsys.o)
+ .debug_ranges  0x00000228       0xe0 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(opamp_basic.o)
+ .debug_ranges  0x00000308       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(rtc.o)
+ .debug_ranges  0x00000318       0x18 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(slpctrl.o)
+ .debug_ranges  0x00000330       0x78 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(spi_basic.o)
+ .debug_ranges  0x000003a8       0x68 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(usart_basic.o)
+ .debug_ranges  0x00000410       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(vref.o)
+ .debug_ranges  0x00000420       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(bod.o)
+ .debug_ranges  0x00000430       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(clkctrl.o)
+ .debug_ranges  0x00000440       0x10 C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\library\libAVR128DB_BSP.a(cpuint.o)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(ADF5610_AVR128DB_LIB.elf elf32-avr)
+LOAD linker stubs

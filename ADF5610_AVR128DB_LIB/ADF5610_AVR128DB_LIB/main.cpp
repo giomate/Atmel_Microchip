@@ -33,9 +33,11 @@ int main(void)
 	/* Initializes MCU, drivers and middleware */
 	atmel_start_init();
 	RTC_enable();
-	ENABLE_INTERRUPTS();
+	
 	printf("hello\n\r");
+	
 	adf.Init();
+	ENABLE_INTERRUPTS();
 	/* Replace with your application code */
 	while (1) {
 		adf.SelfTest(1);

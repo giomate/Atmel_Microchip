@@ -36,8 +36,25 @@
 #include "driver_init.h"
 #include <system.h>
 
+/* Configure pins and initialize registers */
+void OPERATIONAL_AMPLIFIER_0_initialization(void)
+{
+
+	// Disable digital input buffer
+	PD7_set_isc(PORT_ISC_INPUT_DISABLE_gc);
+	// Disable pull-up resistor
+	PD7_set_pull_mode(PORT_PULL_OFF);
+
+	// Disable digital input buffer
+	PD5_set_isc(PORT_ISC_INPUT_DISABLE_gc);
+	// Disable pull-up resistor
+	PD5_set_pull_mode(PORT_PULL_OFF);
+
+	OPERATIONAL_AMPLIFIER_0_init();
+}
+
 /* configure the pins and initialize the registers */
-void USART_ASYNC_initialization(void)
+void USART_0_initialization(void)
 {
 
 	// Set pin direction to input
@@ -61,7 +78,7 @@ void USART_ASYNC_initialization(void)
 
 	PB0_set_dir(PORT_DIR_OUT);
 
-	USART_ASYNC_init();
+	USART_0_init();
 }
 
 void EVENT_SYSTEM_0_initialization(void)
@@ -71,7 +88,7 @@ void EVENT_SYSTEM_0_initialization(void)
 }
 
 /* configure pins and initialize registers */
-void ZCD_0_initialization(void)
+void ZCD_RISING_initialization(void)
 {
 
 	// Disable digital input buffer
@@ -79,11 +96,11 @@ void ZCD_0_initialization(void)
 	// Disable pull-up resistor
 	PD1_set_pull_mode(PORT_PULL_OFF);
 
-	ZCD_0_init();
+	ZCD_RISING_init();
 }
 
 /* configure pins and initialize registers */
-void ZCD_1_initialization(void)
+void ZCD_FALLING_initialization(void)
 {
 
 	// Disable digital input buffer
@@ -91,11 +108,11 @@ void ZCD_1_initialization(void)
 	// Disable pull-up resistor
 	PE3_set_pull_mode(PORT_PULL_OFF);
 
-	ZCD_1_init();
+	ZCD_FALLING_init();
 }
 
 /* configure the pins and initialize the registers */
-void SPI_0_initialization(void)
+void SPI_ADF_initialization(void)
 {
 
 	// Set pin direction to input
@@ -126,15 +143,15 @@ void SPI_0_initialization(void)
 	    // <id> pad_initial_level
 	    // <false"> Low
 	    // <true"> High
-	    false);
+	    true);
 
 	PA6_set_dir(PORT_DIR_OUT);
 
-	SPI_0_init();
+	SPI_ADF_init();
 }
 
 /* configure the pins and initialize the registers */
-void SPI_1_initialization(void)
+void SPI_LMX_initialization(void)
 {
 
 	// Set pin direction to input
@@ -169,19 +186,25 @@ void SPI_1_initialization(void)
 
 	PC2_set_dir(PORT_DIR_OUT);
 
-	SPI_1_init();
+	SPI_LMX_init();
 }
 
-void TIMER_B_initialization(void)
+void TIMER_RISING_initialization(void)
 {
 
-	TIMER_B_init();
+	TIMER_RISING_init();
 }
 
-void TIMER_C_initialization(void)
+void TIMER_FALLING_initialization(void)
 {
 
-	TIMER_C_init();
+	TIMER_FALLING_init();
+}
+
+void TIMER_0_initialization(void)
+{
+
+	TIMER_0_init();
 }
 
 /**
@@ -204,6 +227,19 @@ void system_init()
 
 	CS_ADF_set_dir(PORT_DIR_OUT);
 
+	/* PORT setting on PB3 */
+
+	// Set pin direction to output
+
+	LED0_set_level(
+	    // <y> Initial level
+	    // <id> pad_initial_level
+	    // <false"> Low
+	    // <true"> High
+	    false);
+
+	LED0_set_dir(PORT_DIR_OUT);
+
 	/* PORT setting on PC3 */
 
 	// Set pin direction to output
@@ -217,22 +253,11 @@ void system_init()
 
 	CS_LMX_set_dir(PORT_DIR_OUT);
 
-	/* PORT setting on PC6 */
-
-	// Set pin direction to output
-
-	LED_0_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    true);
-
-	LED_0_set_dir(PORT_DIR_OUT);
+	OPERATIONAL_AMPLIFIER_0_initialization();
 
 	CLKCTRL_init();
 
-	USART_ASYNC_initialization();
+	USART_0_initialization();
 
 	EVENT_SYSTEM_0_initialization();
 
@@ -240,19 +265,23 @@ void system_init()
 
 	CPUINT_init();
 
-	ZCD_0_initialization();
+//	ZCD_RISING_initialization();
 
-	ZCD_1_initialization();
+	ZCD_FALLING_initialization();
 
-	SPI_0_initialization();
+	SPI_ADF_initialization();
 
-	SPI_1_initialization();
+	SPI_LMX_initialization();
 
 	RTC_0_init();
 
-	TIMER_B_initialization();
+//	TIMER_RISING_initialization();
 
-	TIMER_C_initialization();
+	TIMER_FALLING_initialization();
+
+	TIMER_0_initialization();
+
+	VREF_0_init();
 
 	BOD_init();
 }

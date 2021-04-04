@@ -7,7 +7,9 @@
 
 #include "lmx2694Handler.h"
 #include "math.h"
-#include "util\delay.h"
+#include <atomic.h>
+#include <util/delay.h>
+#include <clock_config.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -15,9 +17,9 @@
 #include "string.h"
 //#include "SPI_Async_Handler.h"
 
-static SPI_Async_Handler staticSPI;
+//static SPI_Async_Handler staticSPI;
 
-//static SPI_Syn_Class staticSPI;
+static SPI_Syn_Class staticSPI;
 static uint16_t local_read_registers[0x73];
 static uint16_t local_write_registers[0x73];
 static const int channel_divider_values[]={2,4,6,8,12,16,24,32,48,64,72,96,128,192};
@@ -85,7 +87,7 @@ bool lmx2694_Handler::Is_Locked(void){
 	} 
 	else
 	{
-		_delay_ms(10);
+	//	_delay_ms(10);
 		is_locked=PC1_get_level();
 	}
 	

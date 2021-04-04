@@ -44,14 +44,16 @@ uint8_t SPI_Syn_Class_ADF::Enable(){
 
 uint8_t  SPI_Syn_Class_ADF::Write(const uint8_t * p, uint8_t n){
 	ready=false;
-
+	DISABLE_INTERRUPTS();
 	SPI_ADF_write_block((void *)p, n);
-
+	ENABLE_INTERRUPTS();
 	return n;
 }
 uint8_t  SPI_Syn_Class_ADF::Read(uint8_t * p, uint8_t n){
 	ready=false;
+	DISABLE_INTERRUPTS();
 	SPI_ADF_read_block((void *)p, n);
+	ENABLE_INTERRUPTS();
 
 	
 	return n;
@@ -62,6 +64,7 @@ void SPI_Syn_Class_ADF::Disable(void){
 	
 }
 void SPI_Syn_Class_ADF::SetCS(bool st){
+	//PORTA_set_pin_level(7, st);
 	CS_ADF_set_level(st);
 }
 

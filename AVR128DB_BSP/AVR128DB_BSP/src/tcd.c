@@ -41,16 +41,16 @@
  *
  * \return Initialization status.
  */
-int8_t TIMER_C_init()
+int8_t TIMER_0_init()
 {
 
 	// Enable Protected register, peripheral must be disabled (ENABLE=0, in TCD.CTRLA).
 
-	TCD0.CMPASET = 4095; /* Compare A Set: 4095 */
+	 TCD0.CMPASET = 0xfff; /* Compare A Set: 0 */
 
-	// TCD0.CMPACLR = 0; /* Compare A Clear: 0 */
+	 TCD0.CMPACLR = 0xfff; /* Compare A Clear: 0 */
 
-	TCD0.CMPBSET = 4095; /* Compare B Set: 4095 */
+	// TCD0.CMPBSET = 0; /* Compare B Set: 0 */
 
 	// TCD0.CMPBCLR = 0; /* Compare B Clear: 0 */
 
@@ -78,17 +78,15 @@ int8_t TIMER_C_init()
 
 	// TCD0.DLYVAL = 0 << TCD_DLYVAL_gp; /* Delay value: 0 */
 
-	TCD0.EVCTRLA
-	    = TCD_CFG_NEITHER_gc      /* Neither Filter nor Asynchronous Event is enabled */
-	      | TCD_ACTION_CAPTURE_gc /* Event trigger a fault and capture */
-	      | TCD_EDGE_RISE_HIGH_gc /* The rising edge or high level of event generates retrigger or fault action */
-	      | 1 << TCD_TRIGEI_bp;   /* Trigger event enable: enabled */
+	 TCD0.EVCTRLA = TCD_CFG_FILTER_gc /* Neither Filter nor Asynchronous Event is enabled */
+			 | TCD_ACTION_CAPTURE_gc /* Event trigger a fault */
+			 | TCD_EDGE_RISE_HIGH_gc /* The falling edge or low level of event generates retrigger or fault action */
+			 | 1 << TCD_TRIGEI_bp; /* Trigger event enable: disabled */
 
-	TCD0.EVCTRLB
-	    = TCD_CFG_NEITHER_gc      /* Neither Filter nor Asynchronous Event is enabled */
-	      | TCD_ACTION_CAPTURE_gc /* Event trigger a fault and capture */
-	      | TCD_EDGE_RISE_HIGH_gc /* The rising edge or high level of event generates retrigger or fault action */
-	      | 1 << TCD_TRIGEI_bp;   /* Trigger event enable: enabled */
+	// TCD0.EVCTRLB = TCD_CFG_NEITHER_gc /* Neither Filter nor Asynchronous Event is enabled */
+	//		 | TCD_ACTION_FAULT_gc /* Event trigger a fault */
+	//		 | TCD_EDGE_FALL_LOW_gc /* The falling edge or low level of event generates retrigger or fault action */
+	//		 | 0 << TCD_TRIGEI_bp; /* Trigger event enable: disabled */
 
 	// ccp_write_io((void*)&(TCD0.FAULTCTRL),0 << TCD_CMPAEN_bp /* Compare A enable: disabled */
 	//		 | 0 << TCD_CMPA_bp /* Compare A value: disabled */
@@ -103,15 +101,15 @@ int8_t TIMER_C_init()
 
 	// TCD0.INPUTCTRLB = TCD_INPUTMODE_NONE_gc; /* Input has no actions */
 
-	TCD0.INTCTRL = 0 << TCD_OVF_bp      /* Overflow interrupt enable: disabled */
-	               | 1 << TCD_TRIGA_bp  /* Trigger A interrupt enable: enabled */
-	               | 1 << TCD_TRIGB_bp; /* Trigger B interrupt enable: enabled */
+	 TCD0.INTCTRL = 0 << TCD_OVF_bp /* Overflow interrupt enable: disabled */
+			 | 1 << TCD_TRIGA_bp /* Trigger A interrupt enable: disabled */
+			 | 0 << TCD_TRIGB_bp; /* Trigger B interrupt enable: disabled */
 
 	while ((TCD0.STATUS & TCD_ENRDY_bm) == 0)
 		; // Wait for Enable Ready to be high.
 
 	TCD0.CTRLA = 1 << TCD_ENABLE_bp      /* Enable: enabled */
-	             | TCD_CLKSEL_OSCHF_gc   /*  */
+	             | TCD_CLKSEL_PLL_gc     /*  */
 	             | TCD_CNTPRES_DIV1_gc   /* Sync clock divided by 1 */
 	             | TCD_SYNCPRES_DIV1_gc; /*  */
 

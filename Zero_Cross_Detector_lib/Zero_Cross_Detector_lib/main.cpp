@@ -8,11 +8,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <atmel_start.h>
-#include <usart_basic_example.h>
+
 #include <usart_basic.h>
 #include <atomic.h>
 
-#include <clock_config.h>
+
 #include <util/delay.h>
 
 #include <usart_basic.h>

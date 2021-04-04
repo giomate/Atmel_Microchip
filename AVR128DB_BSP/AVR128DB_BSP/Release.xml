@@ -14,13 +14,13 @@
   </avrgcc.compiler.symbols.DefSymbols>
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
+      <Value>../examples/include</Value>
       <Value>../include</Value>
       <Value>../utils</Value>
       <Value>../utils/assembler</Value>
       <Value>../</Value>
-      <Value>../examples/include</Value>
-      <Value>%24(PackRepoDir)\atmel\AVR-Dx_DFP\1.6.76\include\</Value>
       <Value>../Config</Value>
+      <Value>%24(PackRepoDir)\atmel\AVR-Dx_DFP\1.6.76\include\</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -34,13 +34,13 @@
   </avrgcc.linker.libraries.Libraries>
   <avrgcc.assembler.general.IncludePaths>
     <ListValues>
-      <Value>%24(PackRepoDir)\atmel\AVR-Dx_DFP\1.6.76\include\</Value>
       <Value>../Config</Value>
       <Value>../examples/include</Value>
       <Value>../include</Value>
       <Value>../utils</Value>
       <Value>../utils/assembler</Value>
       <Value>../</Value>
+      <Value>%24(PackRepoDir)\atmel\AVR-Dx_DFP\1.6.76\include\</Value>
     </ListValues>
   </avrgcc.assembler.general.IncludePaths>
 </AvrGcc>

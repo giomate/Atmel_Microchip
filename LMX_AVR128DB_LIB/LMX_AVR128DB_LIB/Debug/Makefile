@@ -39,6 +39,7 @@ SUBDIRS :=
 C_SRCS +=  \
 ../lmx2694Handler.cpp \
 ../main.cpp \
+../SPI_Async_Handler.cpp \
 ../SPI_Syn_Class.cpp
 
 
@@ -51,21 +52,25 @@ ASM_SRCS +=
 OBJS +=  \
 lmx2694Handler.o \
 main.o \
+SPI_Async_Handler.o \
 SPI_Syn_Class.o
 
 OBJS_AS_ARGS +=  \
 lmx2694Handler.o \
 main.o \
+SPI_Async_Handler.o \
 SPI_Syn_Class.o
 
 C_DEPS +=  \
 lmx2694Handler.d \
 main.d \
+SPI_Async_Handler.d \
 SPI_Syn_Class.d
 
 C_DEPS_AS_ARGS +=  \
 lmx2694Handler.d \
 main.d \
+SPI_Async_Handler.d \
 SPI_Syn_Class.d
 
 OUTPUT_FILE_PATH +=libLMX_AVR128DB_LIB.a
@@ -77,7 +82,7 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 LIB_DEP+=  \
-C:/Users/GMateusDP/Documents/Trobina/Development/Software/Atmel_Microchip/AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Debug/libAVR_CURIOSITY_BSP.a
+C:/Users/GMateusDP/Documents/Trobina/Development/Software/Atmel_Microchip/AVR128DB_BSP/AVR128DB_BSP/Debug/libAVR128DB_BSP.a
 
 LINKER_SCRIPT_DEP+= 
 
@@ -86,21 +91,28 @@ LINKER_SCRIPT_DEP+=
 ./lmx2694Handler.o: .././lmx2694Handler.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DONLY_LOCK_SIGNAL -D__DELAY_BACKWARD_COMPATIBLE__  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include\util" -I".." -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include\util" -I".." -I"../../../AVR128DB_BSP/AVR128DB_BSP/examples/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils/assembler" -I"../../../AVR128DB_BSP/AVR128DB_BSP" -I"../../../AVR128DB_BSP/AVR128DB_BSP/Config"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./main.o: .././main.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DONLY_LOCK_SIGNAL -D__DELAY_BACKWARD_COMPATIBLE__  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include\util" -I".." -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include\util" -I".." -I"../../../AVR128DB_BSP/AVR128DB_BSP/examples/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils/assembler" -I"../../../AVR128DB_BSP/AVR128DB_BSP" -I"../../../AVR128DB_BSP/AVR128DB_BSP/Config"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+./SPI_Async_Handler.o: .././SPI_Async_Handler.cpp
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include\util" -I".." -I"../../../AVR128DB_BSP/AVR128DB_BSP/examples/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils/assembler" -I"../../../AVR128DB_BSP/AVR128DB_BSP" -I"../../../AVR128DB_BSP/AVR128DB_BSP/Config"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./SPI_Syn_Class.o: .././SPI_Syn_Class.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DONLY_LOCK_SIGNAL -D__DELAY_BACKWARD_COMPATIBLE__  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include\util" -I".." -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DONLY_LOCK_SIGNAL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include\util" -I".." -I"../../../AVR128DB_BSP/AVR128DB_BSP/examples/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils/assembler" -I"../../../AVR128DB_BSP/AVR128DB_BSP" -I"../../../AVR128DB_BSP/AVR128DB_BSP/Config"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 

@@ -43,8 +43,6 @@ main.d main.o: .././main.cpp \
  .././LTC5548HANDLER.h \
  ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/lmx2694Handler.h \
  ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/lmx2694_Default_Configuration.h \
- ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/driver_init.h \
- ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Async_Handler.h \
  ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Syn_Class.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
@@ -141,10 +139,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/lmx2694Handler.h:
 
 ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/lmx2694_Default_Configuration.h:
-
-../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/driver_init.h:
-
-../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Async_Handler.h:
 
 ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Syn_Class.h:
 

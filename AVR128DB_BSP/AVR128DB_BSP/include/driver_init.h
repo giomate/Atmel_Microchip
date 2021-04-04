@@ -41,6 +41,9 @@
 #include <port.h>
 #include <atmel_start_pins.h>
 
+#include <opamp_basic.h>
+#include <math.h>
+
 #include <clkctrl.h>
 
 #include <usart_basic.h>
@@ -62,7 +65,13 @@
 #include <tcb.h>
 
 #include <interrupt_avr8.h>
+#include <tcb.h>
+
+#include <interrupt_avr8.h>
 #include <tcd.h>
+
+#include <vref.h>
+
 #include <bod.h>
 
 #ifdef __cplusplus
