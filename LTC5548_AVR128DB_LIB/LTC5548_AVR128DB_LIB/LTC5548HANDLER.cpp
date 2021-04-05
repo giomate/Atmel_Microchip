@@ -43,31 +43,31 @@ bool LTC5548_HANDLER::Set_Mixer(bool st){
 }
 bool LTC5548_HANDLER::Start_Mixer(void){
 	if(Start_LO()){
-// 		adf->Set_Target_Frequency(CENTER_FREQUENCY);
-// 		while (!adf->Is_Locked())
-// 		{
-// 			_delay_ms(100);
-// 			adf->Set_Target_Frequency(CENTER_FREQUENCY);
-// 		}
-// 		if (Start_RF())
-// 		{
-// 			lmx->Set_Target_Frequency(CENTER_FREQUENCY+(BAND_WIDTH/BAND_WIDTH_FRACTION));
-// 			while (!lmx->Is_Locked())
+		adf->Set_Target_Frequency(CENTER_FREQUENCY);
+		while (!adf->Is_Locked())
+		{
+			_delay_ms(100);
+			adf->Set_Target_Frequency(CENTER_FREQUENCY);
+		}
+		if (Start_RF())
+		{
+			lmx->Set_Target_Frequency(CENTER_FREQUENCY+(BAND_WIDTH/BAND_WIDTH_FRACTION));
+			while (!lmx->Is_Locked())
+			{
+				_delay_ms(100);
+				lmx->Set_Target_Frequency(CENTER_FREQUENCY+(BAND_WIDTH/BAND_WIDTH_FRACTION));
+			}
+// 			lmx->Start_Woobling(CENTER_FREQUENCY+BAND_WIDTH,CENTER_FREQUENCY-BAND_WIDTH);
+// 			while (!lmx->Keep_Woobling())
 // 			{
-// 				_delay_ms(100);
-// 				lmx->Set_Target_Frequency(CENTER_FREQUENCY+(BAND_WIDTH/BAND_WIDTH_FRACTION));
+// 				
 // 			}
-// // 			lmx->Start_Woobling(CENTER_FREQUENCY+BAND_WIDTH,CENTER_FREQUENCY-BAND_WIDTH);
-// // 			while (!lmx->Keep_Woobling())
-// // 			{
-// // 				
-// // 			}
-// 			Set_Enable(true);
-// 		} 
-// 		else
-// 		{
-// 			Set_Enable(false);
-// 		}
+			Set_Enable(true);
+		} 
+		else
+		{
+			Set_Enable(false);
+		}
 		
 	}else{
 		Set_Enable(false);
@@ -89,7 +89,7 @@ bool LTC5548_HANDLER::Start_RF(void){
 bool LTC5548_HANDLER::Start_LO(void){
 	while(!adf->Init()){
 	
-	//	_delay_ms(100);
+		_delay_ms(100);
 		//	_delay_loop_2(100);
 
 		LED0_toggle_level();

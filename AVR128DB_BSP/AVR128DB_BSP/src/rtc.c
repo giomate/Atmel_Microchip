@@ -51,23 +51,20 @@ int8_t RTC_0_init()
 	// RTC.CNT = 0x0; /* Counter: 0x0 */
 
 	RTC.CTRLA = RTC_PRESCALER_DIV32_gc  /* 32 */
-	            | 1 << RTC_RTCEN_bp     /* Enable: enabled */
-	            | 0 << RTC_RUNSTDBY_bp; /* Run In Standby: disabled */
+	            | 0 << RTC_RTCEN_bp     /* Enable: disabled */
+	            | 1 << RTC_RUNSTDBY_bp; /* Run In Standby: enabled */
 
-	RTC.PER = 0x400; /* Period: 0x400 */
+	RTC.PER = 0x1ff; /* Period: 0x1ff */
 
 	RTC.CLKSEL = RTC_CLKSEL_OSC32K_gc; /* Internal 32.768 kHz oscillator */
 
 	// RTC.DBGCTRL = 0 << RTC_DBGRUN_bp; /* Run in debug: disabled */
 
-	// RTC.INTCTRL = 0 << RTC_CMP_bp /* Compare Match Interrupt enable: disabled */
-	//		 | 0 << RTC_OVF_bp; /* Overflow Interrupt enable: disabled */
+	RTC.INTCTRL = 0 << RTC_CMP_bp    /* Compare Match Interrupt enable: disabled */
+	              | 1 << RTC_OVF_bp; /* Overflow Interrupt enable: enabled */
 
-	while (RTC.PITSTATUS > 0) { /* Wait for all register to be synchronized */
-	}
-
-	RTC.PITCTRLA = RTC_PERIOD_OFF_gc    /* Off */
-	               | 1 << RTC_PITEN_bp; /* Enable: enabled */
+	// RTC.PITCTRLA = RTC_PERIOD_OFF_gc /* Off */
+	//		 | 0 << RTC_PITEN_bp; /* Enable: disabled */
 
 	// RTC.PITDBGCTRL = 0 << RTC_DBGRUN_bp; /* Run in debug: disabled */
 

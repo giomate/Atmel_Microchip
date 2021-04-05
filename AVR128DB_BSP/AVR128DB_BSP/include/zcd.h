@@ -34,9 +34,9 @@
 extern "C" {
 #endif
 
-int8_t ZCD_0_init();
+int8_t ZCD_RISING_init();
 
-int8_t ZCD_1_init();
+int8_t ZCD_FALLING_init();
 
 #ifdef __cplusplus
 }

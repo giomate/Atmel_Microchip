@@ -38,27 +38,27 @@ extern "C" {
 /* Normal Mode, Baud register value */
 #define USART3_BAUD_RATE(BAUD_RATE) ((float)(24000000 * 64 / (16 * (float)BAUD_RATE)) + 0.5)
 
-int8_t USART_ASYNC_init();
+int8_t USART_0_init();
 
-void USART_ASYNC_enable();
+void USART_0_enable();
 
-void USART_ASYNC_enable_rx();
+void USART_0_enable_rx();
 
-void USART_ASYNC_enable_tx();
+void USART_0_enable_tx();
 
-void USART_ASYNC_disable();
+void USART_0_disable();
 
-uint8_t USART_ASYNC_get_data();
+uint8_t USART_0_get_data();
 
-bool USART_ASYNC_is_tx_ready();
+bool USART_0_is_tx_ready();
 
-bool USART_ASYNC_is_rx_ready();
+bool USART_0_is_rx_ready();
 
-bool USART_ASYNC_is_tx_busy();
+bool USART_0_is_tx_busy();
 
-uint8_t USART_ASYNC_read(void);
+uint8_t USART_0_read(void);
 
-void USART_ASYNC_write(const uint8_t data);
+void USART_0_write(const uint8_t data);
 
 #ifdef __cplusplus
 }

@@ -43,13 +43,13 @@
 
 #if defined(__GNUC__)
 
-int USART_ASYNC_printCHAR(char character, FILE *stream)
+int USART_0_printCHAR(char character, FILE *stream)
 {
-	USART_ASYNC_write(character);
+	USART_0_write(character);
 	return 0;
 }
 
-FILE USART_ASYNC_stream = FDEV_SETUP_STREAM(USART_ASYNC_printCHAR, NULL, _FDEV_SETUP_WRITE);
+FILE USART_0_stream = FDEV_SETUP_STREAM(USART_0_printCHAR, NULL, _FDEV_SETUP_WRITE);
 
 #elif defined(__ICCAVR__)
 
@@ -69,10 +69,10 @@ int putchar(int outChar)
  * \retval 0 the USART init was successful
  * \retval 1 the USART init was not successful
  */
-int8_t USART_ASYNC_init()
+int8_t USART_0_init()
 {
 
-	USART3.BAUD = (uint16_t)USART3_BAUD_RATE(9600); /* set baud rate register */
+	USART3.BAUD = (uint16_t)USART3_BAUD_RATE(115200); /* set baud rate register */
 
 	// USART3.CTRLA = 0 << USART_ABEIE_bp /* Auto-baud Error Interrupt Enable: disabled */
 	//		 | 0 << USART_DREIE_bp /* Data Register Empty Interrupt Enable: disabled */
@@ -103,66 +103,66 @@ int8_t USART_ASYNC_init()
 	// USART3.TXPLCTRL = 0x0 << USART_TXPL_gp; /* Transmit pulse length: 0x0 */
 
 #if defined(__GNUC__)
-	stdout = &USART_ASYNC_stream;
+	stdout = &USART_0_stream;
 #endif
 
 	return 0;
 }
 
 /**
- * \brief Enable RX and TX in USART_ASYNC
+ * \brief Enable RX and TX in USART_0
  * 1. If supported by the clock system, enables the clock to the USART
  * 2. Enables the USART module by setting the RX and TX enable-bits in the USART control register
  *
  * \return Nothing
  */
-void USART_ASYNC_enable()
+void USART_0_enable()
 {
 	USART3.CTRLB |= USART_RXEN_bm | USART_TXEN_bm;
 }
 
 /**
- * \brief Enable RX in USART_ASYNC
+ * \brief Enable RX in USART_0
  * 1. If supported by the clock system, enables the clock to the USART
  * 2. Enables the USART module by setting the RX enable-bit in the USART control register
  *
  * \return Nothing
  */
-void USART_ASYNC_enable_rx()
+void USART_0_enable_rx()
 {
 	USART3.CTRLB |= USART_RXEN_bm;
 }
 
 /**
- * \brief Enable TX in USART_ASYNC
+ * \brief Enable TX in USART_0
  * 1. If supported by the clock system, enables the clock to the USART
  * 2. Enables the USART module by setting the TX enable-bit in the USART control register
  *
  * \return Nothing
  */
-void USART_ASYNC_enable_tx()
+void USART_0_enable_tx()
 {
 	USART3.CTRLB |= USART_TXEN_bm;
 }
 
 /**
- * \brief Disable USART_ASYNC
+ * \brief Disable USART_0
  * 1. Disables the USART module by clearing the enable-bit(s) in the USART control register
  * 2. If supported by the clock system, disables the clock to the USART
  *
  * \return Nothing
  */
-void USART_ASYNC_disable()
+void USART_0_disable()
 {
 	USART3.CTRLB &= ~(USART_RXEN_bm | USART_TXEN_bm);
 }
 
 /**
- * \brief Get recieved data from USART_ASYNC
+ * \brief Get recieved data from USART_0
  *
- * \return Data register from USART_ASYNC module
+ * \return Data register from USART_0 module
  */
-uint8_t USART_ASYNC_get_data()
+uint8_t USART_0_get_data()
 {
 	return USART3.RXDATAL;
 }
@@ -174,7 +174,7 @@ uint8_t USART_ASYNC_get_data()
  * \retval false The USART can not receive data to be transmitted
  * \retval true The USART can receive data to be transmitted
  */
-bool USART_ASYNC_is_tx_ready()
+bool USART_0_is_tx_ready()
 {
 	return (USART3.STATUS & USART_DREIF_bm);
 }
@@ -186,31 +186,31 @@ bool USART_ASYNC_is_tx_ready()
  * \retval true The USART has received data
  * \retval false The USART has not received data
  */
-bool USART_ASYNC_is_rx_ready()
+bool USART_0_is_rx_ready()
 {
 	return (USART3.STATUS & USART_RXCIF_bm);
 }
 
 /**
- * \brief Check if USART_ASYNC data is transmitted
+ * \brief Check if USART_0 data is transmitted
  *
  * \return Receiver ready status
  * \retval true  Data is not completely shifted out of the shift register
  * \retval false Data completely shifted out if the USART shift register
  */
-bool USART_ASYNC_is_tx_busy()
+bool USART_0_is_tx_busy()
 {
 	return (!(USART3.STATUS & USART_TXCIF_bm));
 }
 
 /**
- * \brief Read one character from USART_ASYNC
+ * \brief Read one character from USART_0
  *
  * Function will block if a character is not available.
  *
- * \return Data read from the USART_ASYNC module
+ * \return Data read from the USART_0 module
  */
-uint8_t USART_ASYNC_read()
+uint8_t USART_0_read()
 {
 	while (!(USART3.STATUS & USART_RXCIF_bm))
 		;
@@ -218,7 +218,7 @@ uint8_t USART_ASYNC_read()
 }
 
 /**
- * \brief Write one character to USART_ASYNC
+ * \brief Write one character to USART_0
  *
  * Function will block until a character can be accepted.
  *
@@ -226,7 +226,7 @@ uint8_t USART_ASYNC_read()
  *
  * \return Nothing
  */
-void USART_ASYNC_write(const uint8_t data)
+void USART_0_write(const uint8_t data)
 {
 	while (!(USART3.STATUS & USART_DREIF_bm))
 		;

@@ -40,31 +40,66 @@
  *
  * \return Initialization status.
  */
-int8_t TIMER_B_init()
+int8_t TIMER_RISING_init()
 {
 
 	// TCB0.CCMP = 0x0; /* Compare or Capture: 0x0 */
 
 	// TCB0.CNT = 0x0; /* Count: 0x0 */
 
-	TCB0.CTRLB = 0 << TCB_ASYNC_bp      /* Asynchronous Enable: disabled */
+	TCB0.CTRLB = 1 << TCB_ASYNC_bp      /* Asynchronous Enable: enabled */
 	             | 0 << TCB_CCMPEN_bp   /* Pin Output Enable: disabled */
 	             | 0 << TCB_CCMPINIT_bp /* Pin Initial State: disabled */
 	             | TCB_CNTMODE_FRQ_gc;  /* Input Capture Frequency measurement */
 
-	// TCB0.DBGCTRL = 0 << TCB_DBGRUN_bp; /* Debug Run: disabled */
+	TCB0.DBGCTRL = 1 << TCB_DBGRUN_bp; /* Debug Run: enabled */
 
 	TCB0.EVCTRL = 1 << TCB_CAPTEI_bp    /* Event Input Enable: enabled */
 	              | 0 << TCB_EDGE_bp    /* Event Edge: disabled */
 	              | 0 << TCB_FILTER_bp; /* Input Capture Noise Cancellation Filter: disabled */
 
 	TCB0.INTCTRL = 1 << TCB_CAPT_bp   /* Capture or Timeout: enabled */
-	               | 1 << TCB_OVF_bp; /* OverFlow Interrupt: enabled */
+	               | 0 << TCB_OVF_bp; /* OverFlow Interrupt: disabled */
 
 	TCB0.CTRLA = TCB_CLKSEL_DIV1_gc     /* CLK_PER */
 	             | 1 << TCB_ENABLE_bp   /* Enable: enabled */
 	             | 0 << TCB_RUNSTDBY_bp /* Run Standby: disabled */
-	             | 0 << TCB_SYNCUPD_bp  /* Synchronize Update: disabled */
+	             | 1 << TCB_SYNCUPD_bp  /* Synchronize Update: enabled */
+	             | 0 << TCB_CASCADE_bp; /* Cascade Two Timer/Counters: disabled */
+
+	return 0;
+}
+
+/**
+ * \brief Initialize tcb interface
+ *
+ * \return Initialization status.
+ */
+int8_t TIMER_FALLING_init()
+{
+
+	 TCB1.CCMP = 0xffff; /* Compare or Capture: 0x0 */
+
+	 TCB1.CNT = 0xffff; /* Count: 0x0 */
+
+	TCB1.CTRLB = 1 << TCB_ASYNC_bp      /* Asynchronous Enable: enabled */
+	             | 0 << TCB_CCMPEN_bp   /* Pin Output Enable: disabled */
+	             | 0 << TCB_CCMPINIT_bp /* Pin Initial State: disabled */
+	             | TCB_CNTMODE_FRQ_gc;  /* Input Capture Frequency measurement */
+
+	TCB1.DBGCTRL = 1 << TCB_DBGRUN_bp; /* Debug Run: enabled */
+
+	TCB1.EVCTRL = 1 << TCB_CAPTEI_bp    /* Event Input Enable: enabled */
+	              | 0 << TCB_EDGE_bp    /* Event Edge: disabled */
+	              | 0 << TCB_FILTER_bp; /* Input Capture Noise Cancellation Filter: disabled */
+
+	TCB1.INTCTRL = 1 << TCB_CAPT_bp   /* Capture or Timeout: enabled */
+	               | 0 << TCB_OVF_bp; /* OverFlow Interrupt: disabled */
+
+	TCB1.CTRLA = TCB_CLKSEL_DIV1_gc     /* CLK_PER */
+	             | 1 << TCB_ENABLE_bp   /* Enable: enabled */
+	             | 0 << TCB_RUNSTDBY_bp /* Run Standby: disabled */
+	             | 1 << TCB_SYNCUPD_bp  /* Synchronize Update: enabled */
 	             | 0 << TCB_CASCADE_bp; /* Cascade Two Timer/Counters: disabled */
 
 	return 0;

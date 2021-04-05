@@ -36,7 +36,8 @@ protected:
 private:
 	Zero_Cross_Counter( const Zero_Cross_Counter &c );
 	Zero_Cross_Counter& operator=( const Zero_Cross_Counter &c );
-
+	void ZCD_RISING_Init(void);
+	uint8_t TIMER_RISING_Init();
 }; //Zero_Cross_Counter
 
 #endif //__ZERO_CROSS_COUNTER_H__

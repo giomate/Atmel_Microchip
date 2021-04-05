@@ -9,15 +9,15 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
 		Release|AVR = Release|AVR
-		test_exe|AVR = test_exe|AVR
+		test_app|AVR = test_app|AVR
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
-		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.test_exe|AVR.ActiveCfg = test_exe|AVR
-		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.test_exe|AVR.Build.0 = test_exe|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.test_app|AVR.ActiveCfg = test_app|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.test_app|AVR.Build.0 = test_app|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

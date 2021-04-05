@@ -569,6 +569,99 @@ static inline bool PB1_get_level()
 }
 
 /**
+ * \brief Set LED0 pull mode
+ *
+ * Configure pin to pull up, down or disable pull mode, supported pull
+ * modes are defined by device used
+ *
+ * \param[in] pull_mode Pin pull mode
+ */
+static inline void LED0_set_pull_mode(const enum port_pull_mode pull_mode)
+{
+	PORTB_set_pin_pull_mode(3, pull_mode);
+}
+
+/**
+ * \brief Set LED0 data direction
+ *
+ * Select if the pin data direction is input, output or disabled.
+ * If disabled state is not possible, this function throws an assert.
+ *
+ * \param[in] direction PORT_DIR_IN  = Data direction in
+ *                      PORT_DIR_OUT = Data direction out
+ *                      PORT_DIR_OFF = Disables the pin
+ *                      (low power state)
+ */
+static inline void LED0_set_dir(const enum port_dir dir)
+{
+	PORTB_set_pin_dir(3, dir);
+}
+
+/**
+ * \brief Set LED0 input/sense configuration
+ *
+ * Enable/disable LED0 digital input buffer and pin change interrupt,
+ * select pin interrupt edge/level sensing mode
+ *
+ * \param[in] isc PORT_ISC_INTDISABLE_gc    = Iterrupt disabled but input buffer enabled
+ *                PORT_ISC_BOTHEDGES_gc     = Sense Both Edges
+ *                PORT_ISC_RISING_gc        = Sense Rising Edge
+ *                PORT_ISC_FALLING_gc       = Sense Falling Edge
+ *                PORT_ISC_INPUT_DISABLE_gc = Digital Input Buffer disabled
+ *                PORT_ISC_LEVEL_gc         = Sense low Level
+ */
+static inline void LED0_set_isc(const PORT_ISC_t isc)
+{
+	PORTB_pin_set_isc(3, isc);
+}
+
+/**
+ * \brief Set LED0 inverted mode
+ *
+ * Enable or disable inverted I/O on a pin
+ *
+ * \param[in] inverted true  = I/O on LED0 is inverted
+ *                     false = I/O on LED0 is not inverted
+ */
+static inline void LED0_set_inverted(const bool inverted)
+{
+	PORTB_pin_set_inverted(3, inverted);
+}
+
+/**
+ * \brief Set LED0 level
+ *
+ * Sets output level on a pin
+ *
+ * \param[in] level true  = Pin level set to "high" state
+ *                  false = Pin level set to "low" state
+ */
+static inline void LED0_set_level(const bool level)
+{
+	PORTB_set_pin_level(3, level);
+}
+
+/**
+ * \brief Toggle output level on LED0
+ *
+ * Toggle the pin level
+ */
+static inline void LED0_toggle_level()
+{
+	PORTB_toggle_pin_level(3);
+}
+
+/**
+ * \brief Get level on LED0
+ *
+ * Reads the level on a pin
+ */
+static inline bool LED0_get_level()
+{
+	return PORTB_get_pin_level(3);
+}
+
+/**
  * \brief Set PC0 pull mode
  *
  * Configure pin to pull up, down or disable pull mode, supported pull
@@ -941,99 +1034,6 @@ static inline bool CS_LMX_get_level()
 }
 
 /**
- * \brief Set LED_0 pull mode
- *
- * Configure pin to pull up, down or disable pull mode, supported pull
- * modes are defined by device used
- *
- * \param[in] pull_mode Pin pull mode
- */
-static inline void LED_0_set_pull_mode(const enum port_pull_mode pull_mode)
-{
-	PORTC_set_pin_pull_mode(6, pull_mode);
-}
-
-/**
- * \brief Set LED_0 data direction
- *
- * Select if the pin data direction is input, output or disabled.
- * If disabled state is not possible, this function throws an assert.
- *
- * \param[in] direction PORT_DIR_IN  = Data direction in
- *                      PORT_DIR_OUT = Data direction out
- *                      PORT_DIR_OFF = Disables the pin
- *                      (low power state)
- */
-static inline void LED_0_set_dir(const enum port_dir dir)
-{
-	PORTC_set_pin_dir(6, dir);
-}
-
-/**
- * \brief Set LED_0 input/sense configuration
- *
- * Enable/disable LED_0 digital input buffer and pin change interrupt,
- * select pin interrupt edge/level sensing mode
- *
- * \param[in] isc PORT_ISC_INTDISABLE_gc    = Iterrupt disabled but input buffer enabled
- *                PORT_ISC_BOTHEDGES_gc     = Sense Both Edges
- *                PORT_ISC_RISING_gc        = Sense Rising Edge
- *                PORT_ISC_FALLING_gc       = Sense Falling Edge
- *                PORT_ISC_INPUT_DISABLE_gc = Digital Input Buffer disabled
- *                PORT_ISC_LEVEL_gc         = Sense low Level
- */
-static inline void LED_0_set_isc(const PORT_ISC_t isc)
-{
-	PORTC_pin_set_isc(6, isc);
-}
-
-/**
- * \brief Set LED_0 inverted mode
- *
- * Enable or disable inverted I/O on a pin
- *
- * \param[in] inverted true  = I/O on LED_0 is inverted
- *                     false = I/O on LED_0 is not inverted
- */
-static inline void LED_0_set_inverted(const bool inverted)
-{
-	PORTC_pin_set_inverted(6, inverted);
-}
-
-/**
- * \brief Set LED_0 level
- *
- * Sets output level on a pin
- *
- * \param[in] level true  = Pin level set to "high" state
- *                  false = Pin level set to "low" state
- */
-static inline void LED_0_set_level(const bool level)
-{
-	PORTC_set_pin_level(6, level);
-}
-
-/**
- * \brief Toggle output level on LED_0
- *
- * Toggle the pin level
- */
-static inline void LED_0_toggle_level()
-{
-	PORTC_toggle_pin_level(6);
-}
-
-/**
- * \brief Get level on LED_0
- *
- * Reads the level on a pin
- */
-static inline bool LED_0_get_level()
-{
-	return PORTC_get_pin_level(6);
-}
-
-/**
  * \brief Set PD1 pull mode
  *
  * Configure pin to pull up, down or disable pull mode, supported pull
@@ -1124,6 +1124,192 @@ static inline void PD1_toggle_level()
 static inline bool PD1_get_level()
 {
 	return PORTD_get_pin_level(1);
+}
+
+/**
+ * \brief Set PD5 pull mode
+ *
+ * Configure pin to pull up, down or disable pull mode, supported pull
+ * modes are defined by device used
+ *
+ * \param[in] pull_mode Pin pull mode
+ */
+static inline void PD5_set_pull_mode(const enum port_pull_mode pull_mode)
+{
+	PORTD_set_pin_pull_mode(5, pull_mode);
+}
+
+/**
+ * \brief Set PD5 data direction
+ *
+ * Select if the pin data direction is input, output or disabled.
+ * If disabled state is not possible, this function throws an assert.
+ *
+ * \param[in] direction PORT_DIR_IN  = Data direction in
+ *                      PORT_DIR_OUT = Data direction out
+ *                      PORT_DIR_OFF = Disables the pin
+ *                      (low power state)
+ */
+static inline void PD5_set_dir(const enum port_dir dir)
+{
+	PORTD_set_pin_dir(5, dir);
+}
+
+/**
+ * \brief Set PD5 input/sense configuration
+ *
+ * Enable/disable PD5 digital input buffer and pin change interrupt,
+ * select pin interrupt edge/level sensing mode
+ *
+ * \param[in] isc PORT_ISC_INTDISABLE_gc    = Iterrupt disabled but input buffer enabled
+ *                PORT_ISC_BOTHEDGES_gc     = Sense Both Edges
+ *                PORT_ISC_RISING_gc        = Sense Rising Edge
+ *                PORT_ISC_FALLING_gc       = Sense Falling Edge
+ *                PORT_ISC_INPUT_DISABLE_gc = Digital Input Buffer disabled
+ *                PORT_ISC_LEVEL_gc         = Sense low Level
+ */
+static inline void PD5_set_isc(const PORT_ISC_t isc)
+{
+	PORTD_pin_set_isc(5, isc);
+}
+
+/**
+ * \brief Set PD5 inverted mode
+ *
+ * Enable or disable inverted I/O on a pin
+ *
+ * \param[in] inverted true  = I/O on PD5 is inverted
+ *                     false = I/O on PD5 is not inverted
+ */
+static inline void PD5_set_inverted(const bool inverted)
+{
+	PORTD_pin_set_inverted(5, inverted);
+}
+
+/**
+ * \brief Set PD5 level
+ *
+ * Sets output level on a pin
+ *
+ * \param[in] level true  = Pin level set to "high" state
+ *                  false = Pin level set to "low" state
+ */
+static inline void PD5_set_level(const bool level)
+{
+	PORTD_set_pin_level(5, level);
+}
+
+/**
+ * \brief Toggle output level on PD5
+ *
+ * Toggle the pin level
+ */
+static inline void PD5_toggle_level()
+{
+	PORTD_toggle_pin_level(5);
+}
+
+/**
+ * \brief Get level on PD5
+ *
+ * Reads the level on a pin
+ */
+static inline bool PD5_get_level()
+{
+	return PORTD_get_pin_level(5);
+}
+
+/**
+ * \brief Set PD7 pull mode
+ *
+ * Configure pin to pull up, down or disable pull mode, supported pull
+ * modes are defined by device used
+ *
+ * \param[in] pull_mode Pin pull mode
+ */
+static inline void PD7_set_pull_mode(const enum port_pull_mode pull_mode)
+{
+	PORTD_set_pin_pull_mode(7, pull_mode);
+}
+
+/**
+ * \brief Set PD7 data direction
+ *
+ * Select if the pin data direction is input, output or disabled.
+ * If disabled state is not possible, this function throws an assert.
+ *
+ * \param[in] direction PORT_DIR_IN  = Data direction in
+ *                      PORT_DIR_OUT = Data direction out
+ *                      PORT_DIR_OFF = Disables the pin
+ *                      (low power state)
+ */
+static inline void PD7_set_dir(const enum port_dir dir)
+{
+	PORTD_set_pin_dir(7, dir);
+}
+
+/**
+ * \brief Set PD7 input/sense configuration
+ *
+ * Enable/disable PD7 digital input buffer and pin change interrupt,
+ * select pin interrupt edge/level sensing mode
+ *
+ * \param[in] isc PORT_ISC_INTDISABLE_gc    = Iterrupt disabled but input buffer enabled
+ *                PORT_ISC_BOTHEDGES_gc     = Sense Both Edges
+ *                PORT_ISC_RISING_gc        = Sense Rising Edge
+ *                PORT_ISC_FALLING_gc       = Sense Falling Edge
+ *                PORT_ISC_INPUT_DISABLE_gc = Digital Input Buffer disabled
+ *                PORT_ISC_LEVEL_gc         = Sense low Level
+ */
+static inline void PD7_set_isc(const PORT_ISC_t isc)
+{
+	PORTD_pin_set_isc(7, isc);
+}
+
+/**
+ * \brief Set PD7 inverted mode
+ *
+ * Enable or disable inverted I/O on a pin
+ *
+ * \param[in] inverted true  = I/O on PD7 is inverted
+ *                     false = I/O on PD7 is not inverted
+ */
+static inline void PD7_set_inverted(const bool inverted)
+{
+	PORTD_pin_set_inverted(7, inverted);
+}
+
+/**
+ * \brief Set PD7 level
+ *
+ * Sets output level on a pin
+ *
+ * \param[in] level true  = Pin level set to "high" state
+ *                  false = Pin level set to "low" state
+ */
+static inline void PD7_set_level(const bool level)
+{
+	PORTD_set_pin_level(7, level);
+}
+
+/**
+ * \brief Toggle output level on PD7
+ *
+ * Toggle the pin level
+ */
+static inline void PD7_toggle_level()
+{
+	PORTD_toggle_pin_level(7);
+}
+
+/**
+ * \brief Get level on PD7
+ *
+ * Reads the level on a pin
+ */
+static inline bool PD7_get_level()
+{
+	return PORTD_get_pin_level(7);
 }
 
 /**

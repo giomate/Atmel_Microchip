@@ -10,8 +10,8 @@
 
 #include "lmx2694_Default_Configuration.h"
 //#include "SPIHandler.h"
-#include "SPI_Async_Handler.h"
-//#include "SPI_Syn_Class.h"
+//#include "SPI_Async_Handler.h"
+#include "SPI_Syn_Class.h"
 
 
 
@@ -23,8 +23,8 @@ public:
 	float current_frequency;
 private:
 	uint16_t *read_registers,*write_registers;
-	SPI_Async_Handler		*spi_lmx;
-//	SPI_Syn_Class	*spi_lmx;
+//	SPI_Async_Handler		*spi_lmx;
+	SPI_Syn_Class	*spi_lmx;
 	uint8_t write_bytes[3],read_bytes[3];
 	bool bool_result,is_locked;
 	int int_result;

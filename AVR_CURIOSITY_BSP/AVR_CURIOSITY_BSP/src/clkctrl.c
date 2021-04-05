@@ -80,9 +80,9 @@ int8_t CLKCTRL_init()
 	// ccp_write_io((void*)&(CLKCTRL.MCLKCTRLA),CLKCTRL_CLKSEL_OSCHF_gc /* Internal high-frequency oscillator */
 	//		 | 0 << CLKCTRL_CLKOUT_bp /* System clock out: disabled */);
 
-	/* wait for PLL to start 
+	/* wait for PLL to start */
 	while (!(CLKCTRL.MCLKSTATUS & CLKCTRL_PLLS_bm))
-		;*/
+		;
 
 	return 0;
 }

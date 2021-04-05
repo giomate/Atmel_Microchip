@@ -114,8 +114,6 @@ int8_t TIMER_C_init()
 	             | TCD_CLKSEL_PLL_gc     /*  */
 	             | TCD_CNTPRES_DIV1_gc   /* Sync clock divided by 1 */
 	             | TCD_SYNCPRES_DIV1_gc; /*  */
-				 
-	while (!(CLKCTRL.MCLKSTATUS & CLKCTRL_PLLS_bm));
 
 	return 0;
 }

@@ -40,15 +40,15 @@
  *
  * \return Initialization status.
  */
-int8_t ZCD_0_init()
+int8_t ZCD_RISING_init()
 {
 
-	ZCD0.CTRLA = 0 << ZCD_ENABLE_bp     /* Setting: disabled */
-	             | 0 << ZCD_OUTEN_bp    /* Setting: disabled */
-	             | 1 << ZCD_RUNSTDBY_bp /* Setting: enabled */
+	ZCD0.CTRLA = 1 << ZCD_ENABLE_bp     /* Setting: enabled */
+	             | 1 << ZCD_OUTEN_bp    /* Setting: enabled */
+	             | 0 << ZCD_RUNSTDBY_bp /* Setting: disabled */
 	             | 0 << ZCD_INVERT_bp;  /* Setting: disabled */
 
-	ZCD0.INTCTRL = ZCD_INTMODE_RISING_gc; /* Interrupt on rising input signal */
+	// ZCD0.INTCTRL = ZCD_INTMODE_NONE_gc; /* No interrupt */
 
 	return 0;
 }
@@ -58,15 +58,15 @@ int8_t ZCD_0_init()
  *
  * \return Initialization status.
  */
-int8_t ZCD_1_init()
+int8_t ZCD_FALLING_init()
 {
 
 	ZCD1.CTRLA = 1 << ZCD_ENABLE_bp     /* Setting: enabled */
-	             | 0 << ZCD_OUTEN_bp    /* Setting: disabled */
+	             | 1 << ZCD_OUTEN_bp    /* Setting: enabled */
 	             | 0 << ZCD_RUNSTDBY_bp /* Setting: disabled */
-	             | 0 << ZCD_INVERT_bp;  /* Setting: disabled */
+	             | 1 << ZCD_INVERT_bp;  /* Setting: enabled */
 
-	ZCD1.INTCTRL = ZCD_INTMODE_FALLING_gc; /* Interrupt on falling input signal */
+	// ZCD1.INTCTRL = ZCD_INTMODE_NONE_gc; /* No interrupt */
 
 	return 0;
 }

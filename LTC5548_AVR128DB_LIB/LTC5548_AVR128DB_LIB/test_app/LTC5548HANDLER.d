@@ -7,11 +7,16 @@ LTC5548HANDLER.d LTC5548HANDLER.o: .././LTC5548HANDLER.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
  ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/lmx2694Handler.h \
  ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/lmx2694_Default_Configuration.h \
+ ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Syn_Class.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
+ ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/atmel_start.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/driver_init.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/compiler.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
  C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include/avr/ioavr128db48.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\portpins.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\common.h \
@@ -29,9 +34,6 @@ LTC5548HANDLER.d LTC5548HANDLER.o: .././LTC5548HANDLER.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/clkctrl.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/usart_basic.h \
- ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/atmel_start.h \
- ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/driver_init.h \
- ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/atmel_start_pins.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/evsys.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/slpctrl.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/cpuint.h \
@@ -42,11 +44,7 @@ LTC5548HANDLER.d LTC5548HANDLER.o: .././LTC5548HANDLER.cpp \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/tcb.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/tcd.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/bod.h \
- ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Async_Handler.h \
- ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Syn_Class.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
+ ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/atmel_start_pins.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/atomic.h \
  ../../../ADF5610_AVR128DB_LIB/ADF5610_AVR128DB_LIB/ADF5610Driver.h \
  ../../../ADF5610_AVR128DB_LIB/ADF5610_AVR128DB_LIB/SPI_Syn_Class_ADF.h \
@@ -72,6 +70,18 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 
 ../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/lmx2694_Default_Configuration.h:
 
+../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Syn_Class.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:
+
+../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/atmel_start.h:
+
 ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/driver_init.h:
 
 ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/compiler.h:
@@ -79,8 +89,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:
 
 C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include/avr/ioavr128db48.h:
 
@@ -116,12 +124,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/usart_basic.h:
 
-../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/atmel_start.h:
-
-../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/driver_init.h:
-
-../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/atmel_start_pins.h:
-
 ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/evsys.h:
 
 ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/slpctrl.h:
@@ -142,15 +144,7 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/bod.h:
 
-../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Async_Handler.h:
-
-../../../LMX_AVR128DB_LIB/LMX_AVR128DB_LIB/SPI_Syn_Class.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:
+../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/atmel_start_pins.h:
 
 ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/atomic.h:
 

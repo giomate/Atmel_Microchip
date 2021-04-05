@@ -58,53 +58,33 @@ typedef enum spi_transfer_status {
 	SPI_DONE  ///< SPI hardware has been opened, transfer complete.
 } spi_transfer_status_t;
 
-void SPI_0_init(void);
+void SPI_ADF_init(void);
 
-void SPI_0_enable();
+void SPI_ADF_enable();
 
-void SPI_0_disable();
+void SPI_ADF_disable();
 
-uint8_t SPI_0_exchange_byte(uint8_t data);
+uint8_t SPI_ADF_exchange_byte(uint8_t data);
 
-void SPI_0_exchange_block(void *block, uint8_t size);
+void SPI_ADF_exchange_block(void *block, uint8_t size);
 
-void SPI_0_write_block(void *block, uint8_t size);
+void SPI_ADF_write_block(void *block, uint8_t size);
 
-void SPI_0_read_block(void *block, uint8_t size);
+void SPI_ADF_read_block(void *block, uint8_t size);
 
-void SPI_0_register_callback(spi_transfer_done_cb_t f);
+void SPI_LMX_init(void);
 
-bool SPI_0_status_free(void);
+void SPI_LMX_enable();
 
-bool SPI_0_status_idle(void);
+void SPI_LMX_disable();
 
-bool SPI_0_status_busy(void);
+uint8_t SPI_LMX_exchange_byte(uint8_t data);
 
-bool SPI_0_status_done(void);
+void SPI_LMX_exchange_block(void *block, uint8_t size);
 
-void SPI_1_init(void);
+void SPI_LMX_write_block(void *block, uint8_t size);
 
-void SPI_1_enable();
-
-void SPI_1_disable();
-
-uint8_t SPI_1_exchange_byte(uint8_t data);
-
-void SPI_1_exchange_block(void *block, uint8_t size);
-
-void SPI_1_write_block(void *block, uint8_t size);
-
-void SPI_1_read_block(void *block, uint8_t size);
-
-void SPI_1_register_callback(spi_transfer_done_cb_t f);
-
-bool SPI_1_status_free(void);
-
-bool SPI_1_status_idle(void);
-
-bool SPI_1_status_busy(void);
-
-bool SPI_1_status_done(void);
+void SPI_LMX_read_block(void *block, uint8_t size);
 
 #ifdef __cplusplus
 }

@@ -72,7 +72,11 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 LIB_DEP+=  \
+<<<<<<< HEAD
 C:/Salukat/Purificador/SoftwareDevelopment/Atmel_Microchip/AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Debug/libAVR_CURIOSITY_BSP.a
+=======
+C:/Users/GMateusDP/Documents/Trobina/Development/Software/Atmel_Microchip/AVR128DB_BSP/AVR128DB_BSP/Debug/libAVR128DB_BSP.a
+>>>>>>> 0c4e865a6384e81e59b7648369c97f4d3239deff
 
 LINKER_SCRIPT_DEP+= 
 
@@ -81,14 +85,22 @@ LINKER_SCRIPT_DEP+=
 ./main.o: .././main.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+<<<<<<< HEAD
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config" -I".."  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+=======
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG  -I"../../../AVR128DB_BSP/AVR128DB_BSP/examples/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils/assembler" -I"../../../AVR128DB_BSP/AVR128DB_BSP/src" -I"../../../AVR128DB_BSP/AVR128DB_BSP" -I"../../../AVR128DB_BSP/AVR128DB_BSP/Config" -I".." -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+>>>>>>> 0c4e865a6384e81e59b7648369c97f4d3239deff
 	@echo Finished building: $<
 	
 
 ./Zero_Cross_Counter.o: .././Zero_Cross_Counter.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+<<<<<<< HEAD
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/examples/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/utils/assembler" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/src" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP" -I"../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/Config" -I".."  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+=======
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG  -I"../../../AVR128DB_BSP/AVR128DB_BSP/examples/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils/assembler" -I"../../../AVR128DB_BSP/AVR128DB_BSP/src" -I"../../../AVR128DB_BSP/AVR128DB_BSP" -I"../../../AVR128DB_BSP/AVR128DB_BSP/Config" -I".." -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+>>>>>>> 0c4e865a6384e81e59b7648369c97f4d3239deff
 	@echo Finished building: $<
 	
 
@@ -118,7 +130,11 @@ all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
 $(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
 	@echo Building target: $@
 	@echo Invoking: AVR8/GNU Linker : 5.4.0
+<<<<<<< HEAD
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -Wl,-Map="Zero_Cross_Detector_lib.map" -Wl,--start-group -Wl,-lm -Wl,-lAVR_CURIOSITY_BSP  -Wl,--end-group -Wl,-L"C:\Salukat\PURIFI~1\SOFTWA~1\ATMEL_~1\AVR_CU~1\AVR_CU~1\Debug"  -Wl,--gc-sections -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48"  
+=======
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -Wl,-Map="Zero_Cross_Detector_lib.map" -Wl,--start-group -Wl,-lm -Wl,-lAVR128DB_BSP  -Wl,--end-group -Wl,-L"C:\Users\GMATEU~1\DOCUME~1\Trobina\DEVELO~1\Software\ATMEL_~1\AVR128~1\AVR128~1\Debug"  -Wl,--gc-sections -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48"  
+>>>>>>> 0c4e865a6384e81e59b7648369c97f4d3239deff
 	@echo Finished building target: $@
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "Zero_Cross_Detector_lib.elf" "Zero_Cross_Detector_lib.hex"
 	"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "Zero_Cross_Detector_lib.elf" "Zero_Cross_Detector_lib.eep" || exit 0
