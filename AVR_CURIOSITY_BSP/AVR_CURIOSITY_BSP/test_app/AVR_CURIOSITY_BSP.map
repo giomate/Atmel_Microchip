@@ -56,7 +56,7 @@ Discarded input sections
                 0x00000000       0x30 examples/src/spi_basic_example.o
  .debug_ranges  0x00000000       0x20 examples/src/spi_basic_example.o
  .debug_line    0x00000000      0x14c examples/src/spi_basic_example.o
- .debug_str     0x00000000      0x279 examples/src/spi_basic_example.o
+ .debug_str     0x00000000      0x26a examples/src/spi_basic_example.o
  .comment       0x00000000       0x31 examples/src/spi_basic_example.o
  .debug_frame   0x00000000       0x44 examples/src/spi_basic_example.o
  .text          0x00000000        0x0 examples/src/usart_basic_example.o
@@ -74,7 +74,7 @@ Discarded input sections
                 0x00000000       0x20 examples/src/usart_basic_example.o
  .debug_ranges  0x00000000       0x10 examples/src/usart_basic_example.o
  .debug_line    0x00000000      0x13e examples/src/usart_basic_example.o
- .debug_str     0x00000000      0x1ff examples/src/usart_basic_example.o
+ .debug_str     0x00000000      0x1f0 examples/src/usart_basic_example.o
  .comment       0x00000000       0x31 examples/src/usart_basic_example.o
  .debug_frame   0x00000000       0x48 examples/src/usart_basic_example.o
  .text          0x00000000        0x0 main.o
@@ -889,11 +889,34 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
+<<<<<<< HEAD:AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/test_exe/AVR_CURIOSITY_BSP.map
+.debug_info     0x00000000     0x842b
+=======
 .debug_info     0x00000000     0x8360
+>>>>>>> 0c4e865a6384e81e59b7648369c97f4d3239deff:AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/test_app/AVR_CURIOSITY_BSP.map
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000     0x2f42 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
  .debug_info    0x00002f42       0x9a atmel_start.o
  .debug_info    0x00002fdc      0x6ba driver_isr.o
+<<<<<<< HEAD:AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/test_exe/AVR_CURIOSITY_BSP.map
+ .debug_info    0x00003696      0x3e1 main.o
+ .debug_info    0x00003a77      0x188 src/bod.o
+ .debug_info    0x00003bff      0x48f src/clkctrl.o
+ .debug_info    0x0000408e       0x8d src/cpuint.o
+ .debug_info    0x0000411b     0x157f src/driver_init.o
+ .debug_info    0x0000569a      0x8b0 src/evsys.o
+ .debug_info    0x00005f4a      0xa33 src/opamp_basic.o
+ .debug_info    0x0000697d       0xa4 src/protected_io.o
+ .debug_info    0x00006a21      0x389 src/rtc.o
+ .debug_info    0x00006daa      0x136 src/slpctrl.o
+ .debug_info    0x00006ee0      0x592 src/spi_basic.o
+ .debug_info    0x00007472      0x2ae src/tcb.o
+ .debug_info    0x00007720      0x6ff src/tcd.o
+ .debug_info    0x00007e1f      0x492 src/usart_basic.o
+ .debug_info    0x000082b1      0x17a src/zcd.o
+
+.debug_abbrev   0x00000000     0x3df9
+=======
  .debug_info    0x00003696      0x483 main.o
  .debug_info    0x00003b19      0x188 src/bod.o
  .debug_info    0x00003ca1      0x489 src/clkctrl.o
@@ -911,6 +934,7 @@ END GROUP
  .debug_info    0x000081e6      0x17a src/zcd.o
 
 .debug_abbrev   0x00000000     0x3e73
+>>>>>>> 0c4e865a6384e81e59b7648369c97f4d3239deff:AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/test_app/AVR_CURIOSITY_BSP.map
  *(.debug_abbrev)
  .debug_abbrev  0x00000000     0x2cc2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
  .debug_abbrev  0x00002cc2       0x63 atmel_start.o
@@ -956,6 +980,58 @@ END GROUP
  *(.debug_frame)
  .debug_frame   0x00000000       0x24 atmel_start.o
  .debug_frame   0x00000024       0xb4 driver_isr.o
+<<<<<<< HEAD:AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/test_exe/AVR_CURIOSITY_BSP.map
+ .debug_frame   0x000000d8       0x54 main.o
+ .debug_frame   0x0000012c       0x24 src/bod.o
+ .debug_frame   0x00000150       0x24 src/clkctrl.o
+ .debug_frame   0x00000174       0x24 src/cpuint.o
+ .debug_frame   0x00000198       0xd4 src/driver_init.o
+ .debug_frame   0x0000026c       0x24 src/evsys.o
+ .debug_frame   0x00000290      0x1c4 src/opamp_basic.o
+ .debug_frame   0x00000454       0x24 src/rtc.o
+ .debug_frame   0x00000478       0x34 src/slpctrl.o
+ .debug_frame   0x000004ac      0x1ac src/spi_basic.o
+ .debug_frame   0x00000658       0x34 src/tcb.o
+ .debug_frame   0x0000068c       0x24 src/tcd.o
+ .debug_frame   0x000006b0       0xd4 src/usart_basic.o
+ .debug_frame   0x00000784       0x34 src/zcd.o
+
+.debug_str      0x00000000     0x554e
+ *(.debug_str)
+ .debug_str     0x00000000     0x14f0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_str     0x000014f0      0x184 atmel_start.o
+                                0x1b8 (size before relaxing)
+ .debug_str     0x00001674      0x231 driver_isr.o
+                                0x3eb (size before relaxing)
+ .debug_str     0x000018a5       0xc2 main.o
+                                0x2e5 (size before relaxing)
+ .debug_str     0x00001967       0x7e src/bod.o
+                                0x25b (size before relaxing)
+ .debug_str     0x000019e5      0x352 src/clkctrl.o
+                                0x54e (size before relaxing)
+ .debug_str     0x00001d37       0x1c src/cpuint.o
+                                0x1ab (size before relaxing)
+ .debug_str     0x00001d53      0x6a8 src/driver_init.o
+                                0x8c9 (size before relaxing)
+ .debug_str     0x000023fb     0x13f0 src/evsys.o
+                               0x15de (size before relaxing)
+ .debug_str     0x000037eb     0x1250 src/opamp_basic.o
+                               0x1456 (size before relaxing)
+ .debug_str     0x00004a3b      0x201 src/rtc.o
+                                0x482 (size before relaxing)
+ .debug_str     0x00004c3c       0xb9 src/slpctrl.o
+                                0x26f (size before relaxing)
+ .debug_str     0x00004cf5      0x30a src/spi_basic.o
+                                0x505 (size before relaxing)
+ .debug_str     0x00004fff      0x130 src/tcb.o
+                                0x388 (size before relaxing)
+ .debug_str     0x0000512f      0x1d7 src/tcd.o
+                                0x5dd (size before relaxing)
+ .debug_str     0x00005306      0x1d5 src/usart_basic.o
+                                0x3f0 (size before relaxing)
+ .debug_str     0x000054db       0x73 src/zcd.o
+                                0x273 (size before relaxing)
+=======
  .debug_frame   0x000000d8       0x60 main.o
  .debug_frame   0x00000138       0x24 src/bod.o
  .debug_frame   0x0000015c       0x24 src/clkctrl.o
@@ -1006,6 +1082,7 @@ END GROUP
                                 0x3ff (size before relaxing)
  .debug_str     0x0000553c       0x73 src/zcd.o
                                 0x282 (size before relaxing)
+>>>>>>> 0c4e865a6384e81e59b7648369c97f4d3239deff:AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/test_app/AVR_CURIOSITY_BSP.map
 
 .debug_loc      0x00000000      0xe8d
  *(.debug_loc)

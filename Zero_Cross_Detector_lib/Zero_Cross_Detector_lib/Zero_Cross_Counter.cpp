@@ -87,7 +87,10 @@ Zero_Cross_Counter::~Zero_Cross_Counter()
 } //~Zero_Cross_Counter
 
 bool Zero_Cross_Counter::Init(void){
-//	ZCD_RISING_Init();	//	EVSYS.USERTCB0CAPT = EVSYS_USER_CHANNEL0_gc; /* Connect user to event channel 0 */	//TIMER_RISING_Init();
+//	ZCD_RISING_Init();
+	//	EVSYS.USERTCB0CAPT = EVSYS_USER_CHANNEL0_gc; /* Connect user to event channel 0 */
+	//TIMER_RISING_Init();
+
 	return true;
 }
 
@@ -95,7 +98,8 @@ void Zero_Cross_Counter::ZCD_RISING_Init(){
 		// Disable digital input buffer
 		PD1_set_isc(PORT_ISC_INPUT_DISABLE_gc);
 		// Disable pull-up resistor
-		PD1_set_pull_mode(PORT_PULL_OFF);
+		PD1_set_pull_mode(PORT_PULL_OFF);
+
 		ZCD0.CTRLA = 1 << ZCD_ENABLE_bp     /* Setting: enabled */
 		| 1 << ZCD_OUTEN_bp    /* Setting: enabled */
 		| 0 << ZCD_RUNSTDBY_bp /* Setting: disabled */
