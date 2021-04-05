@@ -13,13 +13,39 @@
 #include <hpl_gclk_base.h>
 #include <hpl_pm_base.h>
 
-struct spi_m_sync_descriptor SPI_ADF;
-struct spi_m_sync_descriptor SPI_LMX;
-struct spi_m_sync_descriptor SPI_ZCD;
+/*! The buffer size for USART */
+#define USART_0_BUFFER_SIZE 16
 
-struct usart_sync_descriptor TARGET_IO;
+struct spi_m_sync_descriptor  SPI_ADF;
+struct spi_m_sync_descriptor  SPI_LMX;
+struct spi_m_sync_descriptor  SPI_ZCD;
+struct usart_async_descriptor USART_0;
+struct timer_descriptor       TIMER_ZCD;
+struct timer_descriptor       TIMER_USB;
+
+static uint8_t USART_0_buffer[USART_0_BUFFER_SIZE];
 
 struct dac_sync_descriptor DAC_0;
+
+void EXTERNAL_IRQ_0_init(void)
+{
+	_gclk_enable_channel(EIC_GCLK_ID, CONF_GCLK_EIC_SRC);
+
+	// Set pin direction to input
+	gpio_set_pin_direction(PA14, GPIO_DIRECTION_IN);
+
+	gpio_set_pin_pull_mode(PA14,
+	                       // <y> Pull configuration
+	                       // <id> pad_pull_config
+	                       // <GPIO_PULL_OFF"> Off
+	                       // <GPIO_PULL_UP"> Pull-up
+	                       // <GPIO_PULL_DOWN"> Pull-down
+	                       GPIO_PULL_OFF);
+
+	gpio_set_pin_function(PA14, PINMUX_PA14A_EIC_EXTINT14);
+
+	ext_irq_init();
+}
 
 void SPI_ADF_PORT_init(void)
 {
@@ -183,7 +209,24 @@ void SPI_ZCD_init(void)
 	SPI_ZCD_PORT_init();
 }
 
-void TARGET_IO_PORT_init(void)
+/**
+ * \brief USART Clock initialization function
+ *
+ * Enables register interface and peripheral clock
+ */
+void USART_0_CLOCK_init()
+{
+
+	_pm_enable_bus_clock(PM_BUS_APBC, SERCOM3);
+	_gclk_enable_channel(SERCOM3_GCLK_ID_CORE, CONF_GCLK_SERCOM3_CORE_SRC);
+}
+
+/**
+ * \brief USART pinmux initialization function
+ *
+ * Set each required pin to USART functionality
+ */
+void USART_0_PORT_init()
 {
 
 	gpio_set_pin_function(PA22, PINMUX_PA22C_SERCOM3_PAD0);
@@ -191,22 +234,47 @@ void TARGET_IO_PORT_init(void)
 	gpio_set_pin_function(PA23, PINMUX_PA23C_SERCOM3_PAD1);
 }
 
-void TARGET_IO_CLOCK_init(void)
+/**
+ * \brief USART initialization function
+ *
+ * Enables USART peripheral, clocks and initializes USART driver
+ */
+void USART_0_init(void)
 {
-	_pm_enable_bus_clock(PM_BUS_APBC, SERCOM3);
-	_gclk_enable_channel(SERCOM3_GCLK_ID_CORE, CONF_GCLK_SERCOM3_CORE_SRC);
-}
-
-void TARGET_IO_init(void)
-{
-	TARGET_IO_CLOCK_init();
-	usart_sync_init(&TARGET_IO, SERCOM3, (void *)NULL);
-	TARGET_IO_PORT_init();
+	USART_0_CLOCK_init();
+	usart_async_init(&USART_0, SERCOM3, USART_0_buffer, USART_0_BUFFER_SIZE, (void *)NULL);
+	USART_0_PORT_init();
 }
 
 void delay_driver_init(void)
 {
 	delay_init(SysTick);
+}
+
+/**
+ * \brief Timer initialization function
+ *
+ * Enables Timer peripheral, clocks and initializes Timer driver
+ */
+static void TIMER_ZCD_init(void)
+{
+	_pm_enable_bus_clock(PM_BUS_APBC, TC3);
+	_gclk_enable_channel(TC3_GCLK_ID, CONF_GCLK_TC3_SRC);
+
+	timer_init(&TIMER_ZCD, TC3, _tc_get_timer());
+}
+
+/**
+ * \brief Timer initialization function
+ *
+ * Enables Timer peripheral, clocks and initializes Timer driver
+ */
+static void TIMER_USB_init(void)
+{
+	_pm_enable_bus_clock(PM_BUS_APBC, TC4);
+	_gclk_enable_channel(TC4_GCLK_ID, CONF_GCLK_TC4_SRC);
+
+	timer_init(&TIMER_USB, TC4, _tc_get_timer());
 }
 
 void DAC_0_PORT_init(void)
@@ -437,16 +505,19 @@ void system_init(void)
 
 	gpio_set_pin_function(LED0, GPIO_PIN_FUNCTION_OFF);
 
+	EXTERNAL_IRQ_0_init();
+
 	SPI_ADF_init();
 
 	SPI_LMX_init();
 
 	SPI_ZCD_init();
-
-	TARGET_IO_init();
+	USART_0_init();
 
 	delay_driver_init();
 
+	TIMER_ZCD_init();
+	TIMER_USB_init();
 	DAC_0_init();
 
 	USB_DEVICE_INSTANCE_init();

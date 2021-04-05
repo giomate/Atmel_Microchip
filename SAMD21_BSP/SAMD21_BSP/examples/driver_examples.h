@@ -12,9 +12,15 @@
 extern "C" {
 #endif
 
-void TARGET_IO_example(void);
+void EXTERNAL_IRQ_0_example(void);
+
+void USART_0_example(void);
 
 void delay_example(void);
+
+void TIMER_ZCD_example(void);
+
+void TIMER_USB_example(void);
 
 void DAC_0_example(void);
 

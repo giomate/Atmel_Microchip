@@ -21,23 +21,30 @@ extern "C" {
 #include <hal_io.h>
 #include <hal_sleep.h>
 
-#include <hal_spi_m_sync.h>
-#include <hal_spi_m_sync.h>
-#include <hal_spi_m_sync.h>
+#include <hal_ext_irq.h>
 
-#include <hal_usart_sync.h>
+#include <hal_spi_m_sync.h>
+#include <hal_spi_m_sync.h>
+#include <hal_spi_m_sync.h>
+#include <hal_usart_async.h>
 
 #include <hal_delay.h>
+#include <hal_timer.h>
+#include <hpl_tc_base.h>
+#include <hal_timer.h>
+#include <hpl_tc_base.h>
 
 #include <hal_dac_sync.h>
 
 #include "hal_usb_device.h"
 
-extern struct spi_m_sync_descriptor SPI_ADF;
-extern struct spi_m_sync_descriptor SPI_LMX;
-extern struct spi_m_sync_descriptor SPI_ZCD;
+extern struct spi_m_sync_descriptor  SPI_ADF;
+extern struct spi_m_sync_descriptor  SPI_LMX;
+extern struct spi_m_sync_descriptor  SPI_ZCD;
+extern struct usart_async_descriptor USART_0;
 
-extern struct usart_sync_descriptor TARGET_IO;
+extern struct timer_descriptor TIMER_ZCD;
+extern struct timer_descriptor TIMER_USB;
 
 extern struct dac_sync_descriptor DAC_0;
 
@@ -53,9 +60,9 @@ void SPI_ZCD_PORT_init(void);
 void SPI_ZCD_CLOCK_init(void);
 void SPI_ZCD_init(void);
 
-void TARGET_IO_PORT_init(void);
-void TARGET_IO_CLOCK_init(void);
-void TARGET_IO_init(void);
+void USART_0_PORT_init(void);
+void USART_0_CLOCK_init(void);
+void USART_0_init(void);
 
 void delay_driver_init(void);
 
