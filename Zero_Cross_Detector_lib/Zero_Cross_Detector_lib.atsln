@@ -24,8 +24,8 @@ Global
 		{90DFE693-45ED-4445-B270-1F7B78EDDC65}.Debug|AVR.Build.0 = Debug|AVR
 		{90DFE693-45ED-4445-B270-1F7B78EDDC65}.Release|AVR.ActiveCfg = Release|AVR
 		{90DFE693-45ED-4445-B270-1F7B78EDDC65}.Release|AVR.Build.0 = Release|AVR
-		{90DFE693-45ED-4445-B270-1F7B78EDDC65}.test_app|AVR.ActiveCfg = test_app|AVR
-		{90DFE693-45ED-4445-B270-1F7B78EDDC65}.test_app|AVR.Build.0 = test_app|AVR
+		{90DFE693-45ED-4445-B270-1F7B78EDDC65}.test_app|AVR.ActiveCfg = Debug|AVR
+		{90DFE693-45ED-4445-B270-1F7B78EDDC65}.test_app|AVR.Build.0 = Debug|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -28,7 +28,7 @@ private:
 public:
 	Zero_Cross_Counter();
 	~Zero_Cross_Counter();
-	bool Init(){return true;}
+	bool Init();
 	void CaptureCounterC(void);
 	void CaptureCounterB_Rising(void);
 	void CaptureCounterB_Falling(void);

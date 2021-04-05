@@ -9,6 +9,7 @@
 #include "Zero_Cross_Counter.h"
 #include <driver_init.h>
 #include <compiler.h>
+#include <util/delay.h>
 Zero_Cross_Counter *ptr_zero_cross_handler;
 static uint16_t capture_value_rising;
 static uint16_t capture_value_falling;
@@ -80,6 +81,12 @@ Zero_Cross_Counter::Zero_Cross_Counter()
 Zero_Cross_Counter::~Zero_Cross_Counter()
 {
 } //~Zero_Cross_Counter
+
+bool Zero_Cross_Counter::Init(){
+	_delay_ms(100);
+	return true;
+}
+
 
 void Zero_Cross_Counter::CaptureCounterC(void){
 	if (toogle_bit)

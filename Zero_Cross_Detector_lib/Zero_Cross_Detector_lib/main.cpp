@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <atmel_start.h>
-#include <usart_basic_example.h>
+
 #include <usart_basic.h>
 #include <atomic.h>
 
@@ -50,7 +50,7 @@ int main(void)
 	/* Initializes MCU, drivers and middleware */
 	atmel_start_init();
 	RTC_enable();
-	ENABLE_INTERRUPTS();
+	//ENABLE_INTERRUPTS();
 	counter.Init();
 	asm("nop");
 	printf("hello\n\r");

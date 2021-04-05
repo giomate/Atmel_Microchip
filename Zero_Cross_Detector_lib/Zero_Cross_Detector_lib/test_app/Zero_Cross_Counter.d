@@ -38,7 +38,10 @@ Zero_Cross_Counter.d Zero_Cross_Counter.o: .././Zero_Cross_Counter.cpp \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/tcb.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/tcd.h \
  ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/bod.h \
- ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/atmel_start_pins.h
+ ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/atmel_start_pins.h \
+ ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/driver_init.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h
 
 .././Zero_Cross_Counter.h:
 
@@ -119,3 +122,9 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/bod.h:
 
 ../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/atmel_start_pins.h:
+
+../../../AVR_CURIOSITY_BSP/AVR_CURIOSITY_BSP/include/driver_init.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:

@@ -1,7 +1,7 @@
 Archive member included to satisfy reference by file (symbol)
 
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
-                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o (exit)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
                               examples/src/spi_basic_example.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_clear_bss.o)
@@ -30,8 +30,8 @@ __iob               0x6               c:/program files (x86)/atmel/studio/7.0/to
 
 Discarded input sections
 
- .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
- .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
  .text          0x00000000        0x0 atmel_start.o
  .data          0x00000000        0x0 atmel_start.o
  .bss           0x00000000        0x0 atmel_start.o
@@ -56,7 +56,7 @@ Discarded input sections
                 0x00000000       0x30 examples/src/spi_basic_example.o
  .debug_ranges  0x00000000       0x20 examples/src/spi_basic_example.o
  .debug_line    0x00000000      0x14c examples/src/spi_basic_example.o
- .debug_str     0x00000000      0x279 examples/src/spi_basic_example.o
+ .debug_str     0x00000000      0x26a examples/src/spi_basic_example.o
  .comment       0x00000000       0x31 examples/src/spi_basic_example.o
  .debug_frame   0x00000000       0x44 examples/src/spi_basic_example.o
  .text          0x00000000        0x0 examples/src/usart_basic_example.o
@@ -74,7 +74,7 @@ Discarded input sections
                 0x00000000       0x20 examples/src/usart_basic_example.o
  .debug_ranges  0x00000000       0x10 examples/src/usart_basic_example.o
  .debug_line    0x00000000      0x13e examples/src/usart_basic_example.o
- .debug_str     0x00000000      0x1ff examples/src/usart_basic_example.o
+ .debug_str     0x00000000      0x1f0 examples/src/usart_basic_example.o
  .comment       0x00000000       0x31 examples/src/usart_basic_example.o
  .debug_frame   0x00000000       0x48 examples/src/usart_basic_example.o
  .text          0x00000000        0x0 main.o
@@ -334,7 +334,7 @@ Linker script and memory map
 
 Address of section .data set to 0x804000
                 0x00008000                __RODATA_PM_OFFSET__ = 0x8000
-LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
 LOAD atmel_start.o
 LOAD driver_isr.o
 LOAD examples/src/spi_basic_example.o
@@ -361,7 +361,7 @@ START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a
-LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4\libavr128db48.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4\libavr128db48.a
 END GROUP
                 [0x00000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
                 [0x00804000]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x802000
@@ -465,7 +465,7 @@ END GROUP
 
 .text           0x00000000      0x660
  *(.vectors)
- .vectors       0x00000000       0xf4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .vectors       0x00000000       0xf4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
@@ -493,13 +493,13 @@ END GROUP
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000000f4        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .init0         0x000000f4        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
                 0x000000f4                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000000f4        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .init2         0x000000f4        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
  *(.init2)
  *(.init3)
  *(.init3)
@@ -518,10 +518,10 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x0000012a        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .init9         0x0000012a        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
  *(.init9)
  *(.text)
- .text          0x00000132        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .text          0x00000132        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
                 0x00000132                __vector_38
                 0x00000132                __vector_22
                 0x00000132                __vector_1
@@ -822,7 +822,7 @@ END GROUP
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
  .note.gnu.avr.deviceinfo
-                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
 
 .note.gnu.build-id
  *(.note.gnu.build-id)
@@ -879,9 +879,9 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x843a
+.debug_info     0x00000000     0x842b
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x2f42 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_info    0x00000000     0x2f42 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
  .debug_info    0x00002f42       0x9a atmel_start.o
  .debug_info    0x00002fdc      0x6ba driver_isr.o
  .debug_info    0x00003696      0x3e1 main.o
@@ -891,18 +891,18 @@ END GROUP
  .debug_info    0x0000411b     0x157f src/driver_init.o
  .debug_info    0x0000569a      0x8b0 src/evsys.o
  .debug_info    0x00005f4a      0xa33 src/opamp_basic.o
- .debug_info    0x0000697d       0xb3 src/protected_io.o
- .debug_info    0x00006a30      0x389 src/rtc.o
- .debug_info    0x00006db9      0x136 src/slpctrl.o
- .debug_info    0x00006eef      0x592 src/spi_basic.o
- .debug_info    0x00007481      0x2ae src/tcb.o
- .debug_info    0x0000772f      0x6ff src/tcd.o
- .debug_info    0x00007e2e      0x492 src/usart_basic.o
- .debug_info    0x000082c0      0x17a src/zcd.o
+ .debug_info    0x0000697d       0xa4 src/protected_io.o
+ .debug_info    0x00006a21      0x389 src/rtc.o
+ .debug_info    0x00006daa      0x136 src/slpctrl.o
+ .debug_info    0x00006ee0      0x592 src/spi_basic.o
+ .debug_info    0x00007472      0x2ae src/tcb.o
+ .debug_info    0x00007720      0x6ff src/tcd.o
+ .debug_info    0x00007e1f      0x492 src/usart_basic.o
+ .debug_info    0x000082b1      0x17a src/zcd.o
 
 .debug_abbrev   0x00000000     0x3df9
  *(.debug_abbrev)
- .debug_abbrev  0x00000000     0x2cc2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_abbrev  0x00000000     0x2cc2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
  .debug_abbrev  0x00002cc2       0x63 atmel_start.o
  .debug_abbrev  0x00002d25       0xd9 driver_isr.o
  .debug_abbrev  0x00002dfe      0x18a main.o
@@ -923,7 +923,7 @@ END GROUP
 
 .debug_line     0x00000000     0x1f4b
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x205 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_line    0x00000000      0x205 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
  .debug_line    0x00000205       0x60 atmel_start.o
  .debug_line    0x00000265      0x182 driver_isr.o
  .debug_line    0x000003e7      0x192 main.o
@@ -961,41 +961,41 @@ END GROUP
  .debug_frame   0x000006b0       0xd4 src/usart_basic.o
  .debug_frame   0x00000784       0x34 src/zcd.o
 
-.debug_str      0x00000000     0x555d
+.debug_str      0x00000000     0x554e
  *(.debug_str)
- .debug_str     0x00000000     0x14f0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/AVR-Dx_DFP/1.6.76/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
- .debug_str     0x000014f0      0x193 atmel_start.o
-                                0x1c7 (size before relaxing)
- .debug_str     0x00001683      0x231 driver_isr.o
-                                0x3fa (size before relaxing)
- .debug_str     0x000018b4       0xc2 main.o
-                                0x2f4 (size before relaxing)
- .debug_str     0x00001976       0x7e src/bod.o
-                                0x26a (size before relaxing)
- .debug_str     0x000019f4      0x352 src/clkctrl.o
-                                0x55d (size before relaxing)
- .debug_str     0x00001d46       0x1c src/cpuint.o
-                                0x1ba (size before relaxing)
- .debug_str     0x00001d62      0x6a8 src/driver_init.o
-                                0x8d8 (size before relaxing)
- .debug_str     0x0000240a     0x13f0 src/evsys.o
-                               0x15ed (size before relaxing)
- .debug_str     0x000037fa     0x1250 src/opamp_basic.o
-                               0x1465 (size before relaxing)
- .debug_str     0x00004a4a      0x201 src/rtc.o
-                                0x491 (size before relaxing)
- .debug_str     0x00004c4b       0xb9 src/slpctrl.o
-                                0x27e (size before relaxing)
- .debug_str     0x00004d04      0x30a src/spi_basic.o
-                                0x514 (size before relaxing)
- .debug_str     0x0000500e      0x130 src/tcb.o
-                                0x397 (size before relaxing)
- .debug_str     0x0000513e      0x1d7 src/tcd.o
-                                0x5ec (size before relaxing)
- .debug_str     0x00005315      0x1d5 src/usart_basic.o
-                                0x3ff (size before relaxing)
- .debug_str     0x000054ea       0x73 src/zcd.o
-                                0x282 (size before relaxing)
+ .debug_str     0x00000000     0x14f0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/AVR-Dx_DFP/1.7.85/gcc/dev/avr128db48/avrxmega4/crtavr128db48.o
+ .debug_str     0x000014f0      0x184 atmel_start.o
+                                0x1b8 (size before relaxing)
+ .debug_str     0x00001674      0x231 driver_isr.o
+                                0x3eb (size before relaxing)
+ .debug_str     0x000018a5       0xc2 main.o
+                                0x2e5 (size before relaxing)
+ .debug_str     0x00001967       0x7e src/bod.o
+                                0x25b (size before relaxing)
+ .debug_str     0x000019e5      0x352 src/clkctrl.o
+                                0x54e (size before relaxing)
+ .debug_str     0x00001d37       0x1c src/cpuint.o
+                                0x1ab (size before relaxing)
+ .debug_str     0x00001d53      0x6a8 src/driver_init.o
+                                0x8c9 (size before relaxing)
+ .debug_str     0x000023fb     0x13f0 src/evsys.o
+                               0x15de (size before relaxing)
+ .debug_str     0x000037eb     0x1250 src/opamp_basic.o
+                               0x1456 (size before relaxing)
+ .debug_str     0x00004a3b      0x201 src/rtc.o
+                                0x482 (size before relaxing)
+ .debug_str     0x00004c3c       0xb9 src/slpctrl.o
+                                0x26f (size before relaxing)
+ .debug_str     0x00004cf5      0x30a src/spi_basic.o
+                                0x505 (size before relaxing)
+ .debug_str     0x00004fff      0x130 src/tcb.o
+                                0x388 (size before relaxing)
+ .debug_str     0x0000512f      0x1d7 src/tcd.o
+                                0x5dd (size before relaxing)
+ .debug_str     0x00005306      0x1d5 src/usart_basic.o
+                                0x3f0 (size before relaxing)
+ .debug_str     0x000054db       0x73 src/zcd.o
+                                0x273 (size before relaxing)
 
 .debug_loc      0x00000000      0xe33
  *(.debug_loc)
