@@ -78,9 +78,9 @@ int8_t TIMER_RISING_init()
 int8_t TIMER_FALLING_init()
 {
 
-	 TCB1.CCMP = 0xffff; /* Compare or Capture: 0x0 */
+	// TCB1.CCMP = 0x0; /* Compare or Capture: 0x0 */
 
-	 TCB1.CNT = 0xffff; /* Count: 0x0 */
+	// TCB1.CNT = 0x0; /* Count: 0x0 */
 
 	TCB1.CTRLB = 1 << TCB_ASYNC_bp      /* Asynchronous Enable: enabled */
 	             | 0 << TCB_CCMPEN_bp   /* Pin Output Enable: disabled */

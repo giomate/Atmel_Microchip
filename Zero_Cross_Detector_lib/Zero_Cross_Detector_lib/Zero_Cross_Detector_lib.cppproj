@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
-    <ProjectGuid>{e8b348a6-51e7-4a57-90bd-113de4d666d0}</ProjectGuid>
+    <ProjectGuid>{dce6c7e3-ee26-4d79-826b-08594b9ad897}</ProjectGuid>
     <avrdevice>AVR128DB48</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -247,6 +247,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPI_SLAVE_CLASS.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="SPI_SLAVE_CLASS.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Zero_Cross_Counter.cpp">

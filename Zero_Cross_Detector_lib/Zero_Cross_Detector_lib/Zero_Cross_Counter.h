@@ -18,6 +18,9 @@ public:
 	volatile uint16_t capture_timer_fall;
 	volatile 	uint16_t capture_timer_rise;
 	
+	 uint8_t	 *last_frequency;
+	 uint32_t	frequency_out;
+	
 
 protected:
 private:
@@ -32,6 +35,7 @@ public:
 	void CaptureCounterC(void);
 	void CaptureCounterB_Rising(void);
 	void CaptureCounterB_Falling(void);
+	void Set_Last_Frequency(uint32_t lf);
 protected:
 private:
 	Zero_Cross_Counter( const Zero_Cross_Counter &c );
@@ -39,5 +43,8 @@ private:
 	void ZCD_RISING_Init(void);
 	uint8_t TIMER_RISING_Init();
 }; //Zero_Cross_Counter
+
+static Zero_Cross_Counter tako;
+
 
 #endif //__ZERO_CROSS_COUNTER_H__

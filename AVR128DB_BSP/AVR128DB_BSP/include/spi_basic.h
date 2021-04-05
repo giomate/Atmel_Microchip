@@ -58,33 +58,51 @@ typedef enum spi_transfer_status {
 	SPI_DONE  ///< SPI hardware has been opened, transfer complete.
 } spi_transfer_status_t;
 
-void SPI_ADF_init(void);
+void SPI_REFERENCE_init(void);
 
-void SPI_ADF_enable();
+void SPI_REFERENCE_enable();
 
-void SPI_ADF_disable();
+void SPI_REFERENCE_disable();
 
-uint8_t SPI_ADF_exchange_byte(uint8_t data);
+uint8_t SPI_REFERENCE_exchange_byte(uint8_t data);
 
-void SPI_ADF_exchange_block(void *block, uint8_t size);
+void SPI_REFERENCE_exchange_block(void *block, uint8_t size);
 
-void SPI_ADF_write_block(void *block, uint8_t size);
+void SPI_REFERENCE_write_block(void *block, uint8_t size);
 
-void SPI_ADF_read_block(void *block, uint8_t size);
+void SPI_REFERENCE_read_block(void *block, uint8_t size);
 
-void SPI_LMX_init(void);
+bool SPI_REFERENCE_selected(void);
 
-void SPI_LMX_enable();
+uint8_t SPI_REFERENCE_get_rx_data(void);
 
-void SPI_LMX_disable();
+void SPI_REFERENCE_write_tx_data(uint8_t data);
 
-uint8_t SPI_LMX_exchange_byte(uint8_t data);
+void SPI_REFERENCE_wait_dataready(void);
 
-void SPI_LMX_exchange_block(void *block, uint8_t size);
+void SPI_ZCD_init(void);
 
-void SPI_LMX_write_block(void *block, uint8_t size);
+void SPI_ZCD_enable();
 
-void SPI_LMX_read_block(void *block, uint8_t size);
+void SPI_ZCD_disable();
+
+uint8_t SPI_ZCD_exchange_byte(uint8_t data);
+
+void SPI_ZCD_exchange_block(void *block, uint8_t size);
+
+void SPI_ZCD_write_block(void *block, uint8_t size);
+
+void SPI_ZCD_read_block(void *block, uint8_t size);
+
+void SPI_ZCD_register_callback(spi_transfer_done_cb_t f);
+
+bool SPI_ZCD_status_free(void);
+
+bool SPI_ZCD_status_idle(void);
+
+bool SPI_ZCD_status_busy(void);
+
+bool SPI_ZCD_status_done(void);
 
 #ifdef __cplusplus
 }

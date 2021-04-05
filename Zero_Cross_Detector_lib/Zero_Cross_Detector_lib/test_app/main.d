@@ -26,6 +26,8 @@ main.d main.o: .././main.cpp \
  ../../../AVR128DB_BSP/AVR128DB_BSP/Config/clock_config.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/port.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h \
+ ../../../AVR128DB_BSP/AVR128DB_BSP/include/opamp_basic.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/clkctrl.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/usart_basic.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/evsys.h \
@@ -43,8 +45,7 @@ main.d main.o: .././main.cpp \
  ../../../AVR128DB_BSP/AVR128DB_BSP/utils/atomic.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
- .././Zero_Cross_Counter.h
+ .././Zero_Cross_Counter.h .././SPI_SLAVE_CLASS.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
 
@@ -100,6 +101,10 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h:
 
+../../../AVR128DB_BSP/AVR128DB_BSP/include/opamp_basic.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
+
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/clkctrl.h:
 
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/usart_basic.h:
@@ -134,6 +139,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
 
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
-
 .././Zero_Cross_Counter.h:
+
+.././SPI_SLAVE_CLASS.h:

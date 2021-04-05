@@ -131,13 +131,13 @@ int8_t EVENT_SYSTEM_0_init()
 
 	// EVSYS.USERTCB2COUNT = EVSYS_USER_OFF_gc; /* Off */
 
-	//EVSYS.USERTCB3CAPT = EVSYS_USER_CHANNEL1_gc; /* Connect user to event channel 1 */
+	EVSYS.USERTCB3CAPT = EVSYS_USER_CHANNEL1_gc; /* Connect user to event channel 1 */
 
 	// EVSYS.USERTCB3COUNT = EVSYS_USER_OFF_gc; /* Off */
 
 	EVSYS.USERTCD0INPUTA = EVSYS_USER_CHANNEL0_gc; /* Connect user to event channel 0 */
 
-	//EVSYS.USERTCD0INPUTB = EVSYS_USER_CHANNEL1_gc; /* Connect user to event channel 1 */
+	EVSYS.USERTCD0INPUTB = EVSYS_USER_CHANNEL1_gc; /* Connect user to event channel 1 */
 
 	// EVSYS.USEROPAMP0ENABLE = EVSYS_USER_OFF_gc; /* Off */
 

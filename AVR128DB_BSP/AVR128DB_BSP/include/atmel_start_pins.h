@@ -290,20 +290,20 @@ static inline bool PA6_get_level()
 }
 
 /**
- * \brief Set CS_ADF pull mode
+ * \brief Set PA7 pull mode
  *
  * Configure pin to pull up, down or disable pull mode, supported pull
  * modes are defined by device used
  *
  * \param[in] pull_mode Pin pull mode
  */
-static inline void CS_ADF_set_pull_mode(const enum port_pull_mode pull_mode)
+static inline void PA7_set_pull_mode(const enum port_pull_mode pull_mode)
 {
 	PORTA_set_pin_pull_mode(7, pull_mode);
 }
 
 /**
- * \brief Set CS_ADF data direction
+ * \brief Set PA7 data direction
  *
  * Select if the pin data direction is input, output or disabled.
  * If disabled state is not possible, this function throws an assert.
@@ -313,15 +313,15 @@ static inline void CS_ADF_set_pull_mode(const enum port_pull_mode pull_mode)
  *                      PORT_DIR_OFF = Disables the pin
  *                      (low power state)
  */
-static inline void CS_ADF_set_dir(const enum port_dir dir)
+static inline void PA7_set_dir(const enum port_dir dir)
 {
 	PORTA_set_pin_dir(7, dir);
 }
 
 /**
- * \brief Set CS_ADF input/sense configuration
+ * \brief Set PA7 input/sense configuration
  *
- * Enable/disable CS_ADF digital input buffer and pin change interrupt,
+ * Enable/disable PA7 digital input buffer and pin change interrupt,
  * select pin interrupt edge/level sensing mode
  *
  * \param[in] isc PORT_ISC_INTDISABLE_gc    = Iterrupt disabled but input buffer enabled
@@ -331,53 +331,53 @@ static inline void CS_ADF_set_dir(const enum port_dir dir)
  *                PORT_ISC_INPUT_DISABLE_gc = Digital Input Buffer disabled
  *                PORT_ISC_LEVEL_gc         = Sense low Level
  */
-static inline void CS_ADF_set_isc(const PORT_ISC_t isc)
+static inline void PA7_set_isc(const PORT_ISC_t isc)
 {
 	PORTA_pin_set_isc(7, isc);
 }
 
 /**
- * \brief Set CS_ADF inverted mode
+ * \brief Set PA7 inverted mode
  *
  * Enable or disable inverted I/O on a pin
  *
- * \param[in] inverted true  = I/O on CS_ADF is inverted
- *                     false = I/O on CS_ADF is not inverted
+ * \param[in] inverted true  = I/O on PA7 is inverted
+ *                     false = I/O on PA7 is not inverted
  */
-static inline void CS_ADF_set_inverted(const bool inverted)
+static inline void PA7_set_inverted(const bool inverted)
 {
 	PORTA_pin_set_inverted(7, inverted);
 }
 
 /**
- * \brief Set CS_ADF level
+ * \brief Set PA7 level
  *
  * Sets output level on a pin
  *
  * \param[in] level true  = Pin level set to "high" state
  *                  false = Pin level set to "low" state
  */
-static inline void CS_ADF_set_level(const bool level)
+static inline void PA7_set_level(const bool level)
 {
 	PORTA_set_pin_level(7, level);
 }
 
 /**
- * \brief Toggle output level on CS_ADF
+ * \brief Toggle output level on PA7
  *
  * Toggle the pin level
  */
-static inline void CS_ADF_toggle_level()
+static inline void PA7_toggle_level()
 {
 	PORTA_toggle_pin_level(7);
 }
 
 /**
- * \brief Get level on CS_ADF
+ * \brief Get level on PA7
  *
  * Reads the level on a pin
  */
-static inline bool CS_ADF_get_level()
+static inline bool PA7_get_level()
 {
 	return PORTA_get_pin_level(7);
 }
@@ -941,20 +941,20 @@ static inline bool PC2_get_level()
 }
 
 /**
- * \brief Set CS_LMX pull mode
+ * \brief Set PC3 pull mode
  *
  * Configure pin to pull up, down or disable pull mode, supported pull
  * modes are defined by device used
  *
  * \param[in] pull_mode Pin pull mode
  */
-static inline void CS_LMX_set_pull_mode(const enum port_pull_mode pull_mode)
+static inline void PC3_set_pull_mode(const enum port_pull_mode pull_mode)
 {
 	PORTC_set_pin_pull_mode(3, pull_mode);
 }
 
 /**
- * \brief Set CS_LMX data direction
+ * \brief Set PC3 data direction
  *
  * Select if the pin data direction is input, output or disabled.
  * If disabled state is not possible, this function throws an assert.
@@ -964,15 +964,15 @@ static inline void CS_LMX_set_pull_mode(const enum port_pull_mode pull_mode)
  *                      PORT_DIR_OFF = Disables the pin
  *                      (low power state)
  */
-static inline void CS_LMX_set_dir(const enum port_dir dir)
+static inline void PC3_set_dir(const enum port_dir dir)
 {
 	PORTC_set_pin_dir(3, dir);
 }
 
 /**
- * \brief Set CS_LMX input/sense configuration
+ * \brief Set PC3 input/sense configuration
  *
- * Enable/disable CS_LMX digital input buffer and pin change interrupt,
+ * Enable/disable PC3 digital input buffer and pin change interrupt,
  * select pin interrupt edge/level sensing mode
  *
  * \param[in] isc PORT_ISC_INTDISABLE_gc    = Iterrupt disabled but input buffer enabled
@@ -982,53 +982,53 @@ static inline void CS_LMX_set_dir(const enum port_dir dir)
  *                PORT_ISC_INPUT_DISABLE_gc = Digital Input Buffer disabled
  *                PORT_ISC_LEVEL_gc         = Sense low Level
  */
-static inline void CS_LMX_set_isc(const PORT_ISC_t isc)
+static inline void PC3_set_isc(const PORT_ISC_t isc)
 {
 	PORTC_pin_set_isc(3, isc);
 }
 
 /**
- * \brief Set CS_LMX inverted mode
+ * \brief Set PC3 inverted mode
  *
  * Enable or disable inverted I/O on a pin
  *
- * \param[in] inverted true  = I/O on CS_LMX is inverted
- *                     false = I/O on CS_LMX is not inverted
+ * \param[in] inverted true  = I/O on PC3 is inverted
+ *                     false = I/O on PC3 is not inverted
  */
-static inline void CS_LMX_set_inverted(const bool inverted)
+static inline void PC3_set_inverted(const bool inverted)
 {
 	PORTC_pin_set_inverted(3, inverted);
 }
 
 /**
- * \brief Set CS_LMX level
+ * \brief Set PC3 level
  *
  * Sets output level on a pin
  *
  * \param[in] level true  = Pin level set to "high" state
  *                  false = Pin level set to "low" state
  */
-static inline void CS_LMX_set_level(const bool level)
+static inline void PC3_set_level(const bool level)
 {
 	PORTC_set_pin_level(3, level);
 }
 
 /**
- * \brief Toggle output level on CS_LMX
+ * \brief Toggle output level on PC3
  *
  * Toggle the pin level
  */
-static inline void CS_LMX_toggle_level()
+static inline void PC3_toggle_level()
 {
 	PORTC_toggle_pin_level(3);
 }
 
 /**
- * \brief Get level on CS_LMX
+ * \brief Get level on PC3
  *
  * Reads the level on a pin
  */
-static inline bool CS_LMX_get_level()
+static inline bool PC3_get_level()
 {
 	return PORTC_get_pin_level(3);
 }

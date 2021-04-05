@@ -18,8 +18,9 @@
 #include <usart_basic.h>
 
 #include "Zero_Cross_Counter.h"
+#include "SPI_SLAVE_CLASS.h"
 
-static Zero_Cross_Counter counter;
+
 
 
 void RTC_enable(void)
@@ -50,19 +51,21 @@ int main(void)
 	/* Initializes MCU, drivers and middleware */
 	atmel_start_init();
 	RTC_enable();
+	
+	tako.Init();
+	post.Init();
 	ENABLE_INTERRUPTS();
-	counter.Init();
-	asm("nop");
+	//asm("nop");
 	printf("hello\n\r");
 	/* Replace with your application code */
 	while (1) {
-		current_frequency_c=(uint32_t)(24000000/(counter.capture_timer_fall));
+		current_frequency_c=(uint32_t)(24000000/(tako.capture_timer_fall));
 		if (last_frequency_c!=current_frequency_c)
 		{
-			if (counter.capture_timer_fall>0)
+			if (tako.capture_timer_fall>0)
 			{
 				last_frequency_c=current_frequency_c;
-				
+					tako.Set_Last_Frequency(last_frequency_c);
 				printf("Counter C : %lu \n\r", current_frequency_c);
 			}
 			
@@ -71,13 +74,13 @@ int main(void)
 		{
 			
 		}
-		current_frequency_b=(uint32_t)(24000000/(counter.capture_timer_rise));
+		current_frequency_b=(uint32_t)(24000000/(tako.capture_timer_rise));
 		if (last_frequency_b!=current_frequency_b)
 		{
-			if (counter.capture_timer_rise>0)
+			if (tako.capture_timer_rise>0)
 			{
 				last_frequency_b=current_frequency_b;
-				
+				tako.Set_Last_Frequency(last_frequency_b);
 				printf("Counter B : %lu \n\r", current_frequency_b);
 			}
 			
@@ -85,8 +88,9 @@ int main(void)
 		else
 		{
 		}
+		//post.Check_Command();
 		
-		_delay_ms(100);
+		
 			
 	}
 }

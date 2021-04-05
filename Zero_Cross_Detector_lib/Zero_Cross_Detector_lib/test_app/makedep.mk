@@ -4,5 +4,7 @@
 
 main.cpp
 
+SPI_SLAVE_CLASS.cpp
+
 Zero_Cross_Counter.cpp
 

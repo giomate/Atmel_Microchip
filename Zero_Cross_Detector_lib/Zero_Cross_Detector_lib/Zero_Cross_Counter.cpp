@@ -9,6 +9,7 @@
 #include "Zero_Cross_Counter.h"
 #include <driver_init.h>
 #include <compiler.h>
+#include "string.h"
 
 
 Zero_Cross_Counter *ptr_zero_cross_handler;
@@ -16,6 +17,7 @@ static uint16_t capture_value_rising;
 static uint16_t capture_value_falling;
 static uint16_t capture_value_tc_a;
 static uint16_t capture_value_tc_b;
+ static uint8_t	 local_last_frequency[4];
 
 ISR(ZCD0_ZCD_vect)
 {
@@ -76,6 +78,7 @@ ISR(TCD0_TRIG_vect)
 Zero_Cross_Counter::Zero_Cross_Counter()
 {
 	ptr_zero_cross_handler=this;
+	last_frequency=local_last_frequency;
 } //Zero_Cross_Counter
 
 // default destructor
@@ -84,7 +87,7 @@ Zero_Cross_Counter::~Zero_Cross_Counter()
 } //~Zero_Cross_Counter
 
 bool Zero_Cross_Counter::Init(void){
-	ZCD_RISING_Init();		EVSYS.USERTCB0CAPT = EVSYS_USER_CHANNEL0_gc; /* Connect user to event channel 0 */	TIMER_RISING_Init();
+//	ZCD_RISING_Init();	//	EVSYS.USERTCB0CAPT = EVSYS_USER_CHANNEL0_gc; /* Connect user to event channel 0 */	//TIMER_RISING_Init();
 	return true;
 }
 
@@ -163,4 +166,16 @@ void Zero_Cross_Counter::CaptureCounterB_Rising(void){
 }
 void Zero_Cross_Counter::CaptureCounterB_Falling(void){
 	capture_timer_fall= capture_value_falling;
+}
+
+void Zero_Cross_Counter::Set_Last_Frequency(uint32_t lf){
+	uint32_t local_value;
+	frequency_out=lf;
+	for (int i = 0; i < 4; i++)
+	{
+		local_value=(lf>>((3-i)*8))&0xff;
+		last_frequency[i]=((uint8_t)local_value&0xff);
+	}
+	//memcpy((void*)last_frequency,(void*)&lf,4);
+	
 }

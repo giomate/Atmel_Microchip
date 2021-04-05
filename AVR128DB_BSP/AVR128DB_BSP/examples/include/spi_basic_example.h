@@ -28,8 +28,8 @@
 #ifndef SPI_BASIC_EXAMPLE_H
 #define SPI_BASIC_EXAMPLE_H
 
-uint8_t SPI_ADF_test_spi_basic(void);
+uint8_t SPI_REFERENCE_test_spi_basic(void);
 
-uint8_t SPI_LMX_test_spi_basic(void);
+uint8_t SPI_ZCD_test_spi_basic(void);
 
 #endif /* SPI_BASIC_EXAMPLE_H */

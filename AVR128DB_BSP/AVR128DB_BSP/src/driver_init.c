@@ -112,81 +112,99 @@ void ZCD_FALLING_initialization(void)
 }
 
 /* configure the pins and initialize the registers */
-void SPI_ADF_initialization(void)
+void SPI_REFERENCE_initialization(void)
 {
-
-	// Set pin direction to input
-	PA5_set_dir(PORT_DIR_IN);
-
-	PA5_set_pull_mode(
-	    // <y> Pull configuration
-	    // <id> pad_pull_config
-	    // <PORT_PULL_OFF"> Off
-	    // <PORT_PULL_UP"> Pull-up
-	    PORT_PULL_OFF);
 
 	// Set pin direction to output
 
-	PA4_set_level(
+	PA5_set_level(
 	    // <y> Initial level
 	    // <id> pad_initial_level
 	    // <false"> Low
 	    // <true"> High
 	    false);
 
-	PA4_set_dir(PORT_DIR_OUT);
+	PA5_set_dir(PORT_DIR_OUT);
 
-	// Set pin direction to output
+	// Set pin direction to input
+	PA4_set_dir(PORT_DIR_IN);
 
-	PA6_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    true);
+	PA4_set_pull_mode(
+	    // <y> Pull configuration
+	    // <id> pad_pull_config
+	    // <PORT_PULL_OFF"> Off
+	    // <PORT_PULL_UP"> Pull-up
+	    PORT_PULL_OFF);
 
-	PA6_set_dir(PORT_DIR_OUT);
+	// Set pin direction to input
+	PA6_set_dir(PORT_DIR_IN);
 
-	SPI_ADF_init();
+	PA6_set_pull_mode(
+	    // <y> Pull configuration
+	    // <id> pad_pull_config
+	    // <PORT_PULL_OFF"> Off
+	    // <PORT_PULL_UP"> Pull-up
+	    PORT_PULL_OFF);
+
+	// Set pin direction to input
+	PA7_set_dir(PORT_DIR_IN);
+
+	PA7_set_pull_mode(
+	    // <y> Pull configuration
+	    // <id> pad_pull_config
+	    // <PORT_PULL_OFF"> Off
+	    // <PORT_PULL_UP"> Pull-up
+	    PORT_PULL_OFF);
+
+	SPI_REFERENCE_init();
 }
 
 /* configure the pins and initialize the registers */
-void SPI_LMX_initialization(void)
+void SPI_ZCD_initialization(void)
 {
 
-	// Set pin direction to input
-	PC1_set_dir(PORT_DIR_IN);
+	// Set pin direction to output
 
-	PC1_set_pull_mode(
+	PC1_set_level(
+	    // <y> Initial level
+	    // <id> pad_initial_level
+	    // <false"> Low
+	    // <true"> High
+	    false);
+
+	PC1_set_dir(PORT_DIR_OUT);
+
+	// Set pin direction to input
+	PC0_set_dir(PORT_DIR_IN);
+
+	PC0_set_pull_mode(
 	    // <y> Pull configuration
 	    // <id> pad_pull_config
 	    // <PORT_PULL_OFF"> Off
 	    // <PORT_PULL_UP"> Pull-up
 	    PORT_PULL_OFF);
 
-	// Set pin direction to output
+	// Set pin direction to input
+	PC2_set_dir(PORT_DIR_IN);
 
-	PC0_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
+	PC2_set_pull_mode(
+	    // <y> Pull configuration
+	    // <id> pad_pull_config
+	    // <PORT_PULL_OFF"> Off
+	    // <PORT_PULL_UP"> Pull-up
+	    PORT_PULL_OFF);
 
-	PC0_set_dir(PORT_DIR_OUT);
+	// Set pin direction to input
+	PC3_set_dir(PORT_DIR_IN);
 
-	// Set pin direction to output
+	PC3_set_pull_mode(
+	    // <y> Pull configuration
+	    // <id> pad_pull_config
+	    // <PORT_PULL_OFF"> Off
+	    // <PORT_PULL_UP"> Pull-up
+	    PORT_PULL_OFF);
 
-	PC2_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
-
-	PC2_set_dir(PORT_DIR_OUT);
-
-	SPI_LMX_init();
+	SPI_ZCD_init();
 }
 
 void TIMER_RISING_initialization(void)
@@ -214,19 +232,6 @@ void system_init()
 {
 	mcu_init();
 
-	/* PORT setting on PA7 */
-
-	// Set pin direction to output
-
-	CS_ADF_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    false);
-
-	CS_ADF_set_dir(PORT_DIR_OUT);
-
 	/* PORT setting on PB3 */
 
 	// Set pin direction to output
@@ -240,19 +245,6 @@ void system_init()
 
 	LED0_set_dir(PORT_DIR_OUT);
 
-	/* PORT setting on PC3 */
-
-	// Set pin direction to output
-
-	CS_LMX_set_level(
-	    // <y> Initial level
-	    // <id> pad_initial_level
-	    // <false"> Low
-	    // <true"> High
-	    true);
-
-	CS_LMX_set_dir(PORT_DIR_OUT);
-
 	OPERATIONAL_AMPLIFIER_0_initialization();
 
 	CLKCTRL_init();
@@ -265,17 +257,17 @@ void system_init()
 
 	CPUINT_init();
 
-//	ZCD_RISING_initialization();
+	ZCD_RISING_initialization();
 
 	ZCD_FALLING_initialization();
 
-	SPI_ADF_initialization();
+	SPI_REFERENCE_initialization();
 
-	SPI_LMX_initialization();
+	SPI_ZCD_initialization();
 
 	RTC_0_init();
 
-//	TIMER_RISING_initialization();
+	TIMER_RISING_initialization();
 
 	TIMER_FALLING_initialization();
 
