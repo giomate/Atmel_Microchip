@@ -19,6 +19,7 @@ public:
 	uint8_t *              data;
 	uint8_t                size_message;
 	spi_transfer_type_t    type;
+	uint8_t			*frequency_array;
 	
 	
 protected:
@@ -45,6 +46,6 @@ private:
 
 }; //SPI_SLAVE_CLASS
 
-static SPI_SLAVE_CLASS post;
+extern SPI_SLAVE_CLASS *post;
 
 #endif //__SPI_SLAVE_CLASS_H__

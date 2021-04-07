@@ -1,16 +1,11 @@
-main.d main.o: .././main.cpp \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
- ../../../AVR128DB_BSP/AVR128DB_BSP/atmel_start.h \
- ../../../AVR128DB_BSP/AVR128DB_BSP/include/driver_init.h \
+FREQUENCY_ESTIMATOR.d FREQUENCY_ESTIMATOR.o: .././FREQUENCY_ESTIMATOR.cpp \
+ .././FREQUENCY_ESTIMATOR.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/utils/compiler.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h \
  C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include/avr/ioavr128db48.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\portpins.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\common.h \
@@ -20,9 +15,13 @@ main.d main.o: .././main.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\builtins.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/utils/interrupt_avr8.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
+ .././Zero_Cross_Counter.h \
+ ../../../AVR128DB_BSP/AVR128DB_BSP/atmel_start.h \
+ ../../../AVR128DB_BSP/AVR128DB_BSP/include/driver_init.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/Config/clock_config.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/port.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h \
@@ -41,36 +40,21 @@ main.d main.o: .././main.cpp \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/tcd.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/vref.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/bod.h \
- ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h \
- ../../../AVR128DB_BSP/AVR128DB_BSP/utils/atomic.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
- .././Zero_Cross_Counter.h .././FREQUENCY_ESTIMATOR.h \
- .././SPI_SLAVE_CLASS.h
+ ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h
 
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:
-
-../../../AVR128DB_BSP/AVR128DB_BSP/atmel_start.h:
-
-../../../AVR128DB_BSP/AVR128DB_BSP/include/driver_init.h:
+.././FREQUENCY_ESTIMATOR.h:
 
 ../../../AVR128DB_BSP/AVR128DB_BSP/utils/compiler.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h:
 
 C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include/avr/ioavr128db48.h:
 
@@ -90,11 +74,19 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h:
 
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h:
+
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h:
 
 ../../../AVR128DB_BSP/AVR128DB_BSP/utils/interrupt_avr8.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
+
+.././Zero_Cross_Counter.h:
+
+../../../AVR128DB_BSP/AVR128DB_BSP/atmel_start.h:
+
+../../../AVR128DB_BSP/AVR128DB_BSP/include/driver_init.h:
 
 ../../../AVR128DB_BSP/AVR128DB_BSP/Config/clock_config.h:
 
@@ -133,15 +125,3 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/bod.h:
 
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h:
-
-../../../AVR128DB_BSP/AVR128DB_BSP/utils/atomic.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
-
-.././Zero_Cross_Counter.h:
-
-.././FREQUENCY_ESTIMATOR.h:
-
-.././SPI_SLAVE_CLASS.h:
