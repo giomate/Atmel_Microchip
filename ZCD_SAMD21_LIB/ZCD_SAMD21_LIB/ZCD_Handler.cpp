@@ -7,7 +7,7 @@
 
 
 #include "ZCD_Handler.h"
-#include "stdio_start.h"
+#include "CDC_Class.h"
 
 static SPI_Syn_ZCD_Class local_spi;
 
@@ -33,7 +33,7 @@ uint32_t ZCD_Handler::Get_Tone(){
 	spi->SetCS(false);
 	spi->Write(&command,1);
 	spi->SetCS(true);
-	delay_ms(100);
+	delay_ms(10);
 	spi->SetCS(false);
 	spi->Read(read_buffer,4);
 	spi->SetCS(true);
@@ -41,15 +41,33 @@ uint32_t ZCD_Handler::Get_Tone(){
 	tone=0;
 	for ( int i = 0; i < 4; i++)
 	{
-		tone|=(uint32_t)(read_buffer[i]<<(8*(3-i)));
+		if (i==0)
+		{
+			if (read_buffer[i]&0xa0)
+			{
+				tone|=(uint32_t)(read_buffer[i]<<(8*(3-i)));
+				tone&=0x0fffffff;
+			} 
+			else
+			{
+				tone=24000000;
+				break;
+			}
+			
+		} 
+		else
+		{
+			tone|=(uint32_t)(read_buffer[i]<<(8*(3-i)));
+		}
+		
 	}
 	if (tone>0)
 	{
 	
-		if (tone<0xffffff)
+		if (tone<24000001)
 		{
 			gpio_toggle_pin_level(LED0);
-			printf("tone: %lu \r\n",tone);
+			
 		} 
 		else
 		{
@@ -60,5 +78,6 @@ uint32_t ZCD_Handler::Get_Tone(){
 	{
 		tone=last_tone;
 	}
+	usb<<"tone: "<<tone<<TAB_SPACE;
 	return tone;
 }

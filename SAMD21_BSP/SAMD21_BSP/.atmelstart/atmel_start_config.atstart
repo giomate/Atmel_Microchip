@@ -990,16 +990,16 @@ drivers:
       usb_arch_ep5_cache: Cached by 64 bytes buffer
       usb_arch_ep6_cache: Cached by 64 bytes buffer
       usb_arch_ep7_cache: Cached by 64 bytes buffer
-      usb_ep1_I_CACHE: No cache
-      usb_ep2_I_CACHE: No cache
-      usb_ep3_I_CACHE: No cache
+      usb_ep1_I_CACHE: Cached by 64 bytes buffer
+      usb_ep2_I_CACHE: Cached by 64 bytes buffer
+      usb_ep3_I_CACHE: Cached by 64 bytes buffer
       usb_ep4_I_CACHE: No cache
       usb_ep5_I_CACHE: No cache
       usb_ep6_I_CACHE: No cache
       usb_ep7_I_CACHE: No cache
-      usbd_arch_max_ep_n: 7 (EP 0x87 or 0x07)
+      usbd_arch_max_ep_n: 4 (EP 0x84 or 0x04)
       usbd_arch_speed: Full speed
-      usbd_num_ep_sp: 8 (EP0 + 7 endpoints)
+      usbd_num_ep_sp: 4 (EP0 + 3 endpoints)
     optional_signals: []
     variant:
       specification: default
@@ -1062,6 +1062,12 @@ pads:
     definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PA09
     mode: Digital output
     user_label: PA09
+    configuration: null
+  LTC_ENABLE:
+    name: PB10
+    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PB10
+    mode: Digital output
+    user_label: LTC_ENABLE
     configuration: null
   PA12:
     name: PA12
@@ -1142,19 +1148,6 @@ pads:
     definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PB30
     mode: Digital output
     user_label: LED0
-    configuration:
-      pad_initial_level: High
-  dummy_gpio:
-    name: PB00
-    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PB00
-    mode: Digital output
-    user_label: dummy_gpio
-    configuration: null
-  Dummy_Pin:
-    name: PB01
-    definition: Atmel:SAMD21_Drivers:0.0.1::SAMD21J18A-AU::pad::PB01
-    mode: Digital output
-    user_label: Dummy_Pin
     configuration:
       pad_initial_level: High
 toolchain_options: []

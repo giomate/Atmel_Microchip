@@ -46,6 +46,7 @@ enum LookaheadMode{
 
 #define NO_IGNORE_CHAR  '\x01' // a char not found in a valid ASCII numeric field
 #define  NEWLINE	"\r\n"
+#define  TAB_SPACE  "\t"
 
 class Stream : public Print
 {

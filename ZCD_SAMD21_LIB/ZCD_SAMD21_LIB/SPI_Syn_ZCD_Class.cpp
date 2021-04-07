@@ -8,14 +8,14 @@
 
 #include "SPI_Syn_ZCD_Class.h"
 
-SPI_Syn_ZCD_Class	*ptrSPISync;
+SPI_Syn_ZCD_Class	*ptrSPISyncZCD;
 
 
 
 // default constructor
 SPI_Syn_ZCD_Class::SPI_Syn_ZCD_Class()
 {
-		ptrSPISync=this;
+		ptrSPISyncZCD=this;
 //	SPI=SPI_1;
 } //SPI_Syn_Class
 

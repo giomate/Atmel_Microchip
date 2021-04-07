@@ -40,8 +40,7 @@
 #define PA24 GPIO(GPIO_PORTA, 24)
 #define PA25 GPIO(GPIO_PORTA, 25)
 #define PA30 GPIO(GPIO_PORTA, 30)
-#define dummy_gpio GPIO(GPIO_PORTB, 0)
-#define Dummy_Pin GPIO(GPIO_PORTB, 1)
+#define LTC_ENABLE GPIO(GPIO_PORTB, 10)
 #define LED0 GPIO(GPIO_PORTB, 30)
 
 #endif // ATMEL_START_PINS_H_INCLUDED
