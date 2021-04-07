@@ -463,9 +463,9 @@ void system_init(void)
 
 	gpio_set_pin_function(PA30, GPIO_PIN_FUNCTION_OFF);
 
-	// GPIO on PB00
+	// GPIO on PB10
 
-	gpio_set_pin_level(dummy_gpio,
+	gpio_set_pin_level(LTC_ENABLE,
 	                   // <y> Initial level
 	                   // <id> pad_initial_level
 	                   // <false"> Low
@@ -473,23 +473,9 @@ void system_init(void)
 	                   false);
 
 	// Set pin direction to output
-	gpio_set_pin_direction(dummy_gpio, GPIO_DIRECTION_OUT);
+	gpio_set_pin_direction(LTC_ENABLE, GPIO_DIRECTION_OUT);
 
-	gpio_set_pin_function(dummy_gpio, GPIO_PIN_FUNCTION_OFF);
-
-	// GPIO on PB01
-
-	gpio_set_pin_level(Dummy_Pin,
-	                   // <y> Initial level
-	                   // <id> pad_initial_level
-	                   // <false"> Low
-	                   // <true"> High
-	                   true);
-
-	// Set pin direction to output
-	gpio_set_pin_direction(Dummy_Pin, GPIO_DIRECTION_OUT);
-
-	gpio_set_pin_function(Dummy_Pin, GPIO_PIN_FUNCTION_OFF);
+	gpio_set_pin_function(LTC_ENABLE, GPIO_PIN_FUNCTION_OFF);
 
 	// GPIO on PB30
 

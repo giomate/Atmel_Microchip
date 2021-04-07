@@ -33,9 +33,11 @@ int main(void)
 	
 	usb.Init();
 	delay_ms(100);
-
+usb.println("why is not working");
 	while (1) {
 		usb_test();
+		
+		usb.println("why is not working");
 		
 	}
 }

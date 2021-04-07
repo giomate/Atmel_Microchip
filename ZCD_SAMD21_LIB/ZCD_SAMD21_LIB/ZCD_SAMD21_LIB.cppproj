@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
-    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <ProjectGuid>{1155d11c-c0a8-42ce-8f05-d6cb781c28b2}</ProjectGuid>
     <avrdevice>ATSAMD21J18A</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -107,91 +107,289 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <ArmGccCpp>
-  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
-  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
-  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
-  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
-  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
-  <armgcc.compiler.symbols.DefSymbols>
-    <ListValues>
-      <Value>DEBUG</Value>
-    </ListValues>
-  </armgcc.compiler.symbols.DefSymbols>
-  <armgcc.compiler.directories.IncludePaths>
-    <ListValues>
-      <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
-      <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
-    </ListValues>
-  </armgcc.compiler.directories.IncludePaths>
-  <armgcc.compiler.optimization.level>Optimize debugging experience (-Og)</armgcc.compiler.optimization.level>
-  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
-  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
-  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
-  <armgcccpp.compiler.symbols.DefSymbols>
-    <ListValues>
-      <Value>DEBUG</Value>
-    </ListValues>
-  </armgcccpp.compiler.symbols.DefSymbols>
-  <armgcccpp.compiler.directories.IncludePaths>
-    <ListValues>
-      <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
-      <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/Config</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/examples</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hal/include</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/core</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/dac</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/dmac</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/gclk</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/pm</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/port</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/sercom</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/sysctrl</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/systick</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/usb</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/hri</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/usb</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/class/cdc</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/class/cdc/device</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/device</Value>
-      <Value>../../../SAMD21_BSP/SAMD21_BSP/stdio_redirect</Value>
-    </ListValues>
-  </armgcccpp.compiler.directories.IncludePaths>
-  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
-  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
-  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
-  <armgcccpp.linker.general.AdditionalSpecs>Use syscall stubs (--specs=nosys.specs)</armgcccpp.linker.general.AdditionalSpecs>
-  <armgcccpp.linker.libraries.Libraries>
-    <ListValues>
-      <Value>libm</Value>
-    </ListValues>
-  </armgcccpp.linker.libraries.Libraries>
-  <armgcccpp.linker.libraries.LibrarySearchPaths>
-    <ListValues>
-      <Value>%24(ProjectDir)\Device_Startup</Value>
-    </ListValues>
-  </armgcccpp.linker.libraries.LibrarySearchPaths>
-  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
-  <armgcccpp.linker.memorysettings.ExternalRAM />
-  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21j18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
-  <armgcccpp.assembler.general.IncludePaths>
-    <ListValues>
-      <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
-      <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
-    </ListValues>
-  </armgcccpp.assembler.general.IncludePaths>
-  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
-  <armgcccpp.preprocessingassembler.general.IncludePaths>
-    <ListValues>
-      <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
-      <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
-    </ListValues>
-  </armgcccpp.preprocessingassembler.general.IncludePaths>
-  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
-</ArmGccCpp>
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize debugging experience (-Og)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+        <armgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcccpp.compiler.symbols.DefSymbols>
+        <armgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/Config</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/examples</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hal/include</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/core</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/dac</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/dmac</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/gclk</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/pm</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/port</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/sercom</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/sysctrl</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/systick</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/usb</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hri</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/class/cdc</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/class/cdc/device</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/device</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/stdio_redirect</Value>
+            <Value>../../../USB_SAMD21_HANDLER/USB_SAMD21_HANDLER</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/tc</Value>
+          </ListValues>
+        </armgcccpp.compiler.directories.IncludePaths>
+        <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+        <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+        <armgcccpp.linker.general.UseNewlibNano>True</armgcccpp.linker.general.UseNewlibNano>
+        <armgcccpp.linker.general.AdditionalSpecs>Use syscall stubs (--specs=nosys.specs)</armgcccpp.linker.general.AdditionalSpecs>
+        <armgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.Libraries>
+        <armgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>%24(ProjectDir)\Device_Startup</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.LibrarySearchPaths>
+        <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <armgcccpp.linker.memorysettings.ExternalRAM />
+        <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21j18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+        <armgcccpp.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+          </ListValues>
+        </armgcccpp.assembler.general.IncludePaths>
+        <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+        <armgcccpp.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+          </ListValues>
+        </armgcccpp.preprocessingassembler.general.IncludePaths>
+        <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+      </ArmGccCpp>
     </ToolchainSettings>
+    <OutputFileName>libZCD_SAMD21_LIB</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputType>StaticLibrary</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'test_app' ">
+    <ToolchainSettings>
+      <ArmGccCpp xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize debugging experience (-Og)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+        <armgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcccpp.compiler.symbols.DefSymbols>
+        <armgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/Config</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/examples</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hal/include</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/core</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/dac</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/dmac</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/gclk</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/pm</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/port</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/sercom</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/sysctrl</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/systick</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/usb</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hri</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/class/cdc</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/class/cdc/device</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/device</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/stdio_redirect</Value>
+            <Value>../../../USB_SAMD21_HANDLER/USB_SAMD21_HANDLER</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/tc</Value>
+          </ListValues>
+        </armgcccpp.compiler.directories.IncludePaths>
+        <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+        <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+        <armgcccpp.linker.general.UseNewlibNano>True</armgcccpp.linker.general.UseNewlibNano>
+        <armgcccpp.linker.general.AdditionalSpecs>Use syscall stubs (--specs=nosys.specs)</armgcccpp.linker.general.AdditionalSpecs>
+        <armgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.Libraries>
+        <armgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>%24(ProjectDir)\Device_Startup</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.LibrarySearchPaths>
+        <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <armgcccpp.linker.memorysettings.ExternalRAM />
+        <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21j18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+        <armgcccpp.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+          </ListValues>
+        </armgcccpp.assembler.general.IncludePaths>
+        <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+        <armgcccpp.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+          </ListValues>
+        </armgcccpp.preprocessingassembler.general.IncludePaths>
+        <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+      </ArmGccCpp>
+    </ToolchainSettings>
+    <OutputFileName>libZCD_SAMD21_LIB</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputType>Executable</OutputType>
+    <OutputPath>bin\test_app\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'library' ">
+    <ToolchainSettings>
+      <ArmGccCpp xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize debugging experience (-Og)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+        <armgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcccpp.compiler.symbols.DefSymbols>
+        <armgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/Config</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/examples</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hal/include</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/core</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/dac</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/dmac</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/gclk</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/pm</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/port</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/sercom</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/sysctrl</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/systick</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/usb</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hri</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/class/cdc</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/class/cdc/device</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/usb/device</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/stdio_redirect</Value>
+            <Value>../../../USB_SAMD21_HANDLER/USB_SAMD21_HANDLER</Value>
+            <Value>../../../SAMD21_BSP/SAMD21_BSP/hpl/tc</Value>
+          </ListValues>
+        </armgcccpp.compiler.directories.IncludePaths>
+        <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+        <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+        <armgcccpp.linker.general.UseNewlibNano>True</armgcccpp.linker.general.UseNewlibNano>
+        <armgcccpp.linker.general.AdditionalSpecs>Use syscall stubs (--specs=nosys.specs)</armgcccpp.linker.general.AdditionalSpecs>
+        <armgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.Libraries>
+        <armgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>%24(ProjectDir)\Device_Startup</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.LibrarySearchPaths>
+        <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <armgcccpp.linker.memorysettings.ExternalRAM />
+        <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsamd21j18a_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+        <armgcccpp.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+          </ListValues>
+        </armgcccpp.assembler.general.IncludePaths>
+        <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+        <armgcccpp.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\arm\cmsis\5.4.0\CMSIS\Core\Include\</Value>
+            <Value>%24(PackRepoDir)\atmel\SAMD21_DFP\1.3.395\samd21a\include</Value>
+          </ListValues>
+        </armgcccpp.preprocessingassembler.general.IncludePaths>
+        <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+      </ArmGccCpp>
+    </ToolchainSettings>
+    <OutputFileName>libZCD_SAMD21_LIB</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputType>StaticLibrary</OutputType>
+    <OutputPath>bin\library\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Device_Startup\startup_samd21.c">
@@ -230,7 +428,12 @@
   <ItemGroup>
     <ProjectReference Include="..\..\SAMD21_BSP\SAMD21_BSP\SAMD21_BSP.cproj">
       <Name>SAMD21_BSP</Name>
-      <Project>{1aa5eecb-13d2-41ee-ae59-f10450a64715}</Project>
+      <Project>{5e9e2e11-ca92-4e2a-8f72-22c5dc25f231}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\USB_SAMD21_HANDLER\USB_SAMD21_HANDLER\USB_SAMD21_HANDLER.cppproj">
+      <Name>USB_SAMD21_HANDLER</Name>
+      <Project>{6c88c473-5b25-4157-9bbe-3bb2df95a8ca}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

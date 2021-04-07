@@ -10,7 +10,7 @@
 #include "driver_init.h"
 #include "utils.h"
 #include "ZCD_Handler.h"
-
+#include "CDC_Class.h"
 static ZCD_Handler zcd;
 
 
@@ -20,6 +20,9 @@ int main(void)
 	uint32_t local_tone;
 	/* Initializes MCU, drivers and middleware */
 	atmel_start_init();
+		usb.Init();
+		delay_ms(100);
+		usb.println("initiating ZCD Sensor");
 	dac_sync_enable_channel(&DAC_0, 0);
 	zcd.Init();
 	bool dir=true;
@@ -36,7 +39,7 @@ int main(void)
 
 			dac_value=dir?0:0x3ff;
 			dac_sync_write(&DAC_0, 0, &dac_value, 1);
-			//	delay_ms(100);
+		
 			dir=!dir;
 			local_tone=zcd.Get_Tone();
 	

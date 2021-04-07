@@ -119,15 +119,28 @@ SPI_Syn_Class.d SPI_Syn_Class.o: .././SPI_Syn_Class.cpp \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_init.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_io.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_sleep.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_ext_irq.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_ext_irq.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_spi_m_sync.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_spi_m_sync.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_spi.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include/utils.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_spi_sync.h \
- ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_usart_sync.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_usart_async.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_io.h \
- ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_usart_sync.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_usart_async.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_usart.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_irq.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include/utils_ringbuffer.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include/compiler.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include/utils_assert.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_timer.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include/utils_list.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_timer.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hpl/tc/hpl_tc_base.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_pwm.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_dac_sync.h \
+ ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_dac_sync.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_usb_device.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_usb_device.h \
  ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_usb.h \
@@ -375,6 +388,10 @@ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a
 
 ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_sleep.h:
 
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_ext_irq.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_ext_irq.h:
+
 ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_spi_m_sync.h:
 
 ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_spi_m_sync.h:
@@ -385,13 +402,35 @@ C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\SAMD21_DFP\1.3.395\samd21a
 
 ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_spi_sync.h:
 
-../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_usart_sync.h:
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_usart_async.h:
 
 ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_io.h:
 
-../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_usart_sync.h:
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_usart_async.h:
 
 ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_usart.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_irq.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include/utils_ringbuffer.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include/compiler.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include/utils_assert.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_timer.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/utils/include/utils_list.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_timer.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hpl/tc/hpl_tc_base.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_pwm.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_dac_sync.h:
+
+../../../SAMD21_BSP/SAMD21_BSP/hal/include/hpl_dac_sync.h:
 
 ../../../SAMD21_BSP/SAMD21_BSP/hal/include/hal_usb_device.h:
 

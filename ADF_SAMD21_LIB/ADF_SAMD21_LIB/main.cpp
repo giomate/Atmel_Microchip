@@ -17,7 +17,7 @@ int main(void)
 	/* Initializes MCU, drivers and middleware */
 	atmel_start_init();
 
-	printf("hello\n\r");
+//	printf("hello\n\r");
 	adf.Init();
 	/* Replace with your application code */
 	while (1) {

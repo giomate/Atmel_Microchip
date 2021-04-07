@@ -48,7 +48,9 @@ bool lmx2694_Handler::Init(){
 	spi_lmx->Init();
 	spi_lmx->SetCS(true);
 	Power_Down();
+	delay_ms(10);
 	Program_Reset();
+	delay_ms(100);
 	Initiate_Registers();
 	delay_ms(10);
 	
@@ -545,7 +547,7 @@ bool	lmx2694_Handler::Start_Woobling(float ul, float ll){
 	Set_Target_Frequency((ul+ll)/2);
 	
 	delay_ms(100);
-	step=(ul+ll)/(2*1024);
+	step=(ul-ll)/(2048);
 	upper_limit=ul;
 	lower_limit=ll;
 	return Keep_Woobling();
