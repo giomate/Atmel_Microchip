@@ -15,9 +15,7 @@
 #include "ZCD_Handler.h"
 #include "MIXER_TUNNER_HELPER.h"
 
-#define  BAND_WIDTH	2048
-#define  CENTER_FREQUENCY	3600
-#define  BAND_WIDTH_FRACTION	1025
+
 
 
 class LTC5548_HANDLER: private MIXER_TUNNER_HELPER
@@ -26,7 +24,7 @@ public:
 		lmx2694_Handler  *lmx;
 		ADF5610_Driver  *adf;
 		ZCD_Handler *zcd;
-		float tune_rf_frequency;
+		float tune_rf_frequency,tune_LO_frequency;
 private:
 
 	bool  enable;
@@ -37,8 +35,10 @@ private:
 	uint32_t current_frequency_f=0;
 	uint32_t current_frequency_r=0;
 	uint32_t tone;
-	float next_rf_frequency;
+	float next_RF_frequency, current_LO_frequency,next_LO_frequency;
 	uint8_t error_counter;
+	float upper_limit, lower_limit,step,step_resonance;
+	bool direction;
 	
 public:
 	LTC5548_HANDLER();
@@ -50,6 +50,12 @@ public:
 	bool Set_Enable(bool st);
 	bool Check_Mixer(void);
 	float Tune_RF_Mixer();
+	float Tune_LO_Mixer();
+	float Start_Searching(float uplimit, float downlimit);
+	float Keep_Searching();
+	float Start_Searching_Resonance(float uplimit, float downlimit);
+	float Keep_Searching_Resonance();
+	
 
 private:
 
@@ -57,6 +63,8 @@ private:
 		bool Start_Mixer(void);
 		bool Start_LO(void);
 		bool Start_RF(void);
+		bool Set_RF(float f);
+		bool Set_LO(float f);
 
 };
 extern LTC5548_HANDLER ltc;

@@ -9,8 +9,7 @@
 #include "SPI_Syn_Class_ADF.h"
 
 SPI_Syn_Class_ADF	*ptrSPISync_adf;
-static	uint8_t	txStaticBuffer[SPI_SYN_BUFFER_SIZE];
-static	uint8_t	rxStaticBuffer[SPI_SYN_BUFFER_SIZE];
+
 
 
 // default constructor

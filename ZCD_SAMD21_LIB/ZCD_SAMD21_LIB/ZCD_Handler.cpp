@@ -50,7 +50,7 @@ uint32_t ZCD_Handler::Get_Tone(){
 			} 
 			else
 			{
-				tone=24000000;
+				tone=170000000;
 				break;
 			}
 			
@@ -64,7 +64,7 @@ uint32_t ZCD_Handler::Get_Tone(){
 	if (tone>0)
 	{
 	
-		if (tone<24000001)
+		if (tone<170000001)
 		{
 			gpio_toggle_pin_level(LED0);
 			
@@ -78,6 +78,6 @@ uint32_t ZCD_Handler::Get_Tone(){
 	{
 		tone=last_tone;
 	}
-	usb<<"tone: "<<tone<<TAB_SPACE;
+	//usb<<"tone: "<<tone<<TAB_SPACE;
 	return tone;
 }

@@ -159,6 +159,13 @@ bool ADF5610_Driver::LockDetect(void){
 bool ADF5610_Driver::Is_Locked(void){
 #ifdef NOT_SDO
 	is_locked= gpio_get_pin_level(PA06);
+	if (is_locked)
+	{
+		current_frequency=target_frequency;
+	} 
+	else
+	{
+	}
 #else
 
 
@@ -653,8 +660,7 @@ bool	ADF5610_Driver::SelfTest(uint8_t cycles){
 
 bool	ADF5610_Driver::Start_Woobling(float ul, float ll){
 	dir=1;
-	int errorCounter=0;
-	int counter=0;
+	
 	Set_Target_Frequency((ul+ll)/2);
 	ShortConfigurationFlow();
 	usleep(1000);

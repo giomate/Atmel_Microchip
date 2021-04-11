@@ -469,7 +469,6 @@ int lmx2694_Handler::Write_Single_Register(uint8_t index,uint16_t data){
 uint16_t lmx2694_Handler::Read_Single_Register(uint8_t index){
 	Set_MUXOUT_READBACK(false);
 	register_value=0;
-	uint16_t  last_value=0xff;
 	while((register_value==0)|(register_value==0xffff)){
 		spi_lmx->SetCS(false);
 			private_index=index|0x80;
