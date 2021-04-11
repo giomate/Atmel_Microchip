@@ -246,6 +246,12 @@
     <OutputPath>bin\test_app\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FREQUENCY_ESTIMATOR.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FREQUENCY_ESTIMATOR.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.cpp">
       <SubType>compile</SubType>
     </Compile>

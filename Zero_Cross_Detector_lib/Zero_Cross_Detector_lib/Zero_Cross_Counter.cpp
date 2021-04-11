@@ -7,14 +7,15 @@
 
 
 #include "Zero_Cross_Counter.h"
+#include "SPI_SLAVE_CLASS.h"
 #include <driver_init.h>
 #include <compiler.h>
 #include "string.h"
 
+Zero_Cross_Counter *tako;
 
-Zero_Cross_Counter *ptr_zero_cross_handler;
-static uint16_t capture_value_rising;
-static uint16_t capture_value_falling;
+static uint16_t capture_static_value_rising;
+static uint16_t capture_static_value_falling;
 static uint16_t capture_value_tc_a;
 static uint16_t capture_value_tc_b;
  static uint8_t	 local_last_frequency[4];
@@ -22,9 +23,9 @@ static uint16_t capture_value_tc_b;
 ISR(ZCD0_ZCD_vect)
 {
 	/* Insert your ZCD interrupt handling code here */
-	ptr_zero_cross_handler->leading_edge=true;
-	ptr_zero_cross_handler->falling_edge=false;
-	//ptr_zero_cross_handler->CaptureCounterC();
+	tako->leading_edge=true;
+	tako->falling_edge=false;
+	//tako->CaptureCounterC();
 
 	ZCD0.STATUS = ZCD_CROSSIF_bm;
 }
@@ -32,28 +33,55 @@ ISR(ZCD0_ZCD_vect)
 ISR(ZCD1_ZCD_vect)
 {
 	/* Insert your ZCD interrupt handling code here */
-	ptr_zero_cross_handler->falling_edge=true;
-	ptr_zero_cross_handler->leading_edge=false;
+	tako->falling_edge=true;
+	tako->leading_edge=false;
 	ZCD1.STATUS = ZCD_CROSSIF_bm;
 }
 ISR(TCB0_INT_vect)
 {
-	capture_value_rising= TCB0.CNT;
-// 	if (ptr_zero_cross_handler->leading_edge==true)
+	capture_static_value_rising= TCB0.CNT;
+	
+// 	if (tako->leading_edge==true)
 // 	{
-// 		ptr_zero_cross_handler->CaptureCounterB_Rising();
-	ptr_zero_cross_handler->CaptureCounterB_Rising();
+// 		tako->CaptureCounterB_Rising();
+	if (capture_static_value_rising>0)
+	{
+		if (tako->falling_edge)
+		{
+			tako->CaptureCounterB_Rising();
+			tako->full_wave=true;
+		}else{
+			tako->full_wave=false;
+		}
+
+	}
+	tako->got_value_r=true;
+	tako->leading_edge=true;
+	tako->falling_edge=false;
 
 	TCB0.INTFLAGS = TCB_CAPT_bm;
 }
 ISR(TCB1_INT_vect)
 {
-		capture_value_falling= TCB1.CNT;
-// 		if (ptr_zero_cross_handler->falling_edge==true)
+		capture_static_value_falling= TCB1.CNT;
+		if (capture_static_value_falling>0)
+		{
+			if (tako->leading_edge)
+			{
+				tako->CaptureCounterB_Falling();
+				tako->full_wave=true;
+			}else{
+				tako->full_wave=false;
+			}
+		}
+// 		if (tako->falling_edge==true)
 // 		{
-// 			ptr_zero_cross_handler->CaptureCounterB_Falling();
-// 			
-	ptr_zero_cross_handler->CaptureCounterB_Falling();
+// 			tako->CaptureCounterB_Falling();
+// 		
+		tako->got_value_f=true;
+	
+		tako->falling_edge=true;
+		tako->leading_edge=false;
 	TCB1.INTFLAGS = TCB_CAPT_bm;
 }
 
@@ -62,7 +90,7 @@ ISR(TCD0_TRIG_vect)
 		//capture_value_b= TCD0_CAPTUREA;
 		capture_value_tc_a= TCD0_CAPTUREA;
 		//capture_value_tc_b= TCD0_CAPTUREB;
-		ptr_zero_cross_handler->CaptureCounterC();
+		tako->CaptureCounterC();
 	
 
 	/* Insert your TCD TRIGA interrupt handling code here */
@@ -77,8 +105,13 @@ ISR(TCD0_TRIG_vect)
 // default constructor
 Zero_Cross_Counter::Zero_Cross_Counter()
 {
-	ptr_zero_cross_handler=this;
+	//ptr_zero_cross_handler=this;
 	last_frequency=local_last_frequency;
+	timer_fall=&capture_static_value_falling;
+	timer_rise=&capture_static_value_rising;
+	falling_edge=true;
+	leading_edge=true;
+	post->frequency_array=local_last_frequency;
 } //Zero_Cross_Counter
 
 // default destructor
@@ -87,6 +120,7 @@ Zero_Cross_Counter::~Zero_Cross_Counter()
 } //~Zero_Cross_Counter
 
 bool Zero_Cross_Counter::Init(void){
+
 //	ZCD_RISING_Init();
 	//	EVSYS.USERTCB0CAPT = EVSYS_USER_CHANNEL0_gc; /* Connect user to event channel 0 */
 	//TIMER_RISING_Init();
@@ -166,10 +200,10 @@ void Zero_Cross_Counter::CaptureCounterC(void){
 	leading_edge=false;
 }
 void Zero_Cross_Counter::CaptureCounterB_Rising(void){
-	capture_timer_rise= capture_value_rising;
+	tako->capture_timer_rise= capture_static_value_rising;
 }
 void Zero_Cross_Counter::CaptureCounterB_Falling(void){
-	capture_timer_fall= capture_value_falling;
+	tako->capture_timer_fall= capture_static_value_falling;
 }
 
 void Zero_Cross_Counter::Set_Last_Frequency(uint32_t lf){
@@ -183,3 +217,24 @@ void Zero_Cross_Counter::Set_Last_Frequency(uint32_t lf){
 	//memcpy((void*)last_frequency,(void*)&lf,4);
 	
 }
+void Zero_Cross_Counter::Set_Last_Capture_Frequency(void){
+	uint32_t local_value;
+	tako->frequency_out=OnCapture_Frequecy_Out();
+	uint32_t	dummy_frequency=frequency_out;
+	for (int i = 0; i < 4; i++)
+	{
+		local_value=(dummy_frequency>>((3-i)*8))&0xff;
+		if (i==0)
+		{
+			last_frequency[i]=(0xa0)|((uint8_t)local_value&0xff);
+		} 
+		else
+		{
+			last_frequency[i]=((uint8_t)local_value&0xff);
+		}
+		
+	}
+	//memcpy((void*)last_frequency,(void*)&lf,4);
+	
+}
+

@@ -48,8 +48,8 @@ int8_t ZCD_RISING_init()
 	             | 0 << ZCD_RUNSTDBY_bp /* Setting: disabled */
 	             | 0 << ZCD_INVERT_bp;  /* Setting: disabled */
 
-	// ZCD0.INTCTRL = ZCD_INTMODE_NONE_gc; /* No interrupt */
-
+	 ZCD0.INTCTRL = ZCD_INTMODE_NONE_gc; /* No interrupt */
+	// ZCD0.INTCTRL =  ZCD_INTMODE_RISING_gc; /* No interrupt */
 	return 0;
 }
 
@@ -66,7 +66,7 @@ int8_t ZCD_FALLING_init()
 	             | 0 << ZCD_RUNSTDBY_bp /* Setting: disabled */
 	             | 1 << ZCD_INVERT_bp;  /* Setting: enabled */
 
-	// ZCD1.INTCTRL = ZCD_INTMODE_NONE_gc; /* No interrupt */
-
+	 ZCD1.INTCTRL = ZCD_INTMODE_NONE_gc; /* No interrupt */
+//	 ZCD1.INTCTRL = ZCD_INTMODE_FALLING_gc; /* No interrupt */
 	return 0;
 }

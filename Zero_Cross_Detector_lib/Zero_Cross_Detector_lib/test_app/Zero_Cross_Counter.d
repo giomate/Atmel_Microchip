@@ -40,6 +40,7 @@ Zero_Cross_Counter.d Zero_Cross_Counter.o: .././Zero_Cross_Counter.cpp \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/vref.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/bod.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h \
+ .././FREQUENCY_ESTIMATOR.h .././SPI_SLAVE_CLASS.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/driver_init.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h
 
@@ -124,6 +125,10 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/bod.h:
 
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h:
+
+.././FREQUENCY_ESTIMATOR.h:
+
+.././SPI_SLAVE_CLASS.h:
 
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/driver_init.h:
 

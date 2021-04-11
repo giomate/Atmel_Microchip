@@ -14,11 +14,11 @@ static uint8_t write_buffer_local[16];
 static uint8_t read_buffer_local[16];
 static uint8_t command=0;
 
-SPI_SLAVE_CLASS *ptrSPI_Slave;
+SPI_SLAVE_CLASS *post;
 
 static void SPI_Transfer_Done(){
-	 ptrSPI_Slave->transfer_done=true;
-	  ptrSPI_Slave->type = SPI_READ;
+	 post->transfer_done=true;
+	  post->type = SPI_READ;
 }
 
 
@@ -36,33 +36,33 @@ ISR(SPI1_INT_vect)
 
 	SPI1.INTFLAGS = SPI_RXCIF_bm;
 
-	if (ptrSPI_Slave->type != SPI_WRITE) {
+	if (post->type != SPI_WRITE) {
 		if (command==0x01)
 		{
-			ptrSPI_Slave->transfer_done=false;
-			ptrSPI_Slave->Write_Data(tako.last_frequency,4);
+			post->transfer_done=false;
+			post->Write_Data(post->frequency_array,4);
 			
 			
 		}
 		else
 		{
-			ptrSPI_Slave->acknowledge=false;
+			post->acknowledge=false;
 		}
 	}else{
-		if (ptrSPI_Slave->type != SPI_READ)
+		if (post->type != SPI_READ)
 		{
-			ptrSPI_Slave->data++;
-			wdata = *(ptrSPI_Slave->data);
-			ptrSPI_Slave->size_message--;
+			post->data++;
+			wdata = *(post->data);
+			post->size_message--;
 			// if more bytes to be transferred
-			if (ptrSPI_Slave->size_message != 0) {
+			if (post->size_message != 0) {
 				// more data to send, send a byte
 				SPI1.DATA = wdata;
 			}
 			// if last byte has been transferred, update status
 			// and optionally call callback
 			else {
-				ptrSPI_Slave->status = SPI_DONE;
+				post->status = SPI_DONE;
 				SPI_Transfer_Done();
 				
 			}
@@ -83,7 +83,7 @@ ISR(SPI1_INT_vect)
 // default constructor
 SPI_SLAVE_CLASS::SPI_SLAVE_CLASS()
 {
-	ptrSPI_Slave=this;
+	//ptrSPI_Slave=this;
 	transfer_done=false;
 	read_buffer=read_buffer_local;
 	write_buffer=write_buffer_local;
@@ -97,7 +97,7 @@ SPI_SLAVE_CLASS::~SPI_SLAVE_CLASS()
 } //~SPI_SLAVE_CLASS
 
 bool SPI_SLAVE_CLASS::Init(){
-	ptrSPI_Slave=this;
+	 	//ptrSPI_Slave=this;
 	SPI_ZCD_init();
 	SPI_ZCD_enable();
 	
@@ -109,12 +109,16 @@ void SPI_SLAVE_CLASS::Read_Data(){
 }
 
 void SPI_SLAVE_CLASS::Write_Data(uint8_t *block, uint8_t sz){
-	data  = (uint8_t *)block;
-	size_message   = sz;
-	type   = SPI_WRITE;
-	status = SPI_BUSY;
+	if (block!=NULL)
+	{
+		data  = (uint8_t *)block;
+		size_message   = sz;
+		type   = SPI_WRITE;
+		status = SPI_BUSY;
 
-	SPI1.DATA = *data;
+		SPI1.DATA = *data;
+	}
+	
 }
 
 void SPI_SLAVE_CLASS::SPI_ZCD_init()
@@ -176,13 +180,13 @@ void SPI_SLAVE_CLASS::Check_Command()
 			
 			if (command>1)
 			{
-				Write_Data(tako.last_frequency, 4);
+				Write_Data(tako->last_frequency, 4);
 			}
 			else
 			{
 			}
 		}else{
-			SPI_ZCD_write_block(tako.last_frequency, 4);
+			SPI_ZCD_write_block(tako->last_frequency, 4);
 		}
 	}
 	

@@ -40,7 +40,8 @@ SPI_SLAVE_CLASS.d SPI_SLAVE_CLASS.o: .././SPI_SLAVE_CLASS.cpp \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/tcd.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/vref.h \
  ../../../AVR128DB_BSP/AVR128DB_BSP/include/bod.h \
- ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h
+ ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h \
+ .././FREQUENCY_ESTIMATOR.h
 
 .././SPI_SLAVE_CLASS.h:
 
@@ -125,3 +126,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/bod.h:
 
 ../../../AVR128DB_BSP/AVR128DB_BSP/include/atmel_start_pins.h:
+
+.././FREQUENCY_ESTIMATOR.h:

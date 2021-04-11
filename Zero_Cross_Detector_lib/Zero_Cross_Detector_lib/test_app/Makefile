@@ -37,6 +37,7 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../FREQUENCY_ESTIMATOR.cpp \
 ../main.cpp \
 ../SPI_SLAVE_CLASS.cpp \
 ../Zero_Cross_Counter.cpp
@@ -49,21 +50,25 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+FREQUENCY_ESTIMATOR.o \
 main.o \
 SPI_SLAVE_CLASS.o \
 Zero_Cross_Counter.o
 
 OBJS_AS_ARGS +=  \
+FREQUENCY_ESTIMATOR.o \
 main.o \
 SPI_SLAVE_CLASS.o \
 Zero_Cross_Counter.o
 
 C_DEPS +=  \
+FREQUENCY_ESTIMATOR.d \
 main.d \
 SPI_SLAVE_CLASS.d \
 Zero_Cross_Counter.d
 
 C_DEPS_AS_ARGS +=  \
+FREQUENCY_ESTIMATOR.d \
 main.d \
 SPI_SLAVE_CLASS.d \
 Zero_Cross_Counter.d
@@ -83,6 +88,13 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+./FREQUENCY_ESTIMATOR.o: .././FREQUENCY_ESTIMATOR.cpp
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG  -I"../../../AVR128DB_BSP/AVR128DB_BSP/examples/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/include" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils" -I"../../../AVR128DB_BSP/AVR128DB_BSP/utils/assembler" -I"../../../AVR128DB_BSP/AVR128DB_BSP/src" -I"../../../AVR128DB_BSP/AVR128DB_BSP" -I"../../../AVR128DB_BSP/AVR128DB_BSP/Config" -I".." -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\include"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=avr128db48 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\Atmel\AVR-Dx_DFP\1.7.85\gcc\dev\avr128db48" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 ./main.o: .././main.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
