@@ -72,7 +72,7 @@ int main(void)
 					//tako.Set_Last_Frequency(last_frequency_c);
 					if (tako->full_wave)
 					{
-						printf("Counter fall : %lu \n\r", current_frequency_c);
+						printf("Counter Full_Wave Fall : %lu \n\r", current_frequency_c);
 					}
 				
 			}
@@ -91,7 +91,7 @@ int main(void)
 				//tako.Set_Last_Frequency(last_frequency_b);
 				if (tako->full_wave)
 				{
-					printf("Counter Full WaveRise : %lu \n\r", current_frequency_b);
+					printf("Counter Full-Wave Rise : %lu \n\r", current_frequency_b);
 				}else{
 					
 				}

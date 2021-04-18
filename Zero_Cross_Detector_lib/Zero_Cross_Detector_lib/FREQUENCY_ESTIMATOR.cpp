@@ -13,6 +13,7 @@
 FREQUENCY_ESTIMATOR::FREQUENCY_ESTIMATOR()
 {
 	error_counter=0;
+	average_counter=1;
 } //FREQUENCY_ESTIMATOR
 
 // default destructor
@@ -62,7 +63,7 @@ uint32_t FREQUENCY_ESTIMATOR::OnCapture_Frequecy_Out(void){
 		} 
 		else
 		{
-			average_counter=2;
+		//	average_counter=2;
 		}
 		
 	}
@@ -80,7 +81,7 @@ uint32_t FREQUENCY_ESTIMATOR::OnCapture_Frequecy_Out(void){
 			} 
 			else
 			{
-				average_counter=1;
+			//	average_counter=1;
 			}
 		}
 	}
