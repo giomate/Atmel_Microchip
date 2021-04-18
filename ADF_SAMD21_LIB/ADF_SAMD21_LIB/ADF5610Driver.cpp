@@ -31,16 +31,16 @@ static SPI_Syn_Class_ADF staticSPI;
 
 ADF5610_Driver::ADF5610_Driver() {
 	// TODO Auto-generated constructor stub
-	 current_frequency=3600;
+	 current_frequency=4040;
 		
 
 		 buffer32=0;
 		 dir=1;
 		 spi_adf=&staticSPI;
 		 is_locked=false;
-		 upper_limit=4400;
-		 lower_limit=3600;
-		 step=(upper_limit-lower_limit)/1024.0*2;
+		 upper_limit=4064;
+		 lower_limit=3984;
+		 step=(upper_limit-lower_limit)/(1024.0*2);
 		 target_frequency=current_frequency+step;
 		 pll_started=false;
 }
